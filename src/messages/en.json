@@ -1,0 +1,242 @@
+{
+  "site": {
+    "title": "Finance Calculators - Professional Mortgage, Investment & Tax Tools",
+    "description": "Free online mortgage calculator, investment return calculator, tax calculator. Support early repayment analysis, compound interest calculation, tax optimization advice.",
+    "keywords": "mortgage calculator, investment calculator, tax calculator, early repayment, compound interest, financial tools"
+  },
+  "nav": {
+    "home": "Finance Calculators",
+    "mortgage": "Mortgage",
+    "investment": "Investment",
+    "tax": "Tax",
+    "compound": "Compound Interest",
+    "currency": "Currency"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional Financial Calculators",
+      "subtitle": "Accurate calculations, smart analysis, helping you make better financial decisions",
+      "cta": "Start Calculating"
+    },
+    "tools": {
+      "mortgage": {
+        "title": "Mortgage Calculator",
+        "desc": "Support fixed-rate, adjustable-rate, and early repayment strategy analysis",
+        "features": ["Multiple loan types", "Early repayment comparison", "Payment stress test"]
+      },
+      "investment": {
+        "title": "Investment Calculator",
+        "desc": "Compound interest, regular investment simulation, visualize your wealth growth",
+        "features": ["Compound interest", "Regular investment", "Inflation adjustment"],
+        "soon": "Coming Soon"
+      },
+      "compound": {
+        "title": "Compound Interest Calculator",
+        "desc": "Visualize the power of compound interest over time",
+        "features": ["Daily/Monthly/Yearly", "Visual growth chart", "Interest breakdown"]
+      },
+      "tax": {
+        "title": "Tax Calculator",
+        "desc": "Latest tax rates, automatic deduction calculation, bonus optimization",
+        "features": ["Latest rates", "Deductions", "Bonus optimization"],
+        "soon": "Coming Soon"
+      },
+      "currency": {
+        "title": "Currency Converter",
+        "desc": "Real-time exchange rates for 150+ currencies",
+        "features": ["150+ currencies", "Real-time rates", "Historical charts"]
+      }
+    },
+    "why": {
+      "title": "Why Choose Our Tools?",
+      "accurate": {
+        "title": "Accurate Calculation",
+        "desc": "Bank-grade algorithms, results match actual bank payment schedules"
+      },
+      "instant": {
+        "title": "Instant Results",
+        "desc": "Real-time calculation, no waiting, clear results"
+      },
+      "secure": {
+        "title": "Data Secure",
+        "desc": "All calculations done locally, no data uploaded to servers"
+      }
+    }
+  },
+  "mortgage": {
+    "title": "Mortgage Calculator",
+    "subtitle": "Calculate your monthly payments, total interest, and analyze early repayment strategies",
+    "form": {
+      "loanType": "Loan Type",
+      "loanAmount": "Loan Amount",
+      "loanTerm": "Loan Term",
+      "interestRate": "Interest Rate",
+      "paymentMethod": "Payment Method",
+      "fixedRate": "Fixed Rate",
+      "adjustableRate": "Adjustable Rate (ARM)",
+      "fha": "FHA Loan",
+      "va": "VA Loan",
+      "years": "years",
+      "months": "months"
+    },
+    "method": {
+      "equalInterest": "Equal Payment (Amortization)",
+      "equalPrincipal": "Equal Principal",
+      "equalInterestDesc": "Fixed monthly payment, suitable for stable income",
+      "equalPrincipalDesc": "Decreasing payment, higher initial pressure but less total interest"
+    },
+    "result": {
+      "monthlyPayment": "Monthly Payment",
+      "firstPayment": "First Payment",
+      "lastPayment": "Last Payment",
+      "loanAmount": "Loan Amount",
+      "totalInterest": "Total Interest",
+      "totalPayment": "Total Payment",
+      "payoffDate": "Payoff Date"
+    },
+    "earlyPay": {
+      "title": "Early Repayment Analysis",
+      "month": "Repayment Month",
+      "amount": "Early Repayment Amount",
+      "method": "Treatment Method",
+      "reduceTerm": "Reduce Term",
+      "reducePayment": "Reduce Payment",
+      "savedInterest": "Interest Saved",
+      "newTerm": "New Term",
+      "newPayment": "New Payment",
+      "remainingPrincipal": "Remaining Principal",
+      "tip": "Tip: Repaying {amount} at month {month} can save approximately {saved} in interest"
+    },
+    "chart": {
+      "title": "Payment Trend",
+      "year": "Year",
+      "payment": "Payment",
+      "principal": "Principal",
+      "interest": "Interest",
+      "balance": "Remaining Balance"
+    },
+    "schedule": {
+      "title": "Payment Schedule (Annual Summary)",
+      "year": "Year",
+      "monthly": "Monthly",
+      "annual": "Annual Payment",
+      "principal": "Principal",
+      "interest": "Interest",
+      "balance": "Balance"
+    },
+    "knowledge": {
+      "title": "Mortgage Knowledge",
+      "methods": {
+        "title": "Choosing Between Payment Methods",
+        "desc": "Equal payment (amortization) suits those with stable income. Equal principal suits those with higher current income or wanting to reduce total interest, with higher initial payments but about 10-20% less total interest."
+      },
+      "earlyPay": {
+        "title": "Best Time for Early Repayment",
+        "desc": "Early repayment is most effective in the first 1/3 of the loan term when interest ratio is highest. After halfway, savings are limited - funds may be better used elsewhere."
+      },
+      "rates": {
+        "title": "Fixed vs Adjustable Rates",
+        "desc": "Fixed rates provide payment stability. Adjustable rates start lower but can increase. Choose fixed for long-term stability, adjustable if expecting rate decreases or early payoff."
+      }
+    }
+  },
+  "compound": {
+    "title": "Compound Interest Calculator",
+    "subtitle": "See how your money grows over time with the power of compound interest",
+    "form": {
+      "principal": "Initial Principal",
+      "rate": "Annual Interest Rate",
+      "term": "Investment Term",
+      "compound": "Compound Frequency",
+      "monthly": "Monthly Contribution",
+      "annually": "Annually",
+      "semiannually": "Semi-annually",
+      "quarterly": "Quarterly",
+      "monthlyFreq": "Monthly",
+      "daily": "Daily"
+    },
+    "result": {
+      "finalBalance": "Final Balance",
+      "totalContributions": "Total Contributions",
+      "totalInterest": "Total Interest Earned",
+      "interestRate": "Effective Annual Rate"
+    },
+    "chart": {
+      "title": "Growth Over Time",
+      "year": "Year",
+      "balance": "Balance",
+      "contributions": "Contributions",
+      "interest": "Interest"
+    },
+    "schedule": {
+      "title": "Yearly Breakdown",
+      "year": "Year",
+      "startBalance": "Start Balance",
+      "contributions": "Contributions",
+      "interestEarned": "Interest",
+      "endBalance": "End Balance"
+    },
+    "knowledge": {
+      "title": "The Power of Compound Interest",
+      "rule72": {
+        "title": "Rule of 72",
+        "desc": "Divide 72 by your interest rate to estimate years to double your money. At 8% interest, your money doubles in approximately 9 years."
+      },
+      "frequency": {
+        "title": "Compound Frequency Matters",
+        "desc": "More frequent compounding means more growth. Daily compounding yields slightly more than monthly, though the difference is small at typical rates."
+      },
+      "start": {
+        "title": "Start Early",
+        "desc": "Time is your greatest ally. Starting 10 years earlier can mean 2-3x more wealth at retirement, even with smaller contributions."
+      }
+    }
+  },
+  "currency": {
+    "title": "Currency Converter",
+    "subtitle": "Convert between 150+ currencies with real-time exchange rates",
+    "form": {
+      "amount": "Amount",
+      "from": "From",
+      "to": "To",
+      "swap": "Swap"
+    },
+    "result": {
+      "rate": "Exchange Rate",
+      "inverse": "Inverse Rate",
+      "updated": "Last Updated"
+    },
+    "popular": "Popular Currencies",
+    "currencies": {
+      "USD": "US Dollar",
+      "EUR": "Euro",
+      "GBP": "British Pound",
+      "JPY": "Japanese Yen",
+      "CNY": "Chinese Yuan",
+      "AUD": "Australian Dollar",
+      "CAD": "Canadian Dollar",
+      "CHF": "Swiss Franc",
+      "INR": "Indian Rupee",
+      "KRW": "South Korean Won"
+    }
+  },
+  "footer": {
+    "brand": "Finance Calculators",
+    "desc": "Professional mortgage, investment, and tax calculation tools for smarter financial decisions.",
+    "tools": "Tools",
+    "knowledge": "Knowledge",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "Results are for reference only. Actual loan conditions depend on bank approval.",
+    "copyright": "© 2024 Finance Calculators. For educational use only."
+  },
+  "common": {
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "download": "Download",
+    "share": "Share",
+    "print": "Print",
+    "currency": "Currency",
+    "language": "Language",
+    "theme": "Theme"
+  }
+}

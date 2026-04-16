@@ -1,0 +1,242 @@
+{
+  "site": {
+    "title": "金融计算器 - 专业房贷、投资、税务计算工具",
+    "description": "免费在线房贷计算器、投资收益计算器、个税计算器。支持提前还款策略分析、复利计算、税务优化建议。",
+    "keywords": "房贷计算器,投资计算器,个税计算器,提前还款,复利计算,金融工具"
+  },
+  "nav": {
+    "home": "金融计算器",
+    "mortgage": "房贷",
+    "investment": "投资",
+    "tax": "个税",
+    "compound": "复利",
+    "currency": "汇率"
+  },
+  "home": {
+    "hero": {
+      "title": "专业金融计算工具",
+      "subtitle": "精准计算、智能分析，助您做出更明智的财务决策",
+      "cta": "立即开始计算"
+    },
+    "tools": {
+      "mortgage": {
+        "title": "房贷计算器",
+        "desc": "支持固定利率、浮动利率，提前还款策略智能分析",
+        "features": ["多种贷款类型", "提前还款对比", "月供压力测试"]
+      },
+      "investment": {
+        "title": "投资收益计算器",
+        "desc": "复利计算、定投模拟，可视化您的财富增长路径",
+        "features": ["复利计算", "定投模拟", "通胀折算"],
+        "soon": "即将推出"
+      },
+      "compound": {
+        "title": "复利计算器",
+        "desc": "可视化复利的力量，见证财富增长",
+        "features": ["日/月/年复利", "增长曲线图", "利息明细"]
+      },
+      "tax": {
+        "title": "个税计算器",
+        "desc": "最新税率表，专项扣除自动计算，年终奖优化建议",
+        "features": ["最新税率", "专项扣除", "年终奖优化"],
+        "soon": "即将推出"
+      },
+      "currency": {
+        "title": "汇率换算",
+        "desc": "150+货币实时汇率换算",
+        "features": ["150+货币", "实时汇率", "历史走势"]
+      }
+    },
+    "why": {
+      "title": "为什么选择我们的工具？",
+      "accurate": {
+        "title": "精准计算",
+        "desc": "采用银行级算法，结果与银行实际还款计划一致"
+      },
+      "instant": {
+        "title": "即时结果",
+        "desc": "实时计算，无需等待，结果一目了然"
+      },
+      "secure": {
+        "title": "数据安全",
+        "desc": "所有计算在本地完成，数据不上传服务器"
+      }
+    }
+  },
+  "mortgage": {
+    "title": "房贷计算器",
+    "subtitle": "计算月供、总利息，分析提前还款策略",
+    "form": {
+      "loanType": "贷款类型",
+      "loanAmount": "贷款金额",
+      "loanTerm": "贷款期限",
+      "interestRate": "利率",
+      "paymentMethod": "还款方式",
+      "fixedRate": "固定利率",
+      "adjustableRate": "浮动利率",
+      "fha": "FHA贷款",
+      "va": "VA贷款",
+      "years": "年",
+      "months": "个月"
+    },
+    "method": {
+      "equalInterest": "等额本息",
+      "equalPrincipal": "等额本金",
+      "equalInterestDesc": "每月还款金额固定，适合收入稳定人群",
+      "equalPrincipalDesc": "每月还款金额递减，前期压力大但总利息少"
+    },
+    "result": {
+      "monthlyPayment": "每月还款",
+      "firstPayment": "首月还款",
+      "lastPayment": "末月还款",
+      "loanAmount": "贷款总额",
+      "totalInterest": "支付利息",
+      "totalPayment": "还款总额",
+      "payoffDate": "还清日期"
+    },
+    "earlyPay": {
+      "title": "提前还款分析",
+      "month": "提前还款时间",
+      "amount": "提前还款金额",
+      "method": "处理方式",
+      "reduceTerm": "缩短年限",
+      "reducePayment": "减少月供",
+      "savedInterest": "节省利息",
+      "newTerm": "新期限",
+      "newPayment": "新月供",
+      "remainingPrincipal": "剩余本金",
+      "tip": "提示：在第{month}个月提前还款{amount}，可节省利息约{saved}"
+    },
+    "chart": {
+      "title": "还款趋势",
+      "year": "年",
+      "payment": "月供",
+      "principal": "本金",
+      "interest": "利息",
+      "balance": "剩余本金"
+    },
+    "schedule": {
+      "title": "还款明细（每年汇总）",
+      "year": "年份",
+      "monthly": "月供",
+      "annual": "年还款额",
+      "principal": "本金",
+      "interest": "利息",
+      "balance": "剩余本金"
+    },
+    "knowledge": {
+      "title": "房贷还款知识",
+      "methods": {
+        "title": "等额本息与等额本金的选择",
+        "desc": "等额本息适合收入稳定、预期收入不会大幅增长的购房者。等额本金适合当前收入较高、预期收入可能下降或希望减少总利息支出的购房者，总利息比等额本息少约10%-20%。"
+      },
+      "earlyPay": {
+        "title": "提前还款的最佳时机",
+        "desc": "在贷款前期（还款总期限的1/3之前）提前还款效果最好。如果已经还款超过一半期限，提前还款节省的利息有限。"
+      },
+      "rates": {
+        "title": "固定利率与浮动利率",
+        "desc": "固定利率提供还款稳定性。浮动利率初期较低但可能上涨。长期持有选固定利率，预期利率下降或提前还清可考虑浮动利率。"
+      }
+    }
+  },
+  "compound": {
+    "title": "复利计算器",
+    "subtitle": "见证复利的力量，看您的财富如何随时间增长",
+    "form": {
+      "principal": "初始本金",
+      "rate": "年利率",
+      "term": "投资期限",
+      "compound": "复利频率",
+      "monthly": "每月追加",
+      "annually": "每年",
+      "semiannually": "半年",
+      "quarterly": "每季度",
+      "monthlyFreq": "每月",
+      "daily": "每天"
+    },
+    "result": {
+      "finalBalance": "最终余额",
+      "totalContributions": "累计投入",
+      "totalInterest": "累计收益",
+      "interestRate": "有效年利率"
+    },
+    "chart": {
+      "title": "财富增长曲线",
+      "year": "年",
+      "balance": "余额",
+      "contributions": "投入",
+      "interest": "收益"
+    },
+    "schedule": {
+      "title": "年度明细",
+      "year": "年",
+      "startBalance": "年初余额",
+      "contributions": "追加投入",
+      "interestEarned": "收益",
+      "endBalance": "年末余额"
+    },
+    "knowledge": {
+      "title": "复利的力量",
+      "rule72": {
+        "title": "72法则",
+        "desc": "用72除以年利率，即可估算翻倍所需年数。年利率8%时，约9年翻倍。"
+      },
+      "frequency": {
+        "title": "复利频率的影响",
+        "desc": "复利频率越高，收益越多。日复利比月复利略高，但在常规利率下差距不大。"
+      },
+      "start": {
+        "title": "尽早开始",
+        "desc": "时间是最强大的杠杆。提前10年开始，退休时财富可能翻2-3倍，即使投入更少。"
+      }
+    }
+  },
+  "currency": {
+    "title": "汇率换算",
+    "subtitle": "150+货币实时汇率换算",
+    "form": {
+      "amount": "金额",
+      "from": "从",
+      "to": "到",
+      "swap": "交换"
+    },
+    "result": {
+      "rate": "汇率",
+      "inverse": "反向汇率",
+      "updated": "更新时间"
+    },
+    "popular": "常用货币",
+    "currencies": {
+      "USD": "美元",
+      "EUR": "欧元",
+      "GBP": "英镑",
+      "JPY": "日元",
+      "CNY": "人民币",
+      "AUD": "澳元",
+      "CAD": "加元",
+      "CHF": "瑞士法郎",
+      "INR": "印度卢比",
+      "KRW": "韩元"
+    }
+  },
+  "footer": {
+    "brand": "金融计算器",
+    "desc": "提供专业的房贷、投资、税务计算工具，助您做出明智的财务决策。",
+    "tools": "工具",
+    "knowledge": "相关知识",
+    "disclaimer": "声明",
+    "disclaimerText": "本站计算结果仅供参考，实际贷款条件以银行审批为准。",
+    "copyright": "© 2024 金融计算器. 仅供学习参考使用."
+  },
+  "common": {
+    "calculate": "计算",
+    "reset": "重置",
+    "download": "下载",
+    "share": "分享",
+    "print": "打印",
+    "currency": "货币",
+    "language": "语言",
+    "theme": "主题"
+  }
+}
