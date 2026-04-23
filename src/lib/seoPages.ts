@@ -3263,6 +3263,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Compare cost vs protection: low premium for significant liability protection.",
     ],
   },
+  {
+    slug: "crypto-transaction-verification-guide",
+    title: "Crypto Transaction Verification Guide for Blockchain Records (2026)",
+    description:
+      "Verify crypto transactions for tax records: blockchain explorer usage, transaction confirmation, hash verification, and audit documentation for crypto tax compliance.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Transaction verification confirms blockchain records. This guide explains explorer usage, confirmation, hash verification, and audit documentation.",
+    steps: [
+      "Use blockchain explorer: verify transaction on blockstream, etherscan, or chain-specific explorer.",
+      "Confirm transaction details: verify date, amount, addresses, transaction hash.",
+      "Track confirmation status: sufficient confirmations ensure transaction finality.",
+      "Document hash records: transaction hashes provide immutable proof for audit.",
+      "Export verification: save explorer screenshots or API data for tax documentation.",
+    ],
+  },
+  {
+    slug: "mortgage-interest-only-loan-guide",
+    title: "Mortgage Interest-Only Loan Guide for Payment Flexibility (2026)",
+    description:
+      "Understand interest-only mortgage loans: payment structure, qualification, balloon payment, and interest-only vs amortizing loan comparison.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Interest-only loans have lower initial payments. This guide explains structure, qualification, balloon payment, and comparison to amortizing.",
+    steps: [
+      "Understand payment structure: pay only interest for 5-10 years, then principal included.",
+      "Calculate lower initial payment: interest-only reduces payment during initial period.",
+      "Prepare for balloon: after interest-only, payments increase significantly.",
+      "Compare to amortizing: interest-only saves early but costs more total interest.",
+      "Consider use case: ideal for income growth expected, short ownership, or cash flow flexibility.",
+    ],
+  },
+  {
+    slug: "tax-filing-extension-guide",
+    title: "Tax Filing Extension Guide for Deadline Management (2026)",
+    description:
+      "File tax extension for deadline management: Form 4868, extension deadline, payment requirements, and extension vs late filing consequences.",
+    category: "tax",
+    targetProductHref: "/tools/tax-extension-calculator",
+    targetProductLabel: "Tax Extension Calculator",
+    summary:
+      "Tax extension grants additional filing time. This guide explains Form 4868, deadline, payment, and extension vs late filing.",
+    steps: [
+      "File Form 4868: submit extension request by April 15 for October 15 extended deadline.",
+      "Pay estimated tax: extension grants time to file, not time to pay - pay estimate by April 15.",
+      "Avoid late filing penalty: extension prevents failure-to-file penalty during extension period.",
+      "Track extension deadline: October 15 final deadline, failure-to-file penalty after.",
+      "Document extension: keep Form 4868 confirmation for penalty defense documentation.",
+    ],
+  },
+  {
+    slug: "inherited-ira-distribution-rules-guide",
+    title: "Inherited IRA Distribution Rules Guide for Beneficiary Withdrawals (2026)",
+    description:
+      "Understand inherited IRA distribution rules: 10-year rule, RMD requirements, beneficiary types, and withdrawal timing for inherited retirement accounts.",
+    category: "retirement",
+    targetProductHref: "/tools/ira-contribution-calculator",
+    targetProductLabel: "IRA Contribution Calculator",
+    summary:
+      "Inherited IRA distribution rules changed with SECURE Act. This guide explains 10-year rule, RMDs, beneficiary types, and withdrawal timing.",
+    steps: [
+      "Identify beneficiary type: eligible designated beneficiary, designated beneficiary, or non-designated.",
+      "Apply 10-year rule: most beneficiaries must distribute within 10 years of death.",
+      "Understand exception: spouse, minor child, disabled eligible for stretch IRA treatment.",
+      "Track distribution deadline: 10-year rule requires full distribution by December 31 of year 10.",
+      "Plan tax impact: distributions taxed as ordinary income, plan timing for tax optimization.",
+    ],
+  },
+  {
+    slug: "long-term-care-insurance-premium-guide",
+    title: "Long-Term Care Insurance Premium Guide for Coverage Cost (2026)",
+    description:
+      "Calculate long-term care insurance premiums: age factors, coverage amount, inflation protection, and premium comparison for LTC insurance cost.",
+    category: "insurance",
+    targetProductHref: "/tools/long-term-care-insurance-calculator",
+    targetProductLabel: "Long-Term Care Insurance Calculator",
+    summary:
+      "LTC premiums vary by age and coverage. This guide explains age factors, coverage amount, inflation protection, and premium comparison.",
+    steps: [
+      "Understand age factor: premiums increase significantly with age, buy before 60.",
+      "Calculate coverage cost: daily benefit, benefit period, inflation rider affect premium.",
+      "Compare inflation options: 5% compound most expensive, 3% compound moderate, no inflation cheapest.",
+      "Evaluate elimination period: 90-day elimination period lowers premium vs 30-day.",
+      "Shop multiple carriers: LTC premiums vary 30-50% across carriers, compare quotes.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
