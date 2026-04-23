@@ -3353,6 +3353,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Shop multiple carriers: LTC premiums vary 30-50% across carriers, compare quotes.",
     ],
   },
+  {
+    slug: "crypto-tax-accountant-selection-guide",
+    title: "Crypto Tax Accountant Selection Guide for Professional Preparation (2026)",
+    description:
+      "Select crypto tax accountant for professional preparation: CPA experience, crypto expertise, fee comparison, and accountant qualifications for crypto tax filing.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto tax requires specialized accountant knowledge. This guide explains CPA selection, crypto expertise, fees, and qualifications for professional preparation.",
+    steps: [
+      "Check crypto experience: accountant must have crypto tax clients, understand DeFi, NFTs.",
+      "Verify CPA credentials: licensed CPA, tax preparation experience, audit defense capability.",
+      "Compare fees: crypto tax preparation $500-$2,000+, depends on complexity.",
+      "Review software knowledge: accountant should use crypto tax software (CoinTracker, Koinly).",
+      "Evaluate communication: responsive accountant, clear explanations, proactive tax planning.",
+    ],
+  },
+  {
+    slug: "mortgage-preapproval-vs-approval-guide",
+    title: "Mortgage Preapproval vs Approval Guide for Application Process (2026)",
+    description:
+      "Understand mortgage preapproval vs approval: preapproval process, conditional approval, final approval, and application stages for mortgage borrowers.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Preapproval and approval are different mortgage stages. This guide explains preapproval, conditional approval, final approval, and application timeline.",
+    steps: [
+      "Understand preapproval: credit check, income verification, rate quote, not full approval.",
+      "Track conditional approval: property approved, pending final documentation verification.",
+      "Monitor final approval: all conditions cleared, clear to close, funding scheduled.",
+      "Document timeline: preapproval 1-3 days, conditional 2-4 weeks, final 1-2 days.",
+      "Avoid preapproval expiration: preapproval valid 60-90 days, renew if expired.",
+    ],
+  },
+  {
+    slug: "dependent-tax-credit-guide",
+    title: "Dependent Tax Credit Guide for Family Tax Benefits (2026)",
+    description:
+      "Calculate dependent tax credits: qualifying child, qualifying relative, tax benefits, and dependent eligibility for family tax deductions and credits.",
+    category: "tax",
+    targetProductHref: "/tools/tax-credit-calculator",
+    targetProductLabel: "Tax Credit Calculator",
+    summary:
+      "Dependents qualify for multiple tax benefits. This guide explains qualifying child/relative rules, credits, and tax benefit calculation.",
+    steps: [
+      "Check qualifying child: under 19, live with you >6 months, supported by you.",
+      "Verify qualifying relative: any age, you provide >50% support, income limits.",
+      "Calculate child tax credit: up to $2,000 per qualifying child, $1,700 refundable.",
+      "Apply dependent credit: $500 nonrefundable credit for qualifying relatives.",
+      "Track dependent benefits: EITC, dependent care credit, education credits for dependents.",
+    ],
+  },
+  {
+    slug: "401k-investment-selection-guide",
+    title: "401(k) Investment Selection Guide for Portfolio Allocation (2026)",
+    description:
+      "Select 401(k) investments for retirement portfolio: fund types, allocation strategy, risk tolerance, and investment menu navigation for 401k participants.",
+    category: "retirement",
+    targetProductHref: "/tools/401k-contribution-calculator",
+    targetProductLabel: "401(k) Contribution Calculator",
+    summary:
+      "401(k) investment selection affects retirement outcomes. This guide explains fund types, allocation strategy, risk tolerance, and menu navigation.",
+    steps: [
+      "Review fund menu: target-date funds, index funds, actively managed, bond funds.",
+      "Choose target-date fund: automatic allocation adjustment, age-based simplicity.",
+      "Build custom allocation: stock/bond mix based on risk tolerance and time horizon.",
+      "Check expense ratios: low-cost index funds preferred, avoid high-fee active funds.",
+      "Rebalance annually: adjust allocation back to target, maintain risk profile.",
+    ],
+  },
+  {
+    slug: "travel-insurance-coverage-guide",
+    title: "Travel Insurance Coverage Guide for Trip Protection (2026)",
+    description:
+      "Understand travel insurance coverage: trip cancellation, medical coverage, baggage protection, and policy selection for travel protection.",
+    category: "insurance",
+    targetProductHref: "/tools/travel-budget-calculator",
+    targetProductLabel: "Travel Budget Calculator",
+    summary:
+      "Travel insurance protects against trip disruption. This guide explains cancellation, medical, baggage coverage, and policy selection criteria.",
+    steps: [
+      "Understand trip cancellation: reimburses prepaid costs if trip cancelled for covered reasons.",
+      "Check medical coverage: emergency medical, evacuation coverage while traveling.",
+      "Evaluate baggage protection: lost, stolen, delayed baggage reimbursement limits.",
+      "Compare policy types: comprehensive vs travel medical, coverage scope differences.",
+      "Read exclusions carefully: pre-existing conditions, specific cancellation reasons excluded.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
