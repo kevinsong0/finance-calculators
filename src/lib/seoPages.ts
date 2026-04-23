@@ -5063,6 +5063,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Compare policies: cost typically 4-8% of total trip cost.",
     ],
   },
+  {
+    slug: "crypto-futures-tax-guide",
+    title: "Crypto Futures Tax Guide for Derivative Trading (2026)",
+    description:
+      "Report crypto futures tax: derivative gains, contract taxation, mark-to-market, and cryptocurrency futures trading.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto futures have specific tax treatment. This guide explains derivative gains, contracts, and reporting.",
+    steps: [
+      "Understand futures: derivative contracts for future crypto delivery.",
+      "Know tax treatment: futures may qualify for 60/40 capital gains split.",
+      "Track all contracts: opening, closing, settlement events taxable.",
+      "Mark-to-market option: elect to value positions annually, may simplify.",
+      "Consult professional: futures taxation complex, IRC Section 1256.",
+    ],
+  },
+  {
+    slug: "mortgage-reverse-mortgage-guide",
+    title: "Mortgage Reverse Mortgage Guide for Senior Homeowners (2026)",
+    description:
+      "Understand reverse mortgage: eligibility requirements, payment options, loan repayment, and senior home equity.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Reverse mortgage converts home equity to cash for seniors. This guide explains eligibility, payments, and repayment.",
+    steps: [
+      "Understand reverse: homeowners 62+ borrow against equity, no monthly payment.",
+      "Payment options: lump sum, monthly payments, line of credit, combination.",
+      "Loan repayment: due when homeowner dies, sells, or moves out.",
+      "Eligibility requirements: age 62+, own home, no delinquent federal debt.",
+      "Consider costs: origination fees, closing costs, interest accumulation.",
+    ],
+  },
+  {
+    slug: "tax-child-tax-credit-guide",
+    title: "Tax Child Tax Credit Guide for Family Tax Benefit (2026)",
+    description:
+      "Claim child tax credit: eligibility requirements, credit amount, refundable portion, and dependent child tax benefit.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Child tax credit reduces tax liability. This guide explains eligibility, amount, and claiming requirements.",
+    steps: [
+      "Understand credit: up to $2,000 per qualifying child under age 17.",
+      "Know eligibility: child must be dependent, citizen, live with taxpayer.",
+      "Refundable portion: up to $1,700 refundable if credit exceeds tax liability.",
+      "Income limits: phase-out begins at $200,000 single, $400,000 married.",
+      "Additional credit: other dependent credit for non-child dependents.",
+    ],
+  },
+  {
+    slug: "retirement-required-minimum-distributions-guide",
+    title: "Retirement Required Minimum Distributions Guide for IRA Withdrawal (2026)",
+    description:
+      "Calculate required minimum distributions: RMD age, calculation method, withdrawal timing, and mandatory IRA distribution.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "RMDs required after age 73. This guide explains calculation, timing, and penalty for missed distributions.",
+    steps: [
+      "Know RMD age: required minimum distributions begin at age 73.",
+      "Calculate amount: account balance ÷ life expectancy factor from IRS tables.",
+      "Withdrawal timing: RMD must be taken by December 31 each year.",
+      "Penalty for missed: 25% penalty on amount not distributed, steep.",
+      "Aggregate multiple: can combine RMDs from multiple IRAs.",
+    ],
+  },
+  {
+    slug: "identity-theft-insurance-guide",
+    title: "Identity Theft Insurance Guide for Protection Coverage (2026)",
+    description:
+      "Understand identity theft insurance: coverage scope, recovery services, cost factors, and identity protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Identity theft insurance covers recovery costs. This guide explains coverage, services, and selection.",
+    steps: [
+      "Understand coverage: costs to restore identity, legal fees, lost wages.",
+      "Recovery services: dedicated specialist to help restore identity.",
+      "Know exclusions: typically covers recovery, not stolen funds directly.",
+      "Typical cost: $25-$60 annually standalone, often included in home insurance.",
+      "Monitor proactively: prevention services monitor credit, alerts on activity.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
