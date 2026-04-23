@@ -3533,6 +3533,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Assess breed factors: some breeds have higher premiums due to health predisposition.",
     ],
   },
+  {
+    slug: "crypto-exchange-withdrawal-limit-guide",
+    title: "Crypto Exchange Withdrawal Limit Guide for Account Security (2026)",
+    description:
+      "Understand crypto exchange withdrawal limits: daily limits, verification levels, security tiers, and account upgrade for withdrawal access.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Withdrawal limits affect crypto access. This guide explains daily limits, verification tiers, security levels, and account upgrade requirements.",
+    steps: [
+      "Check daily limits: unverified accounts limited, verified accounts higher limits.",
+      "Complete verification: KYC documentation increases withdrawal limit.",
+      "Enable security features: 2FA, withdrawal whitelist may increase limits.",
+      "Understand tier system: exchanges use tiered verification for increasing limits.",
+      "Plan large withdrawals: stagger withdrawals across days or upgrade verification.",
+    ],
+  },
+  {
+    slug: "mortgage-debt-to-income-ratio-guide",
+    title: "Mortgage Debt-to-Income Ratio Guide for Qualification (2026)",
+    description:
+      "Calculate mortgage debt-to-income ratio: DTI calculation, qualification limits, income documentation, and DTI improvement for mortgage approval.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "DTI ratio determines mortgage qualification. This guide explains calculation, limits, documentation, and improvement strategies.",
+    steps: [
+      "Calculate DTI: total monthly debt ÷ gross monthly income.",
+      "Apply qualification limits: conventional 43% max, FHA allows up to 50%.",
+      "Document income: W-2, tax returns, pay stubs for income verification.",
+      "Reduce DTI: pay down debt, increase income, avoid new debt before application.",
+      "Understand front-end vs back-end: front-end housing ratio, back-end total debt.",
+    ],
+  },
+  {
+    slug: "standard-vs-itemized-deduction-guide",
+    title: "Standard vs Itemized Deduction Guide for Tax Optimization (2026)",
+    description:
+      "Compare standard vs itemized deductions: deduction amounts, itemization requirements, tax benefit comparison, and deduction selection for tax optimization.",
+    category: "tax",
+    targetProductHref: "/tools/tax-deduction-calculator",
+    targetProductLabel: "Tax Deduction Calculator",
+    summary:
+      "Standard deduction simplifies filing, itemizing may save more. This guide compares amounts, requirements, and selection criteria.",
+    steps: [
+      "Know standard deduction: 2026 single $14,600, married $29,200.",
+      "Calculate itemized total: mortgage interest, state taxes, charitable donations, medical.",
+      "Compare totals: itemize only if itemized exceeds standard deduction.",
+      "Consider state tax: SALT capped at $10,000, affects high-tax state residents.",
+      "Plan donation timing: bunch deductions in alternate years for itemizing benefit.",
+    ],
+  },
+  {
+    slug: "roth-ira-income-limit-guide",
+    title: "Roth IRA Income Limit Guide for Contribution Eligibility (2026)",
+    description:
+      "Understand Roth IRA income limits: contribution phase-out, income thresholds, backdoor Roth alternative, and income-based eligibility for Roth contributions.",
+    category: "retirement",
+    targetProductHref: "/tools/roth-ira-contribution-calculator",
+    targetProductLabel: "Roth IRA Contribution Calculator",
+    summary:
+      "Roth IRA contributions have income limits. This guide explains phase-out thresholds, eligibility, and backdoor Roth alternative.",
+    steps: [
+      "Check phase-out range: $146K-$161K single, $230K-$240K married.",
+      "Calculate reduced contribution: phase-out reduces contribution linearly.",
+      "Verify complete phase-out: above phase-out range, no direct Roth contribution.",
+      "Consider backdoor Roth: contribute to Traditional IRA, convert to Roth.",
+      "Track income annually: income changes affect Roth eligibility each year.",
+    ],
+  },
+  {
+    slug: "identity-theft-insurance-guide",
+    title: "Identity Theft Insurance Guide for Fraud Protection (2026)",
+    description:
+      "Understand identity theft insurance coverage: restoration services, expense coverage, prevention features, and insurance vs monitoring service comparison.",
+    category: "insurance",
+    targetProductHref: "/tools/homeowners-insurance-calculator",
+    targetProductLabel: "Homeowners Insurance Calculator",
+    summary:
+      "Identity theft insurance covers restoration costs. This guide explains coverage, services, prevention, and insurance vs monitoring comparison.",
+    steps: [
+      "Understand coverage scope: restoration services, legal fees, lost wages reimbursement.",
+      "Evaluate expense limits: coverage caps for different identity theft costs.",
+      "Compare prevention features: credit monitoring, dark web scanning, alerts.",
+      "Assess insurance vs monitoring: insurance covers costs, monitoring prevents theft.",
+      "Check homeowners endorsement: some policies include identity theft coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
