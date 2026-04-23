@@ -3713,6 +3713,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Evaluate vs health insurance: critical illness supplements, not replaces health coverage.",
     ],
   },
+  {
+    slug: "crypto-tax-filing-deadline-guide",
+    title: "Crypto Tax Filing Deadline Guide for Reporting Timeline (2026)",
+    description:
+      "Understand crypto tax filing deadlines: April 15 deadline, extension timing, prior-year contributions, and crypto tax reporting timeline management.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto tax follows regular tax deadlines. This guide explains April 15 deadline, extension timing, and reporting timeline for crypto investors.",
+    steps: [
+      "Track April 15 deadline: crypto transactions must be reported on tax return.",
+      "Consider extension: Form 4868 extends filing to October 15, pay estimate by April 15.",
+      "Gather exchange data: download transaction history before filing deadline.",
+      "Calculate crypto gains/losses: complete crypto tax calculation before filing.",
+      "Review crypto software output: verify Form 8949 accuracy before submission.",
+    ],
+  },
+  {
+    slug: "mortgage-home-inspection-guide",
+    title: "Mortgage Home Inspection Guide for Property Assessment (2026)",
+    description:
+      "Navigate home inspection for mortgage: inspection checklist, major issues, negotiation, and inspection contingency for property purchase.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Home inspection reveals property condition. This guide explains checklist, major issues, negotiation, and inspection contingency.",
+    steps: [
+      "Schedule inspection: typically within 10 days of contract, buyer pays $300-$500.",
+      "Review major systems: foundation, roof, electrical, plumbing, HVAC, appliances.",
+      "Document issues: inspector report identifies defects, safety concerns, needed repairs.",
+      "Negotiate repairs: request seller repairs, credit, or price reduction for issues.",
+      "Understand contingency: inspection contingency allows contract termination for major defects.",
+    ],
+  },
+  {
+    slug: "tax-filing-status-guide",
+    title: "Tax Filing Status Guide for Tax Rate Optimization (2026)",
+    description:
+      "Choose optimal tax filing status: single vs married filing jointly, head of household, and filing status selection for tax rate optimization.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Filing status affects tax rates and deductions. This guide explains single vs married, head of household, and status selection.",
+    steps: [
+      "Understand options: single, married filing jointly, married filing separately, head of household.",
+      "Compare married benefits: joint filing lower rates, higher standard deduction, larger credits.",
+      "Evaluate head of household: unmarried with dependent, lower rates than single.",
+      "Consider married separately: rare cases beneficial, typically joint filing better.",
+      "Check qualifying widow(er): filing as married for 2 years after spouse death.",
+    ],
+  },
+  {
+    slug: "retirement-age-vs-social-security-claiming-guide",
+    title: "Retirement Age vs Social Security Claiming Guide for Benefit Timing (2026)",
+    description:
+      "Compare retirement age vs Social Security claiming: age 62, FRA 67, age 70, and claiming timing for optimal retirement and Social Security strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/social-security-taxation-calculator",
+    targetProductLabel: "Social Security Taxation Calculator",
+    summary:
+      "Retirement age and SS claiming can differ. This guide explains age 62, FRA, age 70, and optimal timing for retirement and benefit strategy.",
+    steps: [
+      "Understand claiming ages: early 62, full retirement age 67, maximum 70.",
+      "Calculate benefit reduction: claiming at 62 reduces benefit 25-30% permanently.",
+      "Evaluate delayed credits: claiming at 70 increases benefit 24-32% vs FRA.",
+      "Consider retirement date: can retire without claiming SS, draw from savings.",
+      "Plan break-even: early claiming breaks even around age 78-82.",
+    ],
+  },
+  {
+    slug: "disability-insurance-waiting-period-guide",
+    title: "Disability Insurance Waiting Period Guide for Benefit Timing (2026)",
+    description:
+      "Understand disability insurance waiting period: elimination period, benefit timing, premium impact, and waiting period selection for income protection.",
+    category: "insurance",
+    targetProductHref: "/tools/disability-insurance-calculator",
+    targetProductLabel: "Disability Insurance Calculator",
+    summary:
+      "Waiting period delays disability benefit start. This guide explains elimination period, timing, premium impact, and selection criteria.",
+    steps: [
+      "Understand elimination period: days from disability to benefit start, 30-180 days.",
+      "Calculate premium impact: longer waiting period lowers premium significantly.",
+      "Plan emergency fund: waiting period requires savings to cover income gap.",
+      "Consider employer sick leave: coordinate waiting period with employer benefits.",
+      "Choose appropriate period: 60-90 days typical, 30 days for minimal savings.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
