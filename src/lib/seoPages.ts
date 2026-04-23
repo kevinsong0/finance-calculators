@@ -3443,6 +3443,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Read exclusions carefully: pre-existing conditions, specific cancellation reasons excluded.",
     ],
   },
+  {
+    slug: "crypto-tax-filing-mistakes-guide",
+    title: "Crypto Tax Filing Mistakes Guide for Error Avoidance (2026)",
+    description:
+      "Avoid common crypto tax filing mistakes: unreported income, basis errors, wash sale violations, and documentation failures for accurate tax compliance.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto tax mistakes trigger audits and penalties. This guide explains common errors, unreported income, basis tracking, and compliance failures.",
+    steps: [
+      "Report all transactions: every crypto sale, swap, income event must be reported.",
+      "Track cost basis accurately: wrong basis creates incorrect gain/loss, audit risk.",
+      "Avoid wash sale misapplication: crypto wash sales not currently enforced but track carefully.",
+      "Document all wallets: report transactions from every wallet and exchange used.",
+      "File correct forms: Form 8949 for sales, Schedule 1 for mining/staking income.",
+    ],
+  },
+  {
+    slug: "mortgage-credit-score-requirements-guide",
+    title: "Mortgage Credit Score Requirements Guide for Qualification (2026)",
+    description:
+      "Understand mortgage credit score requirements: minimum scores by loan type, rate impact, credit improvement, and qualification strategies for mortgage approval.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Credit score determines mortgage qualification and rate. This guide explains minimum requirements, rate impact, and improvement strategies.",
+    steps: [
+      "Check conventional minimum: 620+ typical, 740+ for best rates.",
+      "Verify FHA minimum: 500+ for 10% down, 580+ for 3.5% down.",
+      "Understand VA minimum: no official minimum, 620+ typical lender requirement.",
+      "Calculate rate impact: each 20-point score change affects rate 0.125-0.25%.",
+      "Improve credit before applying: pay down debt, correct errors, avoid new credit.",
+    ],
+  },
+  {
+    slug: "capital-gains-tax-rate-guide",
+    title: "Capital Gains Tax Rate Guide for Investment Taxation (2026)",
+    description:
+      "Understand capital gains tax rates: short-term vs long-term, rate brackets, holding period impact, and tax rate calculation for investment gains.",
+    category: "tax",
+    targetProductHref: "/tools/capital-gains-tax-calculator",
+    targetProductLabel: "Capital Gains Tax Calculator",
+    summary:
+      "Capital gains rates depend on holding period and income. This guide explains short-term vs long-term, rate brackets, and tax calculation.",
+    steps: [
+      "Distinguish holding period: short-term <1 year, long-term >1 year.",
+      "Apply short-term rates: taxed as ordinary income, rates 10-37%.",
+      "Calculate long-term rates: 0% up to $47K, 15% up to $518K, 20% above.",
+      "Track collectibles rate: 28% for collectibles held >1 year.",
+      "Plan timing: hold investments >1 year for preferential long-term rates.",
+    ],
+  },
+  {
+    slug: "ira-vs-401k-comparison-guide",
+    title: "IRA vs 401(k) Comparison Guide for Retirement Account Selection (2026)",
+    description:
+      "Compare IRA vs 401(k) retirement accounts: contribution limits, employer match, investment options, and selection criteria for retirement savings.",
+    category: "retirement",
+    targetProductHref: "/tools/ira-contribution-calculator",
+    targetProductLabel: "IRA Contribution Calculator",
+    summary:
+      "IRA and 401(k) have different benefits and limits. This guide compares contributions, match, investment options, and selection criteria.",
+    steps: [
+      "Compare limits: 401(k) $23K employee, IRA $7,000 annual contribution.",
+      "Evaluate employer match: 401(k) match is free money, IRA no match.",
+      "Check investment options: IRA broader selection, 401(k) limited menu.",
+      "Consider income limits: IRA deduction and Roth contribution phase-outs.",
+      "Prioritize order: 401(k) to match limit, then IRA, then 401(k) remainder.",
+    ],
+  },
+  {
+    slug: "pet-insurance-cost-benefit-guide",
+    title: "Pet Insurance Cost-Benefit Guide for Veterinary Coverage (2026)",
+    description:
+      "Evaluate pet insurance cost-benefit: premium costs, coverage limits, deductible options, and veterinary expense protection for pet healthcare.",
+    category: "insurance",
+    targetProductHref: "/tools/pet-insurance-calculator",
+    targetProductLabel: "Pet Insurance Calculator",
+    summary:
+      "Pet insurance covers unexpected veterinary costs. This guide explains premiums, coverage limits, deductibles, and cost-benefit analysis.",
+    steps: [
+      "Calculate premium: $30-$50/month for dogs, $15-$30/month for cats.",
+      "Compare coverage types: accident-only, accident/illness, comprehensive with wellness.",
+      "Evaluate deductible options: annual deductible $100-$500, per-incident deductible.",
+      "Check coverage limits: per-incident, annual, lifetime limits affect payout.",
+      "Assess breed factors: some breeds have higher premiums due to health predisposition.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
