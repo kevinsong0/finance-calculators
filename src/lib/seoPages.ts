@@ -3083,6 +3083,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Evaluate coverage gaps: both options exclude certain flood damage types.",
     ],
   },
+  {
+    slug: "crypto-defi-yield-farming-tax-guide",
+    title: "Crypto DeFi Yield Farming Tax Guide for Liquidity Mining (2026)",
+    description:
+      "Report DeFi yield farming income: LP token taxation, reward income, impermanent loss, and liquidity pool tax treatment for DeFi protocol participants.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "DeFi yield farming creates multiple taxable events. This guide explains LP tokens, reward income, impermanent loss, and pool tax treatment.",
+    steps: [
+      "Track reward tokens: yield farming rewards taxable as ordinary income at FMV.",
+      "Document LP provision: adding liquidity creates token swap, taxable event.",
+      "Calculate impermanent loss: realized when liquidity withdrawn, capital gain/loss.",
+      "Monitor pool composition: track token ratio changes for accurate basis.",
+      "Use DeFi tax tools: specialized software for complex protocol transactions.",
+    ],
+  },
+  {
+    slug: "mortgage-bridge-loan-guide",
+    title: "Mortgage Bridge Loan Guide for Home Purchase Transition (2026)",
+    description:
+      "Use bridge loans for home purchase: bridge loan rates, qualification, timing, and bridge vs contingent offer for buying before selling current home.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Bridge loans finance new home before selling current home. This guide explains rates, qualification, timing, and bridge loan strategies.",
+    steps: [
+      "Understand bridge purpose: short-term loan to buy new home before current sale.",
+      "Compare rates: bridge loans 8-10% interest, higher than traditional mortgage.",
+      "Check qualification: requires equity in current home, income verification.",
+      "Calculate costs: bridge interest + carrying costs vs contingent offer risk.",
+      "Plan timing: bridge loans typically 6-12 months, repay when current home sold.",
+    ],
+  },
+  {
+    slug: "tax-audit-preparation-guide",
+    title: "Tax Audit Preparation Guide for IRS Examination Response (2026)",
+    description:
+      "Prepare for IRS tax audit: documentation gathering, audit types, response timeline, and defense strategies for tax examination.",
+    category: "tax",
+    targetProductHref: "/tools/tax-audit-defense-calculator",
+    targetProductLabel: "Tax Audit Defense Calculator",
+    summary:
+      "Tax audit preparation improves outcome. This guide explains documentation, audit types, response timeline, and defense strategies.",
+    steps: [
+      "Organize documentation: gather receipts, invoices, statements for audited items.",
+      "Understand audit type: correspondence, office, field audit different requirements.",
+      "Respond within deadline: typically 30 days to respond to audit notice.",
+      "Consider representation: CPA, tax attorney for complex audits or disputes.",
+      "Prepare explanations: document reasoning for disputed positions, supporting evidence.",
+    ],
+  },
+  {
+    slug: "spousal-ira-contribution-guide",
+    title: "Spousal IRA Contribution Guide for Non-Working Spouse Retirement (2026)",
+    description:
+      "Contribute to spousal IRA for non-working spouse: eligibility, contribution limits, Traditional vs Roth, and spousal retirement savings strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/spousal-ira-calculator",
+    targetProductLabel: "Spousal IRA Calculator",
+    summary:
+      "Spousal IRA enables retirement savings for non-working spouse. This guide explains eligibility, limits, Traditional vs Roth, and strategy.",
+    steps: [
+      "Check eligibility: married filing jointly, working spouse has earned income.",
+      "Apply contribution limit: $7,000 spousal IRA, same as regular IRA.",
+      "Choose Traditional or Roth: based on current vs future tax rate preference.",
+      "Consider income limits: Roth phase-out above $230K married, Traditional deduction limits.",
+      "Coordinate with working spouse: maximize combined retirement savings across both IRAs.",
+    ],
+  },
+  {
+    slug: "earthquake-insurance-coverage-guide",
+    title: "Earthquake Insurance Coverage Guide for Seismic Risk Protection (2026)",
+    description:
+      "Understand earthquake insurance coverage: policy types, deductible structure, coverage limits, and seismic risk assessment for property protection.",
+    category: "insurance",
+    targetProductHref: "/tools/homeowners-insurance-calculator",
+    targetProductLabel: "Homeowners Insurance Calculator",
+    summary:
+      "Earthquake insurance covers seismic damage excluded from homeowners policy. This guide explains policy types, deductibles, coverage, and risk assessment.",
+    steps: [
+      "Assess earthquake risk: location, fault proximity, building type determine need.",
+      "Understand deductible: earthquake deductible typically 10-20% of coverage limit.",
+      "Compare policy types: standalone policy vs endorsement to homeowners.",
+      "Check coverage limits: dwelling, personal property, additional living expenses.",
+      "Evaluate cost-benefit: premium vs deductible vs seismic risk probability.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
