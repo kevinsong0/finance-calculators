@@ -4163,6 +4163,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Compare vs health insurance: indemnity supplements, coordinate with major medical.",
     ],
   },
+  {
+    slug: "crypto-tax-basis-tracking-methods-guide",
+    title: "Crypto Tax Basis Tracking Methods Guide for Cost Documentation (2026)",
+    description:
+      "Track crypto cost basis methods: FIFO, LIFO, specific identification, HIFO, and basis method selection for tax optimization.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Basis method affects tax liability. This guide explains FIFO, LIFO, specific ID, HIFO tracking, and method selection criteria.",
+    steps: [
+      "Understand FIFO: first-in, first-out, default method, oldest coins sold first.",
+      "Evaluate LIFO: last-in, first-out, most recent coins sold, may reduce short-term gains.",
+      "Apply specific ID: identify exact coins sold, requires detailed documentation.",
+      "Consider HIFO: highest-in, first-out, sells highest-cost coins first, minimizes gains.",
+      "Document method choice: IRS requires consistent method, maintain documentation.",
+    ],
+  },
+  {
+    slug: "mortgage-homeowners-association-costs-guide",
+    title: "Mortgage Homeowners Association Costs Guide for HOA Fees (2026)",
+    description:
+      "Understand homeowners association costs: HOA fees, assessment risk, fee impact, and HOA cost considerations for mortgage borrowers.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "HOA fees affect homeownership cost. This guide explains fee structure, assessment risk, impact, and cost considerations.",
+    steps: [
+      "Calculate monthly HOA: fees range $50-$500/month, varies by property type.",
+      "Understand fee coverage: maintenance, amenities, common areas, reserve fund.",
+      "Assess special assessment risk: unexpected repairs may trigger additional fees.",
+      "Evaluate fee impact: HOA fees reduce affordability, include in housing budget.",
+      "Review HOA financials: reserve fund health indicates assessment likelihood.",
+    ],
+  },
+  {
+    slug: "tax-filing-electronic-vs-paper-guide",
+    title: "Tax Filing Electronic vs Paper Guide for Submission Method (2026)",
+    description:
+      "Compare electronic vs paper tax filing: processing speed, error rates, refund timing, and filing method selection for tax submission.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Electronic filing is faster and safer. This guide compares processing speed, error rates, refund timing, and method selection.",
+    steps: [
+      "Compare processing speed: e-file 5-21 days, paper filing 6-8 weeks.",
+      "Evaluate error rates: e-file catches math errors, paper filing prone to mistakes.",
+      "Check refund timing: direct deposit with e-file fastest refund method.",
+      "Assess security: e-file encrypted transmission, paper mail security concerns.",
+      "Consider cost: free e-file options available, paper filing free but slower.",
+    ],
+  },
+  {
+    slug: "retirement-savings-rate-calculator-guide",
+    title: "Retirement Savings Rate Calculator Guide for Income Allocation (2026)",
+    description:
+      "Calculate retirement savings rate: income percentage, savings targets, age-based rates, and retirement savings allocation strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Savings rate determines retirement readiness. This guide explains income percentage, targets, age-based rates, and allocation strategy.",
+    steps: [
+      "Calculate savings rate: retirement savings ÷ gross income = percentage.",
+      "Apply 15% rule: financial experts recommend 15% minimum savings rate.",
+      "Adjust by age: start late requires higher rate, early start can save less.",
+      "Include employer match: employer contributions count toward savings rate.",
+      "Maximize tax-advantaged: 401(k), IRA contributions maximize retirement savings.",
+    ],
+  },
+  {
+    slug: "short-term-disability-insurance-guide",
+    title: "Short-Term Disability Insurance Guide for Income Protection (2026)",
+    description:
+      "Understand short-term disability insurance: benefit duration, coverage triggers, premium cost, and short-term income protection.",
+    category: "insurance",
+    targetProductHref: "/tools/disability-insurance-calculator",
+    targetProductLabel: "Disability Insurance Calculator",
+    summary:
+      "Short-term disability covers temporary illness. This guide explains benefit duration, triggers, premium, and coverage selection.",
+    steps: [
+      "Understand benefit duration: typically 3-6 months, extends through illness recovery.",
+      "Identify coverage triggers: non-work illness, injury, maternity leave qualify.",
+      "Calculate premium: employer-sponsored often free, individual $30-$100/month.",
+      "Check replacement ratio: typically 60-70% of pre-disability income.",
+      "Coordinate with sick leave: short-term disability after sick leave exhausted.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
