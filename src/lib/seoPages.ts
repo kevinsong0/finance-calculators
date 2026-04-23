@@ -3983,6 +3983,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider annual needs: frequent dental work makes insurance valuable, preventive-only may not.",
     ],
   },
+  {
+    slug: "crypto-stablecoin-tax-reporting-guide",
+    title: "Crypto Stablecoin Tax Reporting Guide for Pegged Asset Transactions (2026)",
+    description:
+      "Report stablecoin transactions for tax: stablecoin purchase, yield earnings, peg maintenance, and stablecoin transaction tax treatment.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Stablecoin transactions have tax implications. This guide explains purchase treatment, yield earnings, and transaction reporting.",
+    steps: [
+      "Track stablecoin purchases: stablecoin acquisition creates basis, sale may trigger gain/loss.",
+      "Report yield earnings: stablecoin yield, DeFi earnings taxable as ordinary income.",
+      "Document depeg events: stablecoin peg break creates potential loss or gain.",
+      "Verify transaction type: stablecoin-to-stablecoin swap may be taxable event.",
+      "Use stable tracking: stablecoin value typically $1, simplifies basis tracking.",
+    ],
+  },
+  {
+    slug: "mortgage-first-time-buyer-guide",
+    title: "Mortgage First-Time Buyer Guide for New Homeowner Financing (2026)",
+    description:
+      "Navigate mortgage for first-time buyer: special programs, down payment assistance, credit requirements, and first-time buyer mortgage benefits.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "First-time buyers have special mortgage options. This guide explains programs, assistance, credit, and buyer-specific benefits.",
+    steps: [
+      "Check first-time definition: typically no homeownership in past 3 years.",
+      "Explore FHA loans: 3.5% down, 580+ credit, easier qualification for first-time.",
+      "Research state programs: down payment assistance, low-interest loans, grants.",
+      "Consider conventional options: Fannie Mae/HomeReady, Freddie Mac/HomePossible 3% down.",
+      "Prepare credit: 620+ credit minimum, improve score before application.",
+    ],
+  },
+  {
+    slug: "tax-return-review-checklist-guide",
+    title: "Tax Return Review Checklist Guide for Filing Accuracy (2026)",
+    description:
+      "Review tax return for accuracy before filing: error identification, deduction verification, credit eligibility, and return review checklist.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Return review prevents filing errors. This guide explains error identification, deduction verification, credit eligibility, and checklist.",
+    steps: [
+      "Verify personal information: name, SSN, address, filing status correct.",
+      "Check income completeness: all W-2, 1099, income sources included.",
+      "Confirm deduction accuracy: itemized deductions documented, standard deduction correct.",
+      "Validate credit eligibility: education, child, EITC credits qualify.",
+      "Review math accuracy: calculations correct, software errors rare but possible.",
+    ],
+  },
+  {
+    slug: "retirement-account-transfer-vs-rollover-guide",
+    title: "Retirement Account Transfer vs Rollover Guide for Account Movement (2026)",
+    description:
+      "Compare retirement account transfer vs rollover: direct transfer, indirect rollover, 60-day rule, and account movement methods.",
+    category: "retirement",
+    targetProductHref: "/tools/401k-contribution-calculator",
+    targetProductLabel: "401(k) Contribution Calculator",
+    summary:
+      "Transfers and rollovers move retirement funds differently. This guide explains direct transfer, indirect rollover, and selection criteria.",
+    steps: [
+      "Understand direct transfer: trustee-to-trustee, no tax withholding, no deadline.",
+      "Compare indirect rollover: distribution received, 60-day deadline, 20% withholding.",
+      "Evaluate risk: indirect rollover risks deadline miss, withholding trap.",
+      "Choose direct method: direct transfer safer, no withholding, preferred.",
+      "Track movement: document transfer/rollover for Form 1099-R reporting.",
+    ],
+  },
+  {
+    slug: "accident-insurance-cost-benefit-guide",
+    title: "Accident Insurance Cost-Benefit Guide for Injury Coverage (2026)",
+    description:
+      "Evaluate accident insurance cost-benefit: premium costs, coverage scope, payout structure, and accident coverage for injury financial protection.",
+    category: "insurance",
+    targetProductHref: "/tools/health-insurance-calculator",
+    targetProductLabel: "Health Insurance Calculator",
+    summary:
+      "Accident insurance covers injury-related costs. This guide explains premiums, coverage, payouts, and cost-benefit analysis.",
+    steps: [
+      "Calculate premium: $5-$15/month through employer, varies by coverage level.",
+      "Understand coverage scope: accidental injury, death benefit, dismemberment.",
+      "Review payout structure: lump sum based on injury type, schedule of benefits.",
+      "Evaluate need: high-risk occupations, active lifestyle benefit most.",
+      "Compare vs health insurance: accident insurance supplements, not replaces health coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
