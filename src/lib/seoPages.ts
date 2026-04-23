@@ -2723,6 +2723,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider endorsements: valuable items, electronics, jewelry coverage riders.",
     ],
   },
+  {
+    slug: "crypto-tax-reporting-software-guide",
+    title: "Crypto Tax Reporting Software Guide for Automated Form Generation (2026)",
+    description:
+      "Use crypto tax reporting software for automated forms: Form 8949 generation, Schedule D integration, tax software compatibility, and reporting automation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-reporting-calculator",
+    targetProductLabel: "Crypto Tax Reporting Calculator",
+    summary:
+      "Tax reporting software automates crypto form generation. This guide explains Form 8949, Schedule D, and tax software integration for reporting.",
+    steps: [
+      "Import transaction data: API connection or CSV upload from exchanges.",
+      "Generate Form 8949: software creates transaction list with proceeds, basis, gain/loss.",
+      "Calculate Schedule D totals: short-term and long-term capital gains summary.",
+      "Export tax files: compatible formats for TurboTax, TaxAct, H&R Block.",
+      "Review before filing: verify software calculations, check for missing transactions.",
+    ],
+  },
+  {
+    slug: "mortgage-pmi-vs-lender-paid-guide",
+    title: "Mortgage PMI vs Lender-Paid Mortgage Insurance Comparison Guide (2026)",
+    description:
+      "Compare borrower-paid PMI vs lender-paid mortgage insurance: cost differences, interest rate impact, cancellation rules, and payment strategy selection.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "PMI options affect mortgage cost differently. This guide compares borrower-paid vs lender-paid mortgage insurance and selection criteria.",
+    steps: [
+      "Understand borrower-paid PMI: monthly premium, cancellable at 80% LTV, direct payment.",
+      "Compare lender-paid MI: higher rate, no monthly PMI, never cancellable.",
+      "Calculate break-even: compare PMI cost vs rate increase over loan term.",
+      "Consider cancellation benefit: borrower-paid PMI removable, lender-paid permanent.",
+      "Evaluate tax treatment: both deductible, lender-paid through higher interest deduction.",
+    ],
+  },
+  {
+    slug: "earned-income-tax-credit-guide",
+    title: "Earned Income Tax Credit Guide for Low-Income Workers (2026)",
+    description:
+      "Calculate earned income tax credit eligibility: income limits, qualifying children, refundable credit, and EITC calculation for working families.",
+    category: "tax",
+    targetProductHref: "/tools/tax-credit-calculator",
+    targetProductLabel: "Tax Credit Calculator",
+    summary:
+      "EITC provides refundable credit for low-income workers. This guide explains eligibility, income limits, and credit calculation for working families.",
+    steps: [
+      "Check earned income: must have wages, self-employment, or farm income.",
+      "Apply income limits: 2026 limits based on filing status and number of children.",
+      "Verify qualifying children: age under 19, relationship, residency requirements.",
+      "Calculate credit amount: EITC table or calculator based on income and children.",
+      "Understand refundability: EITC refundable even if no tax liability.",
+    ],
+  },
+  {
+    slug: "retirement-account-contribution-limits-guide",
+    title: "Retirement Account Contribution Limits Guide for Maximum Savings (2026)",
+    description:
+      "Understand retirement account contribution limits: 401(k), IRA, Roth, catch-up contributions, and combined limit strategies for retirement savings.",
+    category: "retirement",
+    targetProductHref: "/tools/401k-contribution-calculator",
+    targetProductLabel: "401(k) Contribution Calculator",
+    summary:
+      "Contribution limits cap retirement savings annually. This guide explains 401(k), IRA, Roth limits, and catch-up contribution strategies.",
+    steps: [
+      "Check 401(k) limit: $23,000 employee contribution, $69,000 combined with employer.",
+      "Verify IRA limit: $7,000 combined Traditional and Roth IRA contributions.",
+      "Apply catch-up contributions: additional $7,500 401(k), $1,000 IRA for age 50+.",
+      "Track Roth income limit: contribution phases out above $146K single, $230K joint.",
+      "Maximize combined limits: contribute to both 401(k) and IRA for maximum savings.",
+    ],
+  },
+  {
+    slug: "health-savings-account-vs-flexible-spending-guide",
+    title: "Health Savings Account vs Flexible Spending Account Comparison Guide (2026)",
+    description:
+      "Compare HSA vs FSA healthcare accounts: eligibility, contribution limits, rollover, portability, and triple tax advantage for healthcare savings decision.",
+    category: "insurance",
+    targetProductHref: "/tools/hsa-contribution-calculator",
+    targetProductLabel: "HSA Contribution Calculator",
+    summary:
+      "HSA and FSA serve different healthcare savings needs. This guide compares eligibility, limits, rollover, and triple tax advantage.",
+    steps: [
+      "Check HSA eligibility: must have HDHP, no other health coverage, not on Medicare.",
+      "Compare contribution limits: HSA $4,150/$8,300, FSA $3,200 annual limits.",
+      "Evaluate rollover: HSA unlimited rollover, FSA limited $640 or grace period.",
+      "Assess portability: HSA portable across jobs, FSA lost when leaving employer.",
+      "Consider investment: HSA investable for growth, FSA only current year spending.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
