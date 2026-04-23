@@ -3173,6 +3173,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Evaluate cost-benefit: premium vs deductible vs seismic risk probability.",
     ],
   },
+  {
+    slug: "crypto-nft-cost-basis-tracking-guide",
+    title: "Crypto NFT Cost Basis Tracking Guide for Digital Collectibles (2026)",
+    description:
+      "Track NFT cost basis for tax reporting: purchase documentation, mint cost, creator royalties, and provenance tracking for NFT capital gains.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "NFT cost basis determines capital gains tax. This guide explains purchase documentation, mint costs, and provenance tracking for NFT taxation.",
+    steps: [
+      "Document purchase: transaction hash, marketplace, price, date for each NFT acquisition.",
+      "Track mint costs: minting fees and gas costs included in NFT cost basis.",
+      "Monitor creator royalties: royalties paid increase purchase price for buyers.",
+      "Maintain provenance: track creator, edition, sale history for basis verification.",
+      "Use NFT tax tools: specialized software for NFT portfolio and tax tracking.",
+    ],
+  },
+  {
+    slug: "mortgage-recinance-break-even-timeline-guide",
+    title: "Mortgage Refinance Break-Even Timeline Guide for Cost Recovery (2026)",
+    description:
+      "Calculate mortgage refinance break-even timeline: closing cost payback, monthly savings, rate difference, and refinance timing decision.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-refinance-break-even-calculator",
+    targetProductLabel: "Mortgage Refinance Break-Even Calculator",
+    summary:
+      "Refinance break-even determines cost recovery timing. This guide explains closing cost payback, savings calculation, and timing decision.",
+    steps: [
+      "Sum closing costs: appraisal, title, origination fees total $3,000-$10,000.",
+      "Calculate monthly savings: current payment minus new lower payment.",
+      "Compute break-even months: closing costs ÷ monthly savings.",
+      "Assess time in home: refinance only if break-even < expected ownership period.",
+      "Consider rate difference: larger rate drops = faster break-even.",
+    ],
+  },
+  {
+    slug: "tax-deduction-vs-tax-credit-guide",
+    title: "Tax Deduction vs Tax Credit Guide for Tax Benefit Comparison (2026)",
+    description:
+      "Compare tax deduction vs tax credit: value difference, tax bracket impact, refundability, and tax benefit optimization for deduction and credit strategies.",
+    category: "tax",
+    targetProductHref: "/tools/tax-deduction-calculator",
+    targetProductLabel: "Tax Deduction Calculator",
+    summary:
+      "Deductions reduce taxable income, credits reduce tax directly. This guide explains value difference, tax bracket impact, and optimization.",
+    steps: [
+      "Understand deduction: reduces taxable income, value depends on tax bracket.",
+      "Understand credit: reduces tax liability dollar-for-dollar, bracket-independent.",
+      "Compare value: $1,000 deduction at 24% bracket saves $240, $1,000 credit saves $1,000.",
+      "Check refundability: refundable credits return excess as refund, nonrefundable limited.",
+      "Prioritize credits: credits worth more per dollar, prioritize before deductions.",
+    ],
+  },
+  {
+    slug: "mega-backdoor-roth-strategy-guide",
+    title: "Mega Backdoor Roth Strategy Guide for High-Income 401(k) Users (2026)",
+    description:
+      "Implement mega backdoor Roth strategy: after-tax 401(k) contribution, in-plan conversion, eligibility requirements, and high-income Roth strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/mega-backdoor-roth-calculator",
+    targetProductLabel: "Mega Backdoor Roth Calculator",
+    summary:
+      "Mega backdoor Roth enables large Roth contributions for high earners. This guide explains after-tax contributions, conversion, and eligibility.",
+    steps: [
+      "Check plan availability: plan must allow after-tax contributions and in-plan Roth conversion.",
+      "Contribute after-tax: 401(k) after-tax contributions up to combined $69,000 limit.",
+      "Convert immediately: in-plan Roth conversion of after-tax balance, minimal growth taxed.",
+      "Track conversion basis: after-tax portion converted tax-free, earnings taxed.",
+      "Roll to Roth IRA: some plans allow Roth 401(k) rollover to Roth IRA.",
+    ],
+  },
+  {
+    slug: "umbrella-insurance-cost-benefit-guide",
+    title: "Umbrella Insurance Cost-Benefit Guide for Liability Coverage Decision (2026)",
+    description:
+      "Evaluate umbrella insurance cost-benefit: premium cost, coverage value, asset protection, and liability risk assessment for coverage decision.",
+    category: "insurance",
+    targetProductHref: "/tools/umbrella-insurance-calculator",
+    targetProductLabel: "Umbrella Insurance Calculator",
+    summary:
+      "Umbrella insurance provides excess liability coverage. This guide explains premium costs, coverage value, and cost-benefit analysis.",
+    steps: [
+      "Calculate premium: $1M coverage costs $150-$300/year, $2M $250-$400.",
+      "Assess coverage value: extends auto/home liability beyond underlying limits.",
+      "Evaluate asset risk: net worth + future earnings potential = liability exposure.",
+      "Consider risk factors: pool, trampoline, teen drivers, rental property increase risk.",
+      "Compare cost vs protection: low premium for significant liability protection.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
