@@ -4703,6 +4703,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Understand risks: investment losses reduce cash value and possibly benefit.",
     ],
   },
+  {
+    slug: "crypto-nft-tax-guide",
+    title: "Crypto NFT Tax Guide for Digital Asset Reporting (2026)",
+    description:
+      "Report NFT tax: creation income, sale capital gains, collectible rate, and non-fungible token tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "NFTs are taxed as digital assets. This guide explains creation, sale, and collectible rate treatment.",
+    steps: [
+      "Understand NFT taxation: treated as digital assets, similar to cryptocurrency.",
+      "Creation income: creating and selling NFT generates ordinary income at FMV.",
+      "Purchase and sale: capital gains/losses on NFT investment transactions.",
+      "Collectible rate: some NFTs taxed at 28% collectible rate if considered art.",
+      "Track all transactions: marketplace sales, transfers, creation events.",
+    ],
+  },
+  {
+    slug: "mortgage-prepayment-penalty-guide",
+    title: "Mortgage Prepayment Penalty Guide for Early Payoff (2026)",
+    description:
+      "Understand mortgage prepayment penalties: penalty types, cost calculation, avoidance strategies, and early payoff fees.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Some mortgages charge prepayment penalties. This guide explains types, costs, and avoidance strategies.",
+    steps: [
+      "Check for penalty: review loan documents for prepayment penalty clause.",
+      "Understand soft penalty: fee only if refinance, not if sell home.",
+      "Understand hard penalty: fee applies to any early payoff including sale.",
+      "Calculate cost: typically 1-2% of loan amount or 6 months interest.",
+      "Plan around penalty: wait until penalty period expires (often 3-5 years).",
+    ],
+  },
+  {
+    slug: "tax-amended-return-guide",
+    title: "Tax Amended Return Guide for Correction Filing (2026)",
+    description:
+      "File amended tax return: correction reasons, Form 1040-X, timing limits, and tax return amendment process.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Amend return to correct errors. This guide explains Form 1040-X, timing, and amendment process.",
+    steps: [
+      "Identify errors: missed deductions, incorrect income, wrong credits.",
+      "Use Form 1040-X: official form for amending individual tax returns.",
+      "Know timing limit: 3 years from original filing or 2 years from payment.",
+      "Wait for processing: amended returns take 8-12 weeks typically.",
+      "File separately: each amendment requires separate 1040-X per tax year.",
+    ],
+  },
+  {
+    slug: "retirement-pension-vs-401k-guide",
+    title: "Retirement Pension vs 401k Guide for Plan Comparison (2026)",
+    description:
+      "Compare pension vs 401k: guaranteed income, investment control, portability, and retirement plan differences.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Pension offers guaranteed income, 401k offers flexibility. This guide explains benefits, risks, and differences.",
+    steps: [
+      "Understand pension: employer-funded, guaranteed monthly income at retirement.",
+      "Understand 401k: employee-funded, investment choices, portable between jobs.",
+      "Compare risk: pension low risk, 401k market risk but potential higher returns.",
+      "Consider portability: 401k portable, pension often requires vesting years.",
+      "Evaluate benefit: pension income fixed, 401k depends on contributions/investments.",
+    ],
+  },
+  {
+    slug: "critical-illness-insurance-guide",
+    title: "Critical Illness Insurance Guide for Health Event Coverage (2026)",
+    description:
+      "Understand critical illness insurance: covered conditions, lump-sum benefit, premium cost, and illness event coverage.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Critical illness pays lump-sum for major diagnosis. This guide explains coverage, benefits, and selection.",
+    steps: [
+      "Understand benefit: lump-sum cash payment upon covered illness diagnosis.",
+      "Know covered conditions: cancer, heart attack, stroke, major organ transplant.",
+      "Use funds freely: pay medical bills, living expenses, debt, travel for care.",
+      "Consider premium: standalone policy $20-$100/month depending on coverage.",
+      "Supplement health insurance: fills gaps in traditional health coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
