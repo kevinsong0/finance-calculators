@@ -4073,6 +4073,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Compare vs health insurance: accident insurance supplements, not replaces health coverage.",
     ],
   },
+  {
+    slug: "crypto-tax-calculator-software-guide",
+    title: "Crypto Tax Calculator Software Guide for Gain/Loss Calculation (2026)",
+    description:
+      "Use crypto tax calculator software: gain/loss calculation, cost basis methods, wash sale tracking, and automated crypto tax calculation tools.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Calculator software automates crypto tax math. This guide explains gain/loss calculation, basis methods, wash sale tracking, and tool selection.",
+    steps: [
+      "Import transactions: API connection or CSV upload from exchanges and wallets.",
+      "Select basis method: FIFO default, LIFO, specific ID, HIFO options available.",
+      "Calculate gain/loss: software computes short-term and long-term gains automatically.",
+      "Track wash sales: identify wash sale pairs, adjust basis accordingly.",
+      "Export tax forms: generate Form 8949, Schedule D for tax filing.",
+    ],
+  },
+  {
+    slug: "mortgage-title-insurance-guide",
+    title: "Mortgage Title Insurance Guide for Property Ownership Protection (2026)",
+    description:
+      "Understand mortgage title insurance: title search, insurance coverage, premium cost, and ownership protection for property purchase.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Title insurance protects property ownership. This guide explains title search, coverage, premium cost, and ownership protection.",
+    steps: [
+      "Understand title search: examination of property records for ownership issues.",
+      "Know coverage types: lender policy required, owner policy optional but recommended.",
+      "Calculate premium: title insurance costs 0.5-1% of property value, one-time payment.",
+      "Identify covered issues: fraud, errors, liens, encumbrances, ownership disputes.",
+      "Compare vs other insurance: title insurance one-time, covers past issues, not future.",
+    ],
+  },
+  {
+    slug: "tax-filing-common-errors-guide",
+    title: "Tax Filing Common Errors Guide for Return Accuracy (2026)",
+    description:
+      "Avoid common tax filing errors: math mistakes, missing income, wrong SSN, deduction errors, and filing error prevention for accurate tax return.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Filing errors delay refunds and trigger audits. This guide explains math mistakes, missing income, wrong SSN, and error prevention.",
+    steps: [
+      "Check math accuracy: tax software calculates, verify manual calculations correct.",
+      "Verify all income: compare W-2, 1099 to tax return, ensure nothing missing.",
+      "Confirm personal info: SSN, name, address must match IRS records.",
+      "Validate filing status: correct status affects rates, deductions, credits.",
+      "Review bank account: routing and account number correct for direct deposit.",
+    ],
+  },
+  {
+    slug: "ira-early-distribution-penalty-guide",
+    title: "IRA Early Distribution Penalty Guide for Premature Withdrawal Tax (2026)",
+    description:
+      "Understand IRA early distribution penalty: 10% penalty, exception criteria, penalty calculation, and early withdrawal tax consequences.",
+    category: "retirement",
+    targetProductHref: "/tools/ira-contribution-calculator",
+    targetProductLabel: "IRA Contribution Calculator",
+    summary:
+      "Early IRA withdrawals face 10% penalty. This guide explains penalty rules, exceptions, calculation, and early distribution consequences.",
+    steps: [
+      "Understand penalty rule: 10% penalty on distributions before age 59½.",
+      "Check exceptions: disability, medical expenses >7.5% AGI, first-time homebuyer $10K.",
+      "Calculate total cost: penalty + ordinary income tax on distribution.",
+      "Consider Roth difference: Roth contributions withdrawal penalty-free, earnings subject to penalty.",
+      "Use 72(t) distributions: substantially equal payments avoid penalty with rules.",
+    ],
+  },
+  {
+    slug: "hospital-indemnity-insurance-guide",
+    title: "Hospital Indemnity Insurance Guide for Hospitalization Coverage (2026)",
+    description:
+      "Understand hospital indemnity insurance: daily benefit, coverage triggers, premium cost, and hospitalization financial protection.",
+    category: "insurance",
+    targetProductHref: "/tools/health-insurance-calculator",
+    targetProductLabel: "Health Insurance Calculator",
+    summary:
+      "Hospital indemnity pays daily benefit during hospital stay. This guide explains coverage triggers, premium, and protection value.",
+    steps: [
+      "Understand daily benefit: fixed payment per day of hospitalization.",
+      "Identify coverage triggers: hospital admission, ICU stay, surgery triggers.",
+      "Calculate premium: $10-$30/month for basic hospital indemnity coverage.",
+      "Evaluate gap coverage: indemnity covers health insurance deductible, copays.",
+      "Compare vs health insurance: indemnity supplements, coordinate with major medical.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
