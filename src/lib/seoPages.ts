@@ -4793,6 +4793,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Supplement health insurance: fills gaps in traditional health coverage.",
     ],
   },
+  {
+    slug: "crypto-hard-fork-tax-guide",
+    title: "Crypto Hard Fork Tax Guide for New Token Income (2026)",
+    description:
+      "Report crypto hard fork tax: new token income, fair market value, fork timing, and cryptocurrency split tax treatment.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Hard fork creates new taxable token. This guide explains income recognition, FMV calculation, and fork taxation.",
+    steps: [
+      "Understand hard fork: blockchain split creates new cryptocurrency token.",
+      "Report income: new tokens taxable at fair market value when received.",
+      "Determine FMV: value when tokens become accessible and tradeable.",
+      "Track cost basis: FMV at receipt becomes basis for future sale.",
+      "Document fork: record date, platform, amount received, market value.",
+    ],
+  },
+  {
+    slug: "mortgage-escrow-account-guide",
+    title: "Mortgage Escrow Account Guide for Property Costs (2026)",
+    description:
+      "Understand mortgage escrow: property taxes, homeowners insurance, escrow analysis, and property cost management.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Escrow accounts hold property tax and insurance funds. This guide explains setup, analysis, and management.",
+    steps: [
+      "Understand escrow: lender holds funds for property taxes and insurance.",
+      "Monthly payment: escrow portion added to principal/interest payment.",
+      "Annual analysis: lender reviews escrow, adjusts for tax/insurance changes.",
+      "Shortage/surplus: shortage requires payment, surplus may be refunded.",
+      "Opt-out option: some loans allow self-paying taxes and insurance.",
+    ],
+  },
+  {
+    slug: "tax-audit-preparation-guide",
+    title: "Tax Audit Preparation Guide for IRS Examination (2026)",
+    description:
+      "Prepare for tax audit: documentation requirements, audit triggers, response strategies, and IRS examination preparation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Audit preparation requires documentation. This guide explains requirements, triggers, and response strategies.",
+    steps: [
+      "Organize records: W-2s, 1099s, receipts, bank statements, prior returns.",
+      "Understand triggers: high income, large deductions, home office, crypto.",
+      "Respond promptly: IRS notices have deadlines, timely response essential.",
+      "Consider professional: CPA or tax attorney for complex audit situations.",
+      "Know rights: appeal rights, professional conduct, burden of proof.",
+    ],
+  },
+  {
+    slug: "retirement-annuity-guide",
+    title: "Retirement Annuity Guide for Guaranteed Income (2026)",
+    description:
+      "Understand retirement annuities: immediate vs deferred, payout options, tax treatment, and guaranteed income products.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Annuities provide guaranteed retirement income. This guide explains types, payouts, and tax treatment.",
+    steps: [
+      "Understand annuity: insurance product providing guaranteed income stream.",
+      "Choose immediate: start payments now with lump-sum purchase.",
+      "Choose deferred: accumulate funds, payments begin at future date.",
+      "Select payout: life only, joint life, period certain, or combination.",
+      "Know taxation: principal portion tax-free, earnings portion taxable.",
+    ],
+  },
+  {
+    slug: "accidental-death-insurance-guide",
+    title: "Accidental Death Insurance Guide for Event Coverage (2026)",
+    description:
+      "Understand accidental death insurance: coverage scope, benefit amount, exclusions, and accident-related death benefit.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Accidental death pays only for accident-related death. This guide explains coverage, exclusions, and selection.",
+    steps: [
+      "Understand coverage: death benefit only if death from covered accident.",
+      "Know exclusions: illness, natural causes, high-risk activities excluded.",
+      "Compare to life insurance: AD&D limited scope, much lower premium.",
+      "Typical benefit: 2x death benefit for accidental death, 1x for injury.",
+      "Consider as supplement: AD&D supplements, not replaces, life insurance.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
