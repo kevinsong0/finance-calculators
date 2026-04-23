@@ -2813,6 +2813,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider investment: HSA investable for growth, FSA only current year spending.",
     ],
   },
+  {
+    slug: "crypto-portfolio-tracking-guide",
+    title: "Crypto Portfolio Tracking Guide for Investment Management (2026)",
+    description:
+      "Track crypto portfolio across platforms: multi-exchange aggregation, performance tracking, cost basis monitoring, and portfolio management tools.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Portfolio tracking helps manage crypto investments. This guide explains multi-exchange aggregation, performance tracking, and management tools.",
+    steps: [
+      "Aggregate holdings: combine all exchange and wallet positions in single dashboard.",
+      "Track performance: monitor gain/loss, ROI, allocation by coin and platform.",
+      "Monitor cost basis: track purchase price for each position across exchanges.",
+      "Use tracking tools: CoinTracker, Koinly, CoinMarketCap portfolio features.",
+      "Set alerts: price thresholds, portfolio value changes, allocation drift notifications.",
+    ],
+  },
+  {
+    slug: "mortgage-lump-sum-payment-guide",
+    title: "Mortgage Lump Sum Payment Guide for Principal Reduction (2026)",
+    description:
+      "Apply lump sum payment to mortgage: principal reduction impact, interest savings, payoff acceleration, and optimal payment timing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Lump sum payments reduce principal and accelerate payoff. This guide explains savings calculation, payment timing, and impact analysis.",
+    steps: [
+      "Calculate interest savings: lump sum reduces principal, saves future interest.",
+      "Choose payment timing: apply early in loan term for maximum interest savings.",
+      "Verify payment processing: ensure lump sum applies to principal, not future payments.",
+      "Check prepayment terms: verify no prepayment penalty before large payment.",
+      "Recalculate payoff date: update amortization schedule with new principal balance.",
+    ],
+  },
+  {
+    slug: "net-investment-income-tax-guide",
+    title: "Net Investment Income Tax Guide for High-Income Investors (2026)",
+    description:
+      "Calculate net investment income tax: 3.8% NIIT rate, income thresholds, investment income definition, and tax planning for high-income taxpayers.",
+    category: "tax",
+    targetProductHref: "/tools/net-investment-income-tax-calculator",
+    targetProductLabel: "Net Investment Income Tax Calculator",
+    summary:
+      "NIIT applies 3.8% tax to high-income investment income. This guide explains thresholds, income calculation, and planning strategies.",
+    steps: [
+      "Check income threshold: $200K single, $250K married filing jointly triggers NIIT.",
+      "Identify investment income: dividends, interest, capital gains, rental, royalties.",
+      "Calculate NIIT liability: 3.8% of lesser of NII or excess MAGI over threshold.",
+      "Plan income timing: defer investment income, harvest losses, Roth conversions.",
+      "Track rental income: rental income subject to NIIT unless material participation.",
+    ],
+  },
+  {
+    slug: "roth-ira-backdoor-conversion-guide",
+    title: "Roth IRA Backdoor Conversion Guide for High-Income Savers (2026)",
+    description:
+      "Implement backdoor Roth IRA conversion: Traditional IRA contribution, conversion process, pro-rata rule avoidance, and tax implications for high earners.",
+    category: "retirement",
+    targetProductHref: "/tools/ira-contribution-calculator",
+    targetProductLabel: "IRA Contribution Calculator",
+    summary:
+      "Backdoor Roth enables Roth access for high earners. This guide explains contribution, conversion, pro-rata rule, and implementation steps.",
+    steps: [
+      "Contribute to Traditional IRA: make nondeductible contribution (no income limit).",
+      "Convert to Roth IRA: convert Traditional to Roth, nondeductible portion tax-free.",
+      "Avoid pro-rata rule: ensure no existing Traditional IRA balance before conversion.",
+      "Complete conversion quickly: convert immediately after contribution to minimize growth.",
+      "Track basis: file Form 8606 to track nondeductible contributions and conversions.",
+    ],
+  },
+  {
+    slug: "life-insurance-policy-review-guide",
+    title: "Life Insurance Policy Review Guide for Coverage Optimization (2026)",
+    description:
+      "Review existing life insurance policies: coverage adequacy, premium comparison, policy performance, and coverage optimization for current needs.",
+    category: "insurance",
+    targetProductHref: "/tools/term-life-insurance-calculator",
+    targetProductLabel: "Term Life Insurance Calculator",
+    summary:
+      "Regular policy review ensures adequate coverage. This guide explains coverage assessment, premium comparison, and optimization strategies.",
+    steps: [
+      "Assess current needs: income replacement, debt coverage, dependents, estate needs.",
+      "Compare coverage to needs: ensure policy death benefit matches current obligations.",
+      "Review premiums: check if current rates competitive, consider new quotes.",
+      "Evaluate term expiration: check if term ending, plan renewal or conversion.",
+      "Consider policy changes: increase coverage, extend term, add riders as needed.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
