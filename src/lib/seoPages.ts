@@ -4523,6 +4523,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "No cash value: term life pure death benefit, no investment component.",
     ],
   },
+  {
+    slug: "crypto-wash-sale-rule-guide",
+    title: "Crypto Wash Sale Rule Guide for Tax Loss Limitations (2026)",
+    description:
+      "Understand crypto wash sale rules: 30-day rule, loss disallowance, replacement purchase, and cryptocurrency tax loss limitations.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Wash sale rules may apply to crypto. This guide explains the 30-day rule, loss disallowance, and compliance.",
+    steps: [
+      "Understand wash sale: sell at loss, buy same/similar within 30 days.",
+      "Loss disallowed: cannot claim loss if repurchased within window.",
+      "Track transactions: document all sales and subsequent purchases.",
+      "Wait 31 days: avoid repurchasing same crypto for 31+ days after loss sale.",
+      "Different crypto: buying different token may avoid wash sale rule.",
+    ],
+  },
+  {
+    slug: "mortgage-points-vs-rate-guide",
+    title: "Mortgage Points vs Rate Guide for Cost Comparison (2026)",
+    description:
+      "Compare mortgage points vs rate: discount points cost, rate reduction, break-even analysis, and mortgage payment optimization.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Points lower mortgage rate but cost upfront. This guide explains cost, benefit, and break-even analysis.",
+    steps: [
+      "Understand points: 1 point = 1% of loan amount, typically 0.25% rate reduction.",
+      "Calculate cost: $200,000 loan, 1 point = $2,000 upfront.",
+      "Estimate savings: rate reduction lowers monthly payment over loan term.",
+      "Find break-even: months to recoup point cost from monthly savings.",
+      "Decide based on time: stay longer than break-even to benefit from points.",
+    ],
+  },
+  {
+    slug: "tax-medical-expense-deduction-guide",
+    title: "Tax Medical Expense Deduction Guide for Health Costs (2026)",
+    description:
+      "Claim medical expense deduction: AGI threshold, eligible expenses, itemized deduction, and healthcare tax benefit.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Medical expenses may be deductible. This guide explains AGI threshold, eligible expenses, and claiming rules.",
+    steps: [
+      "Know threshold: expenses must exceed 7.5% of adjusted gross income.",
+      "Identify eligible: doctor visits, prescriptions, hospital stays, insurance premiums.",
+      "Track expenses: maintain receipts and records for all medical costs.",
+      "Must itemize: medical deduction requires itemized return, not standard deduction.",
+      "Calculate benefit: (total medical - 7.5% AGI) = deductible amount.",
+    ],
+  },
+  {
+    slug: "retirement-ira-contribution-limits-guide",
+    title: "Retirement IRA Contribution Limits Guide for Savings Planning (2026)",
+    description:
+      "Maximize IRA contributions: annual limits, income limits, Traditional vs Roth, and retirement savings contribution rules.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "IRA limits differ by type. This guide explains Traditional and Roth contribution limits, income rules, and strategies.",
+    steps: [
+      "Know contribution limit: $7,000 for 2025, $8,000 if age 50+.",
+      "Traditional IRA: no income limit to contribute, deduction may have limit.",
+      "Roth IRA income limit: phase-out starts at $146,000 single, $230,000 married.",
+      "Split contributions: can contribute to both Traditional and Roth IRA.",
+      "Maximize total: combined contributions cannot exceed annual limit.",
+    ],
+  },
+  {
+    slug: "whole-life-insurance-guide",
+    title: "Whole Life Insurance Guide for Permanent Coverage (2026)",
+    description:
+      "Understand whole life insurance: guaranteed premium, cash value accumulation, death benefit, and permanent coverage.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Whole life provides permanent coverage with cash value. This guide explains premiums, accumulation, and features.",
+    steps: [
+      "Understand coverage: lifetime protection, premiums never increase.",
+      "Know cash value: policy accumulates savings over time, accessible.",
+      "Expect higher premiums: 5-10x more expensive than term life insurance.",
+      "Access cash value: borrow against policy or withdraw partial funds.",
+      "Consider need: whole life suits estate planning, permanent needs.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
