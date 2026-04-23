@@ -5243,6 +5243,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Waiting period: 30-day waiting period before coverage effective.",
     ],
   },
+  {
+    slug: "crypto-airdrop-tax-guide",
+    title: "Crypto Airdrop Tax Guide for Free Token Income (2026)",
+    description:
+      "Report crypto airdrop tax: free token income, fair market value, receipt timing, and promotional cryptocurrency taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Airdrops create taxable income. This guide explains FMV at receipt, income recognition, and promotional token reporting.",
+    steps: [
+      "Understand airdrop: free tokens distributed to wallet addresses.",
+      "Report as income: airdrop tokens taxable at fair market value when received.",
+      "Determine FMV: value when tokens become accessible and tradeable.",
+      "Track cost basis: FMV at receipt becomes basis for future sale.",
+      "Document all airdrops: date, platform, amount, market value at receipt.",
+    ],
+  },
+  {
+    slug: "mortgage-investment-property-guide",
+    title: "Mortgage Investment Property Guide for Rental Financing (2026)",
+    description:
+      "Finance mortgage investment property: loan requirements, down payment, interest rates, and rental property financing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Investment property mortgage has stricter requirements. This guide explains financing, rates, and down payment.",
+    steps: [
+      "Understand classification: property purchased for rental income, not primary.",
+      "Higher down payment: 20-25% minimum for investment property.",
+      "Higher interest rates: 0.5-1.5% above primary residence rates.",
+      "Income verification: rental income may qualify for loan consideration.",
+      "Tax benefits: mortgage interest deductible against rental income.",
+    ],
+  },
+  {
+    slug: "tax-charitable-donation-guide",
+    title: "Tax Charitable Donation Guide for Deduction Claiming (2026)",
+    description:
+      "Claim charitable donation deduction: qualified organizations, documentation, deduction limits, and charity tax benefit.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Charitable donations may be deductible. This guide explains qualified organizations, documentation, and limits.",
+    steps: [
+      "Verify organization: IRS 501(c)(3) qualified charitable organization.",
+      "Cash donations: bank records, written acknowledgment from charity.",
+      "Non-cash donations: fair market value, detailed description, receipt.",
+      "Deduction limits: 60% of AGI for cash, 30% for appreciated property.",
+      "Must itemize: charitable deduction requires itemized return.",
+    ],
+  },
+  {
+    slug: "retirement-sequence-of-returns-guide",
+    title: "Retirement Sequence of Returns Guide for Withdrawal Risk (2026)",
+    description:
+      "Understand sequence of returns risk: early losses impact, withdrawal timing, market volatility, and retirement distribution.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Early retirement losses are devastating. This guide explains sequence risk, timing, and mitigation strategies.",
+    steps: [
+      "Understand sequence risk: market losses early in retirement reduce portfolio.",
+      "Impact calculation: same average return, different outcome based on timing.",
+      "Mitigate with cash buffer: 2-3 years expenses in cash avoids selling in downturn.",
+      "Flexible withdrawals: reduce withdrawals during market downturns.",
+      "Bucket strategy: separate buckets for short-term, medium-term, long-term.",
+    ],
+  },
+  {
+    slug: "earthquake-insurance-guide",
+    title: "Earthquake Insurance Guide for Property Protection (2026)",
+    description:
+      "Understand earthquake insurance: coverage scope, premium cost, deductible, and seismic property protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Earthquake insurance covers seismic damage. This guide explains coverage, costs, and deductible structure.",
+    steps: [
+      "Understand need: standard home insurance excludes earthquake damage.",
+      "Coverage scope: structural damage, contents, additional living expenses.",
+      "High deductible: typically 10-20% of coverage amount, not flat fee.",
+      "Premium factors: location, building construction, age, retrofitting.",
+      "California EQ authority: state-run program in high-risk areas.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
