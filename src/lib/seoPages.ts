@@ -5333,6 +5333,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "California EQ authority: state-run program in high-risk areas.",
     ],
   },
+  {
+    slug: "crypto-cost-basis-methods-guide",
+    title: "Crypto Cost Basis Methods Guide for Gain Calculation (2026)",
+    description:
+      "Choose crypto cost basis method: FIFO, LIFO, specific identification, average cost, and cryptocurrency gain calculation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Cost basis method affects taxable gains. This guide explains FIFO, LIFO, specific ID, and method selection.",
+    steps: [
+      "Understand FIFO: first-in first-out, earliest purchases sold first.",
+      "Understand LIFO: last-in first-out, most recent purchases sold first.",
+      "Specific identification: choose specific coins, must document at sale.",
+      "Method selection: affects capital gains timing and tax liability.",
+      "Consistency required: must use same method consistently for similar transactions.",
+    ],
+  },
+  {
+    slug: "mortgage-condo-financing-guide",
+    title: "Mortgage Condo Financing Guide for Unit Purchase (2026)",
+    description:
+      "Finance mortgage condo: loan requirements, HOA considerations, approval process, and condominium unit financing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Condo mortgage has additional requirements. This guide explains HOA, approval, and financing considerations.",
+    steps: [
+      "Understand condo mortgage: similar to single-family but with HOA factor.",
+      "HOA review: lender reviews HOA financial health, reserve fund.",
+      "Project approval: FHA requires entire condo project approved.",
+      "Down payment: same as single-family, may vary by project status.",
+      "Insurance: HOA covers building exterior, owner needs contents policy.",
+    ],
+  },
+  {
+    slug: "tax-dependent-eligibility-guide",
+    title: "Tax Dependent Eligibility Guide for Tax Benefit Claiming (2026)",
+    description:
+      "Claim tax dependent: qualifying child, qualifying relative, support test, and dependent tax benefit rules.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Dependents provide tax benefits. This guide explains qualifying child, relative, support, and residency tests.",
+    steps: [
+      "Qualifying child: under 19 (24 if student), lives with taxpayer, support test.",
+      "Qualifying relative: any age, gross income under $4,700, support test.",
+      "Support test: taxpayer provides more than half of dependent's support.",
+      "Residency test: qualifying child must live with taxpayer over half year.",
+      "Citizen test: dependent must be US citizen, national, or resident.",
+    ],
+  },
+  {
+    slug: "retirement-social-security-spousal-guide",
+    title: "Retirement Social Security Spousal Guide for Spouse Benefits (2026)",
+    description:
+      "Claim Social Security spousal benefit: eligibility, benefit amount, timing, and spouse retirement income.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Spouses can claim on partner's record. This guide explains eligibility, amount, and timing strategies.",
+    steps: [
+      "Understand spousal benefit: up to 50% of working spouse's benefit.",
+      "Eligibility: married 1+ year, spouse entitled to retirement benefits.",
+      "Divorced spouse: can claim if marriage lasted 10+ years, not remarried.",
+      "Claim timing: spousal benefit reduced if claimed before FRA.",
+      "Coordinate claims: strategies for maximizing combined benefits.",
+    ],
+  },
+  {
+    slug: "renters-insurance-guide",
+    title: "Renters Insurance Guide for Tenant Protection (2026)",
+    description:
+      "Understand renters insurance: contents coverage, liability protection, cost factors, and tenant property protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Renters insurance protects personal property. This guide explains contents, liability, and affordable coverage.",
+    steps: [
+      "Understand contents: personal belongings, furniture, electronics covered.",
+      "Liability protection: covers injury to others in your rental unit.",
+      "Additional living expenses: temporary housing if unit uninhabitable.",
+      "Typical cost: $15-$30 monthly for $30,000 contents, very affordable.",
+      "Document belongings: inventory photos, receipts help claims process.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
