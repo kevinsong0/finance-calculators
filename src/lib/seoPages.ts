@@ -4883,6 +4883,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider as supplement: AD&D supplements, not replaces, life insurance.",
     ],
   },
+  {
+    slug: "crypto-lost-key-tax-guide",
+    title: "Crypto Lost Key Tax Guide for Loss Deduction (2026)",
+    description:
+      "Claim crypto lost key deduction: abandoned wallet, proof of loss, casualty deduction, and cryptocurrency loss tax treatment.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Lost keys may qualify for deduction. This guide explains abandoned wallet treatment, proof requirements, and claiming.",
+    steps: [
+      "Understand situation: lost private key means crypto inaccessible.",
+      "Document loss: wallet address, date acquired, amount, loss date.",
+      "Prove abandonment: reasonable efforts to recover, documented attempts.",
+      "Casualty deduction: may qualify as theft or casualty loss.",
+      "Consult professional: lost crypto deduction complex, IRS guidance unclear.",
+    ],
+  },
+  {
+    slug: "mortgage-underwriting-guide",
+    title: "Mortgage Underwriting Guide for Approval Process (2026)",
+    description:
+      "Understand mortgage underwriting: credit evaluation, income verification, appraisal, and loan approval criteria.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Underwriting evaluates loan risk. This guide explains credit, income, appraisal, and approval criteria.",
+    steps: [
+      "Credit evaluation: credit score, payment history, debt-to-income ratio.",
+      "Income verification: pay stubs, tax returns, employment history.",
+      "Asset verification: bank statements, down payment source.",
+      "Property appraisal: licensed appraiser determines home value.",
+      "Approval timeline: underwriting typically 3-7 business days.",
+    ],
+  },
+  {
+    slug: "tax-extension-deadline-guide",
+    title: "Tax Extension Deadline Guide for Late Filing (2026)",
+    description:
+      "File tax extension: Form 4868, deadline extension, payment requirements, and late filing penalty avoidance.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Extension grants extra time to file. This guide explains Form 4868, deadlines, and payment requirements.",
+    steps: [
+      "File Form 4868: automatic 6-month extension to October 15.",
+      "Extension for filing only: estimated tax still due by April 15.",
+      "Pay estimated tax: pay 90% of expected liability by April 15.",
+      "Avoid late payment penalty: unpaid tax after April 15 accrues interest.",
+      "File by October 15: extension expires, late filing penalty after.",
+    ],
+  },
+  {
+    slug: "retirement-spousal-ira-guide",
+    title: "Retirement Spousal IRA Guide for Non-Working Spouse (2026)",
+    description:
+      "Contribute to spousal IRA: eligibility requirements, contribution limits, tax benefits, and non-working spouse retirement savings.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Spousal IRA allows non-working spouse savings. This guide explains eligibility, limits, and tax benefits.",
+    steps: [
+      "Understand spousal IRA: working spouse can fund IRA for non-working spouse.",
+      "Marriage requirement: must be married filing jointly tax return.",
+      "Same limits: $7,000 contribution limit, $8,000 if age 50+.",
+      "Choose Traditional or Roth: same options as regular IRA.",
+      "Combined limit: working spouse still has own IRA contribution limit.",
+    ],
+  },
+  {
+    slug: "burial-insurance-guide",
+    title: "Burial Insurance Guide for Final Expense Coverage (2026)",
+    description:
+      "Understand burial insurance: coverage amount, premium cost, payout timing, and final expense insurance.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Burial insurance covers funeral costs. This guide explains coverage, costs, and payout for final expenses.",
+    steps: [
+      "Understand coverage: small policy designed for funeral/burial costs.",
+      "Typical amount: $5,000-$25,000 coverage for final expenses.",
+      "No medical exam: simplified issue, minimal health questions.",
+      "Premium cost: higher per-dollar coverage due to simplified underwriting.",
+      "Quick payout: designed for fast claim processing for immediate needs.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
