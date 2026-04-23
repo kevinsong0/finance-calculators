@@ -4253,6 +4253,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Coordinate with sick leave: short-term disability after sick leave exhausted.",
     ],
   },
+  {
+    slug: "crypto-staking-rewards-tax-guide",
+    title: "Crypto Staking Rewards Tax Guide for Income Reporting (2026)",
+    description:
+      "Report crypto staking rewards tax: income recognition, fair market value, staking vs mining, and cryptocurrency tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Staking rewards are taxable income. This guide explains income recognition, FMV calculation, and reporting requirements.",
+    steps: [
+      "Recognize income at fair market value when rewards are received.",
+      "Report as ordinary income: staking rewards not capital gains at receipt.",
+      "Track cost basis: FMV at receipt becomes basis for future sale.",
+      "Distinguish staking vs mining: staking generally simpler tax treatment.",
+      "Maintain records: wallet addresses, dates, amounts, FMV at receipt.",
+    ],
+  },
+  {
+    slug: "mortgage-closing-costs-breakdown-guide",
+    title: "Mortgage Closing Costs Breakdown Guide for Homebuyers (2026)",
+    description:
+      "Understand mortgage closing costs: lender fees, title costs, prepaid items, and closing cost negotiation strategies.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Closing costs add 2-5% to home purchase. This guide breaks down fees and negotiation strategies.",
+    steps: [
+      "Budget 2-5%: closing costs typically $5,000-$15,000 on median home.",
+      "Review loan estimate: lender fees, origination, processing, underwriting.",
+      "Understand title costs: title search, title insurance, attorney fees.",
+      "Account for prepaid items: property taxes, homeowners insurance, interest.",
+      "Negotiate costs: compare lenders, ask for credits, negotiate fees.",
+    ],
+  },
+  {
+    slug: "tax-deduction-vs-tax-credit-guide",
+    title: "Tax Deduction vs Tax Credit Guide for Tax Savings (2026)",
+    description:
+      "Compare tax deduction vs tax credit: impact on tax liability, refund effect, and tax savings optimization strategies.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Tax credits are worth more than deductions. This guide explains the difference and optimization strategies.",
+    steps: [
+      "Understand deduction: reduces taxable income, value depends on tax bracket.",
+      "Understand credit: reduces tax liability dollar-for-dollar, more valuable.",
+      "Calculate impact: $1,000 deduction saves $220 at 22% bracket vs $1,000 credit.",
+      "Identify credits: child tax credit, education credits, energy credits.",
+      "Identify deductions: mortgage interest, charitable donations, state taxes.",
+    ],
+  },
+  {
+    slug: "401k-contribution-limits-guide",
+    title: "401k Contribution Limits Guide for Retirement Planning (2026)",
+    description:
+      "Maximize 401k contributions: annual limits, catch-up contributions, employer match, and retirement savings optimization.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "401k limits reset annually. This guide explains contribution limits, catch-up rules, and maximization strategies.",
+    steps: [
+      "Know employee limit: $23,000 for 2025, increases with inflation.",
+      "Add catch-up: age 50+ can contribute additional $7,500 annually.",
+      "Include employer match: total contribution (employee + employer) up to $69,000.",
+      "Maximize match: contribute at least enough to get full employer match.",
+      "Consider Mega Backdoor: after-tax contributions up to total limit.",
+    ],
+  },
+  {
+    slug: "umbrella-insurance-guide",
+    title: "Umbrella Insurance Guide for Liability Protection (2026)",
+    description:
+      "Understand umbrella insurance: coverage limits, liability protection, cost factors, and umbrella policy selection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Umbrella insurance provides excess liability coverage. This guide explains coverage, costs, and selection.",
+    steps: [
+      "Understand coverage: liability above home/auto policy limits.",
+      "Assess need: high net worth, rental properties, high-risk activities.",
+      "Determine coverage: $1 million minimum, higher for greater assets.",
+      "Check requirements: underlying auto/home policies must meet minimums.",
+      "Calculate cost: typically $150-$300 annually for $1 million coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
