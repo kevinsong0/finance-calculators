@@ -2903,6 +2903,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider policy changes: increase coverage, extend term, add riders as needed.",
     ],
   },
+  {
+    slug: "crypto-tax-year-end-planning-guide",
+    title: "Crypto Tax Year-End Planning Guide for Tax Optimization (2026)",
+    description:
+      "Plan crypto tax strategies before year-end: loss harvesting, gain deferral, gifting, and December tax planning for cryptocurrency investors.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Year-end planning reduces crypto tax liability. This guide explains loss harvesting timing, gain deferral, and December optimization strategies.",
+    steps: [
+      "Review year gains/losses: calculate current position before December 31 deadline.",
+      "Harvest losses: sell losing positions by year-end to offset realized gains.",
+      "Consider gain deferral: delay selling winners until January for next year tax.",
+      "Plan crypto gifts: gift appreciated crypto to avoid selling, $18K exclusion per recipient.",
+      "Document transactions: ensure all trades recorded before tax filing deadline.",
+    ],
+  },
+  {
+    slug: "mortgage-rate-vs-points-calculator-guide",
+    title: "Mortgage Rate vs Points Calculator Guide for Cost Analysis (2026)",
+    description:
+      "Calculate mortgage rate vs points trade-off: break-even analysis, interest savings, and decision criteria for buying discount points.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-points-calculator",
+    targetProductLabel: "Mortgage Points Calculator",
+    summary:
+      "Points reduce rate but cost upfront. This guide explains break-even calculation, savings analysis, and buy vs skip decision.",
+    steps: [
+      "Understand point cost: 1 point = 1% of loan amount ($4,000 on $400K loan).",
+      "Calculate rate reduction: typically 0.25% rate reduction per point purchased.",
+      "Compute break-even: point cost ÷ monthly savings = months to recoup investment.",
+      "Compare to loan term: only buy points if break-even < expected time in home.",
+      "Consider tax deduction: points deductible on purchase, amortized on refinance.",
+    ],
+  },
+  {
+    slug: "alternative-minimum-tax-guide",
+    title: "Alternative Minimum Tax Guide for Tax Liability Calculation (2026)",
+    description:
+      "Understand alternative minimum tax: AMT triggers, preference items, exemption amounts, and AMT calculation for high-income taxpayers.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "AMT ensures minimum tax for high-income taxpayers. This guide explains triggers, preference items, exemption, and calculation methods.",
+    steps: [
+      "Check exemption: 2026 AMT exemption $85,700 single, $133,300 married.",
+      "Identify preference items: state taxes, depreciation, ISO stock options trigger AMT.",
+      "Calculate AMT liability: apply 26% rate to AMTI minus exemption.",
+      "Compare to regular tax: pay AMT if calculated exceeds regular tax liability.",
+      "Plan timing: defer preference items, accelerate income when AMT not triggered.",
+    ],
+  },
+  {
+    slug: "social-security-early-claiming-guide",
+    title: "Social Security Early Claiming Guide for Age 62 Benefits (2026)",
+    description:
+      "Understand Social Security early claiming: benefit reduction, break-even analysis, working while claiming, and age 62 claiming considerations.",
+    category: "retirement",
+    targetProductHref: "/tools/social-security-taxation-calculator",
+    targetProductLabel: "Social Security Taxation Calculator",
+    summary:
+      "Early claiming reduces Social Security permanently. This guide explains reduction amount, break-even timing, and age 62 claiming factors.",
+    steps: [
+      "Calculate reduction: claiming at 62 reduces benefit by 25-30% vs full retirement age.",
+      "Compute break-even: early claiming breaks even around age 78 vs waiting.",
+      "Understand earnings test: income above limit reduces benefits before FRA.",
+      "Consider health factors: shorter life expectancy favors early claiming.",
+      "Evaluate need factors: immediate income need vs maximum lifetime benefit.",
+    ],
+  },
+  {
+    slug: "annuity-vs-lump-sum-pension-choice-guide",
+    title: "Annuity vs Lump Sum Pension Choice Guide for Retirement Distribution (2026)",
+    description:
+      "Compare annuity vs lump sum pension distribution: guaranteed income, investment risk, tax implications, and selection criteria for pension choice.",
+    category: "insurance",
+    targetProductHref: "/tools/pension-calculator",
+    targetProductLabel: "Pension Calculator",
+    summary:
+      "Pension choice affects retirement income security. This guide compares annuity guarantees vs lump sum flexibility and selection factors.",
+    steps: [
+      "Understand annuity: guaranteed monthly income for life, no investment risk.",
+      "Evaluate lump sum: one-time payment, self-manage investments, flexible access.",
+      "Compare tax treatment: annuity taxed as received, lump sum taxed on distribution.",
+      "Assess longevity risk: annuity protects against outliving assets, lump sum requires management.",
+      "Consider spousal benefit: annuity can include survivor benefit, lump sum inheritance.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
