@@ -3803,6 +3803,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Choose appropriate period: 60-90 days typical, 30 days for minimal savings.",
     ],
   },
+  {
+    slug: "crypto-tax-professional-vs-self-filing-guide",
+    title: "Crypto Tax Professional vs Self-Filing Guide for Preparation Decision (2026)",
+    description:
+      "Compare crypto tax professional vs self-filing: complexity factors, cost comparison, software options, and preparation decision for crypto tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto tax can be filed professionally or self-filed. This guide compares complexity, cost, software options, and preparation decision criteria.",
+    steps: [
+      "Assess complexity: simple trades vs DeFi, NFTs, multiple exchanges affect decision.",
+      "Compare costs: CPA $500-$2,000 vs tax software $50-$200 for crypto filing.",
+      "Evaluate software options: CoinTracker, Koinly generate Form 8949 for self-filing.",
+      "Consider audit risk: complex situations benefit from professional preparation.",
+      "Hybrid approach: use software for calculation, CPA for review and filing.",
+    ],
+  },
+  {
+    slug: "mortgage-home-appraisal-process-guide",
+    title: "Mortgage Home Appraisal Process Guide for Property Valuation (2026)",
+    description:
+      "Understand mortgage home appraisal process: appraisal purpose, valuation methods, appraisal contingency, and property value determination for mortgage approval.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Appraisal determines property value for mortgage. This guide explains purpose, methods, contingency, and value determination process.",
+    steps: [
+      "Understand appraisal purpose: lender requires independent property value verification.",
+      "Know appraisal methods: comparable sales approach primary, cost approach for new construction.",
+      "Prepare for appraisal: clean property, provide upgrades list, comparable sales data.",
+      "Check appraisal contingency: appraisal below price may require renegotiation or termination.",
+      "Understand appraisal cost: $300-$500 buyer paid, FHA/VA appraisals have specific requirements.",
+    ],
+  },
+  {
+    slug: "tax-deduction-documentation-guide",
+    title: "Tax Deduction Documentation Guide for Audit Defense (2026)",
+    description:
+      "Maintain tax deduction documentation: receipt requirements, record retention, proof standards, and audit documentation for deduction claims.",
+    category: "tax",
+    targetProductHref: "/tools/tax-deduction-calculator",
+    targetProductLabel: "Tax Deduction Calculator",
+    summary:
+      "Deduction documentation supports tax claims. This guide explains receipts, retention, proof standards, and audit documentation requirements.",
+    steps: [
+      "Save all receipts: physical or digital records for every deductible expense.",
+      "Document large deductions: charitable donations over $250 require written acknowledgment.",
+      "Maintain business records: invoices, contracts, bank statements for Schedule C deductions.",
+      "Track mortgage interest: Form 1098 from lender documents mortgage interest deduction.",
+      "Retain records 7 years: audit can examine returns up to 7 years, keep documentation.",
+    ],
+  },
+  {
+    slug: "401k-loan-vs-personal-loan-guide",
+    title: "401(k) Loan vs Personal Loan Comparison Guide for Borrowing Decision (2026)",
+    description:
+      "Compare 401(k) loan vs personal loan: interest rates, qualification, tax implications, and borrowing decision for loan selection.",
+    category: "retirement",
+    targetProductHref: "/tools/401k-contribution-calculator",
+    targetProductLabel: "401(k) Contribution Calculator",
+    summary:
+      "401(k) loans and personal loans serve different needs. This guide compares rates, qualification, tax implications, and selection criteria.",
+    steps: [
+      "Compare rates: 401(k) loan prime + 1-2%, personal loan 6-36% based on credit.",
+      "Check qualification: 401(k) loan no credit check, personal loan requires credit approval.",
+      "Understand tax implications: 401(k) loan default taxable, personal loan not taxable.",
+      "Evaluate opportunity cost: 401(k) loan reduces retirement growth, personal loan preserves.",
+      "Consider employment risk: 401(k) loan becomes taxable if leave employer.",
+    ],
+  },
+  {
+    slug: "vision-insurance-cost-benefit-guide",
+    title: "Vision Insurance Cost-Benefit Guide for Eye Care Coverage (2026)",
+    description:
+      "Evaluate vision insurance cost-benefit: premium costs, coverage limits, exam frequency, and vision care coverage for eye insurance decision.",
+    category: "insurance",
+    targetProductHref: "/tools/health-insurance-calculator",
+    targetProductLabel: "Health Insurance Calculator",
+    summary:
+      "Vision insurance covers eye exams and glasses. This guide explains premiums, coverage limits, exam frequency, and cost-benefit analysis.",
+    steps: [
+      "Calculate premium: $10-$30/month for vision coverage through employer.",
+      "Understand coverage: annual exam, frames/lenses or contact lens allowance.",
+      "Check coverage limits: frame allowance $100-$150, lenses covered with copay.",
+      "Evaluate frequency: if need glasses annually, insurance worth premium.",
+      "Consider standalone plans: vision discount plans vs insurance, different value.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
