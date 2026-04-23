@@ -4343,6 +4343,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Calculate cost: typically $150-$300 annually for $1 million coverage.",
     ],
   },
+  {
+    slug: "crypto-defi-yield-tax-guide",
+    title: "Crypto DeFi Yield Tax Guide for Income Reporting (2026)",
+    description:
+      "Report DeFi yield farming tax: interest income, reward tokens, liquidity pools, and decentralized finance tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "DeFi yield farming creates taxable events. This guide explains interest, rewards, and liquidity pool tax treatment.",
+    steps: [
+      "Report interest income: DeFi lending yields taxed as ordinary income.",
+      "Track reward tokens: FMV at receipt for governance/liquidity rewards.",
+      "Understand LP taxation: each swap creates taxable event, complex tracking.",
+      "Document transactions: protocol addresses, timestamps, amounts received.",
+      "Consult tax professional: DeFi taxation complex, varies by protocol.",
+    ],
+  },
+  {
+    slug: "mortgage-jumbo-loan-guide",
+    title: "Mortgage Jumbo Loan Guide for High-Value Financing (2026)",
+    description:
+      "Understand jumbo mortgage loans: qualification requirements, down payment, rates, and high-value home financing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Jumbo loans exceed conforming limits. This guide explains requirements, rates, and qualification criteria.",
+    steps: [
+      "Know conforming limit: $766,550 in 2024, loans above this are jumbo.",
+      "Meet credit requirements: typically 700+ credit score for jumbo approval.",
+      "Prepare down payment: 10-20% minimum, often 20%+ for best rates.",
+      "Expect higher rates: jumbo rates 0.25-0.50% above conforming loans.",
+      "Document income: jumbo lenders require extensive income verification.",
+    ],
+  },
+  {
+    slug: "tax-quarterly-estimated-payments-guide",
+    title: "Tax Quarterly Estimated Payments Guide for Self-Employed (2026)",
+    description:
+      "Calculate quarterly estimated taxes: payment deadlines, calculation methods, underpayment penalties, and self-employment tax.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Quarterly payments required for self-employed. This guide explains deadlines, calculations, and penalty avoidance.",
+    steps: [
+      "Know deadlines: April 15, June 15, September 15, January 15 quarterly.",
+      "Calculate amount: 100% of prior year tax or 90% of current year.",
+      "Include self-employment tax: 15.3% for Social Security and Medicare.",
+      "Avoid underpayment penalty: pay at least 90% of current year tax.",
+      "Use safe harbor: 100% of prior year tax avoids penalty regardless.",
+    ],
+  },
+  {
+    slug: "retirement-roth-conversion-guide",
+    title: "Retirement Roth Conversion Guide for Tax Optimization (2026)",
+    description:
+      "Plan Roth IRA conversion: conversion timing, tax impact, five-year rule, and retirement tax optimization strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Roth conversion moves Traditional to Roth. This guide explains timing, tax impact, and five-year rule.",
+    steps: [
+      "Understand conversion: move Traditional IRA funds to Roth IRA.",
+      "Pay conversion tax: converted amount taxed as ordinary income in year of conversion.",
+      "Optimize timing: convert in low-income years or before retirement.",
+      "Know five-year rule: converted funds available after 5 years or age 59½.",
+      "Calculate breakeven: compare upfront tax vs future tax-free withdrawals.",
+    ],
+  },
+  {
+    slug: "long-term-care-insurance-guide",
+    title: "Long-Term Care Insurance Guide for Elder Care Planning (2026)",
+    description:
+      "Understand long-term care insurance: coverage types, eligibility age, premium cost, and elder care financing strategy.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Long-term care insurance covers nursing care. This guide explains coverage, timing, and cost considerations.",
+    steps: [
+      "Understand coverage: nursing home, assisted living, home health care.",
+      "Consider purchase age: 50-65 ideal window for affordable premiums.",
+      "Evaluate daily benefit: $100-$300 per day, affects premium cost.",
+      "Check benefit period: 2-5 years typical, lifetime maximum available.",
+      "Assess need: family history, assets to protect, no family caregivers.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
