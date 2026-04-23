@@ -4613,6 +4613,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider need: whole life suits estate planning, permanent needs.",
     ],
   },
+  {
+    slug: "crypto-lending-tax-guide",
+    title: "Crypto Lending Tax Guide for Income Reporting (2026)",
+    description:
+      "Report crypto lending income tax: interest received, collateral taxation, lending platform income, and cryptocurrency tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto lending generates taxable income. This guide explains interest reporting, collateral treatment, and platform taxation.",
+    steps: [
+      "Report interest income: crypto lending interest taxed as ordinary income.",
+      "Track FMV at receipt: interest paid in crypto taxed at fair market value.",
+      "Understand collateral: pledged crypto not taxable, still owned by lender.",
+      "Document platform: record lending platform, rates, dates, amounts.",
+      "Watch for defaults: liquidated collateral creates capital gain/loss event.",
+    ],
+  },
+  {
+    slug: "mortgage-arm-vs-fixed-rate-guide",
+    title: "Mortgage ARM vs Fixed Rate Guide for Rate Selection (2026)",
+    description:
+      "Compare mortgage ARM vs fixed rate: rate stability, payment changes, rate caps, and mortgage interest rate selection.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "ARM offers lower initial rate but risk of increase. This guide explains stability, caps, and selection criteria.",
+    steps: [
+      "Understand fixed rate: same rate for entire loan term, payment stability.",
+      "Understand ARM: adjustable rate changes after initial fixed period.",
+      "Compare initial rates: ARM typically 0.5-1% lower than fixed initially.",
+      "Know rate caps: periodic cap (annual), lifetime cap (maximum increase).",
+      "Choose based on plans: short-term ownership favors ARM, long-term favors fixed.",
+    ],
+  },
+  {
+    slug: "tax-state-income-tax-guide",
+    title: "Tax State Income Tax Guide for Multi-State Filers (2026)",
+    description:
+      "Understand state income tax: filing requirements, residency rules, multi-state income, and state tax obligations.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "State tax varies by residency. This guide explains filing requirements, multi-state rules, and tax obligations.",
+    steps: [
+      "Determine residency: domicile state where you live and intend to remain.",
+      "Know filing threshold: each state has income threshold for filing requirement.",
+      "Understand multi-state: income earned in non-resident state may require filing.",
+      "Check reciprocity: some states have agreements avoiding double taxation.",
+      "Credit for other state: resident state may credit tax paid to other states.",
+    ],
+  },
+  {
+    slug: "retirement-403b-vs-401k-guide",
+    title: "Retirement 403b vs 401k Guide for Plan Selection (2026)",
+    description:
+      "Compare 403b vs 401k retirement plans: eligibility, contribution limits, investment options, and retirement plan differences.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "403b for public/non-profit employees, 401k for private sector. This guide explains eligibility, limits, and differences.",
+    steps: [
+      "Understand 403b: available to public school and non-profit employees.",
+      "Understand 401k: available to private sector and corporate employees.",
+      "Same contribution limits: both plans share same annual contribution limits.",
+      "Investment differences: 403b often fewer options, annuity-focused historically.",
+      "Both have catch-up: age 50+ catch-up contributions available in both.",
+    ],
+  },
+  {
+    slug: "variable-life-insurance-guide",
+    title: "Variable Life Insurance Guide for Investment Coverage (2026)",
+    description:
+      "Understand variable life insurance: investment component, cash value growth, death benefit, and investment-linked coverage.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Variable life combines insurance with investment. This guide explains cash value, investment options, and risks.",
+    steps: [
+      "Understand structure: death benefit plus investment cash value component.",
+      "Know investment options: policyholder selects investment subaccounts.",
+      "Cash value fluctuates: value varies based on investment performance.",
+      "Death benefit variable: benefit may increase/decrease with investment returns.",
+      "Understand risks: investment losses reduce cash value and possibly benefit.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
