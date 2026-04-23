@@ -3893,6 +3893,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider standalone plans: vision discount plans vs insurance, different value.",
     ],
   },
+  {
+    slug: "crypto-exchange-fee-comparison-guide",
+    title: "Crypto Exchange Fee Comparison Guide for Trading Cost Analysis (2026)",
+    description:
+      "Compare crypto exchange trading fees: maker/taker rates, withdrawal fees, deposit costs, and fee optimization for cryptocurrency trading.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Exchange fees impact trading profitability. This guide compares maker/taker rates, withdrawal fees, and cost optimization strategies.",
+    steps: [
+      "Compare maker/taker fees: major exchanges range 0-0.5%, volume discounts available.",
+      "Calculate withdrawal fees: crypto withdrawal fees vary by coin and exchange.",
+      "Check deposit costs: fiat deposits may have fees, crypto deposits typically free.",
+      "Evaluate spread: exchange spread affects effective trading cost.",
+      "Consider fee tokens: some exchanges offer fee discounts with native token holdings.",
+    ],
+  },
+  {
+    slug: "mortgage-rate-trend-timing-guide",
+    title: "Mortgage Rate Trend Timing Guide for Market Entry (2026)",
+    description:
+      "Monitor mortgage rate trends for market timing: Fed policy impact, economic indicators, rate history, and timing strategies for mortgage rate entry.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Rate timing affects mortgage cost. This guide explains Fed policy impact, indicators, history, and timing strategies.",
+    steps: [
+      "Monitor Fed policy: Federal Reserve rate decisions affect mortgage rates.",
+      "Track Treasury yields: 10-year Treasury yield correlates with mortgage rates.",
+      "Review rate history: historical rate trends inform timing expectations.",
+      "Watch economic indicators: inflation, employment, GDP affect rate direction.",
+      "Consider refinance timing: rates may continue dropping, lock when comfortable.",
+    ],
+  },
+  {
+    slug: "tax-credit-phaseout-guide",
+    title: "Tax Credit Phaseout Guide for Income-Based Credit Reduction (2026)",
+    description:
+      "Understand tax credit phaseout: income thresholds, reduction calculations, phase-out ranges, and income planning for tax credit eligibility.",
+    category: "tax",
+    targetProductHref: "/tools/tax-credit-calculator",
+    targetProductLabel: "Tax Credit Calculator",
+    summary:
+      "Tax credits phase out above income thresholds. This guide explains phase-out ranges, reduction calculations, and income planning.",
+    steps: [
+      "Identify phase-out credits: child tax credit, education credits, retirement savings credit.",
+      "Calculate phase-out range: credit reduces linearly from threshold to complete phase-out.",
+      "Apply specific thresholds: each credit has unique phase-out range and calculation.",
+      "Plan income timing: manage income to stay below phase-out threshold when possible.",
+      "Maximize partial credit: even partial credit valuable, optimize income placement.",
+    ],
+  },
+  {
+    slug: "pension-vs-401k-choice-guide",
+    title: "Pension vs 401(k) Choice Guide for Retirement Plan Selection (2026)",
+    description:
+      "Compare pension vs 401(k) retirement plans: guaranteed income vs investment control, employer funding, portability, and retirement plan selection.",
+    category: "retirement",
+    targetProductHref: "/tools/pension-calculator",
+    targetProductLabel: "Pension Calculator",
+    summary:
+      "Pension and 401(k) offer different retirement benefits. This guide compares guaranteed income, investment control, and selection criteria.",
+    steps: [
+      "Understand pension benefits: employer-funded, guaranteed income, no investment risk.",
+      "Compare 401(k) benefits: employee-funded, investment choice, portable across jobs.",
+      "Evaluate pension risk: employer solvency, plan freeze, limited portability.",
+      "Assess 401(k) risk: investment performance depends on market, participant manages.",
+      "Consider employer offer: some employers offer both, maximize combined benefits.",
+    ],
+  },
+  {
+    slug: "dental-insurance-cost-benefit-guide",
+    title: "Dental Insurance Cost-Benefit Guide for Oral Health Coverage (2026)",
+    description:
+      "Evaluate dental insurance cost-benefit: premium costs, coverage limits, procedure coverage, and dental care coverage for oral health insurance.",
+    category: "insurance",
+    targetProductHref: "/tools/health-insurance-calculator",
+    targetProductLabel: "Health Insurance Calculator",
+    summary:
+      "Dental insurance covers preventive and major procedures. This guide explains premiums, coverage limits, and cost-benefit analysis.",
+    steps: [
+      "Calculate premium: $20-$50/month for dental coverage through employer.",
+      "Understand coverage tiers: preventive 100%, basic 80%, major 50% coverage typical.",
+      "Check annual maximum: dental plans cap annual benefit at $1,000-$2,000.",
+      "Evaluate waiting periods: major procedures may have 6-12 month waiting period.",
+      "Consider annual needs: frequent dental work makes insurance valuable, preventive-only may not.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
