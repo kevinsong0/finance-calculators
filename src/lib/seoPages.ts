@@ -4433,6 +4433,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Assess need: family history, assets to protect, no family caregivers.",
     ],
   },
+  {
+    slug: "crypto-gas-fees-tax-guide",
+    title: "Crypto Gas Fees Tax Guide for Transaction Cost Deduction (2026)",
+    description:
+      "Deduct crypto gas fees tax: transaction costs, fee tracking, investment expense, and cryptocurrency transaction deduction.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Gas fees may be deductible. This guide explains when and how to deduct transaction costs on crypto trades.",
+    steps: [
+      "Understand deduction: gas fees reduce capital gains when selling crypto.",
+      "Track all fees: wallet transaction history shows gas paid for each trade.",
+      "Add to cost basis: gas paid to acquire crypto increases purchase price.",
+      "Reduce sale proceeds: gas paid to sell crypto reduces sale proceeds.",
+      "Document carefully: separate investment vs personal transaction fees.",
+    ],
+  },
+  {
+    slug: "mortgage-refinance-break-even-guide",
+    title: "Mortgage Refinance Break-Even Guide for Cost Analysis (2026)",
+    description:
+      "Calculate mortgage refinance break-even: closing costs, rate reduction, monthly savings, and refinance timing decision.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Break-even determines refinance value. This guide explains closing costs, rate reduction, and timing analysis.",
+    steps: [
+      "Calculate closing costs: refinance fees typically 2-5% of loan amount.",
+      "Estimate monthly savings: payment reduction from lower interest rate.",
+      "Compute break-even: closing costs ÷ monthly savings = months to recoup.",
+      "Assess time horizon: stay in home longer than break-even to benefit.",
+      "Consider rate drop: 0.5-1% rate reduction typical refinance threshold.",
+    ],
+  },
+  {
+    slug: "tax-home-office-deduction-guide",
+    title: "Tax Home Office Deduction Guide for Remote Workers (2026)",
+    description:
+      "Claim home office deduction: exclusive use requirement, calculation methods, expense allocation, and remote work tax benefit.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Home office deduction available for remote workers. This guide explains requirements, methods, and expense tracking.",
+    steps: [
+      "Meet exclusive use: space used regularly and exclusively for business.",
+      "Choose calculation method: simplified $5/sq ft or actual expense method.",
+      "Simplified method: $5 per square foot, max 300 sq ft, $1,500 deduction.",
+      "Actual expense method: mortgage interest, utilities, insurance pro-rated.",
+      "Track expenses: maintain records of all home expenses for allocation.",
+    ],
+  },
+  {
+    slug: "retirement-social-security-benefits-guide",
+    title: "Retirement Social Security Benefits Guide for Income Planning (2026)",
+    description:
+      "Calculate Social Security benefits: eligibility age, benefit amount, spousal benefits, and retirement income planning.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Social Security provides retirement income. This guide explains eligibility, benefit calculation, and timing.",
+    steps: [
+      "Know eligibility: 40 quarters (10 years) of work required for benefits.",
+      "Understand full retirement age: 66-67 for most current retirees.",
+      "Calculate benefit: based on highest 35 years of indexed earnings.",
+      "Consider early claiming: age 62 reduces benefit by 25-30% permanently.",
+      "Delay for increase: waiting to age 70 increases benefit by 8% per year.",
+    ],
+  },
+  {
+    slug: "term-life-insurance-guide",
+    title: "Term Life Insurance Guide for Family Protection (2026)",
+    description:
+      "Understand term life insurance: coverage duration, premium cost, death benefit, and family financial protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Term life provides affordable coverage for set period. This guide explains duration, costs, and benefit selection.",
+    steps: [
+      "Understand term coverage: fixed premium for set period (10, 20, 30 years).",
+      "Determine coverage amount: 10-15 times annual income recommended.",
+      "Choose term length: match to financial obligations (mortgage, children).",
+      "Compare premiums: younger and healthier means lower premiums.",
+      "No cash value: term life pure death benefit, no investment component.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
