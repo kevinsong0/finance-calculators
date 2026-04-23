@@ -3623,6 +3623,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Check homeowners endorsement: some policies include identity theft coverage.",
     ],
   },
+  {
+    slug: "crypto-tax-documentation-mistakes-guide",
+    title: "Crypto Tax Documentation Mistakes Guide for Audit Prevention (2026)",
+    description:
+      "Avoid crypto tax documentation mistakes: incomplete records, missing basis, unreported wallets, and documentation failures for audit prevention.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Documentation mistakes cause audit issues. This guide explains incomplete records, missing basis, unreported wallets, and documentation failures.",
+    steps: [
+      "Track all wallets: every wallet used must have transaction records.",
+      "Document cost basis: missing basis creates audit risk, track all acquisitions.",
+      "Report exchange data: match 1099-K data with your records, reconcile discrepancies.",
+      "Maintain transfer logs: wallet-to-wallet transfers need documentation.",
+      "Preserve records: crypto records needed for 7 years minimum for audit defense.",
+    ],
+  },
+  {
+    slug: "mortgage-property-tax-implications-guide",
+    title: "Mortgage Property Tax Implications Guide for Homeownership Costs (2026)",
+    description:
+      "Understand property tax implications for mortgage: property tax escrow, tax deduction, assessment timing, and property tax planning for homeowners.",
+    category: "mortgage",
+    targetProductHref: "/tools/property-tax-calculator",
+    targetProductLabel: "Property Tax Calculator",
+    summary:
+      "Property tax affects homeownership cost. This guide explains escrow, deduction, assessment, and tax planning for mortgage borrowers.",
+    steps: [
+      "Calculate property tax: assessed value × tax rate, varies by locality.",
+      "Understand escrow: lender collects property tax monthly, pays annually.",
+      "Deduct property tax: SALT deduction up to $10,000 combined with state income tax.",
+      "Monitor assessment: property reassessment after purchase, value changes affect tax.",
+      "Plan tax increase: new development, rate changes can increase property tax.",
+    ],
+  },
+  {
+    slug: "tax-refund-direct-deposit-guide",
+    title: "Tax Refund Direct Deposit Guide for Faster Payment (2026)",
+    description:
+      "Set up tax refund direct deposit: bank account setup, routing verification, split deposit, and refund tracking for faster tax refund payment.",
+    category: "tax",
+    targetProductHref: "/tools/tax-refund-estimator-calculator",
+    targetProductLabel: "Tax Refund Estimator Calculator",
+    summary:
+      "Direct deposit speeds tax refund. This guide explains bank setup, routing verification, split deposit, and refund tracking.",
+    steps: [
+      "Enter bank account: routing number and account number on tax return.",
+      "Verify routing number: correct routing prevents deposit failure.",
+      "Consider split deposit: refund can split across multiple accounts.",
+      "Track refund status: IRS Where's My Refund tool shows processing status.",
+      "Allow processing time: direct deposit typically 5-21 days after filing.",
+    ],
+  },
+  {
+    slug: "social-security-wep-gpo-impact-guide",
+    title: "Social Security WEP GPO Impact Guide for Public Employees (2026)",
+    description:
+      "Understand Social Security WEP GPO impact: windfall elimination provision, government pension offset, reduction calculation, and public employee benefit impact.",
+    category: "retirement",
+    targetProductHref: "/tools/windfall-elimination-provision-calculator",
+    targetProductLabel: "Windfall Elimination Provision Calculator",
+    summary:
+      "WEP and GPO reduce Social Security for public pension recipients. This guide explains reduction calculation and public employee impact.",
+    steps: [
+      "Understand WEP: reduces Social Security for workers with non-SS-covered pension.",
+      "Calculate WEP reduction: maximum $558 reduction (2026), affects first bend point.",
+      "Apply GPO: reduces spousal/survivor benefit by 2/3 of government pension.",
+      "Track years of SS coverage: 30+ years SS-covered employment exempts WEP.",
+      "Plan for reductions: WEP/GPO significantly reduces expected Social Security.",
+    ],
+  },
+  {
+    slug: "critical-illness-insurance-guide",
+    title: "Critical Illness Insurance Guide for Health Event Protection (2026)",
+    description:
+      "Understand critical illness insurance coverage: covered conditions, payout structure, premium costs, and illness coverage for health event financial protection.",
+    category: "insurance",
+    targetProductHref: "/tools/health-insurance-calculator",
+    targetProductLabel: "Health Insurance Calculator",
+    summary:
+      "Critical illness insurance pays lump sum for diagnosis. This guide explains covered conditions, payout, premium, and coverage selection.",
+    steps: [
+      "Review covered conditions: cancer, heart attack, stroke typically covered.",
+      "Understand payout structure: lump sum payment upon diagnosis, use for any expense.",
+      "Calculate premium: younger age lower premium, health history affects cost.",
+      "Compare coverage amounts: $10K-$100K typical, choose based on financial need.",
+      "Evaluate vs health insurance: critical illness supplements, not replaces health coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
