@@ -5423,6 +5423,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Document belongings: inventory photos, receipts help claims process.",
     ],
   },
+  {
+    slug: "crypto-dao-tax-guide",
+    title: "Crypto DAO Tax Guide for Governance Token Income (2026)",
+    description:
+      "Report crypto DAO tax: governance tokens, voting rewards, treasury distributions, and decentralized organization taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "DAO tokens may create taxable income. This guide explains governance tokens, rewards, and reporting requirements.",
+    steps: [
+      "Understand DAO: decentralized autonomous organization with governance tokens.",
+      "Governance tokens: receipt may be taxable income at fair market value.",
+      "Voting rewards: tokens received for voting likely taxable income.",
+      "Treasury distributions: direct distributions to members taxable income.",
+      "Document participation: track all token receipts, voting events, distributions.",
+    ],
+  },
+  {
+    slug: "mortgage-co-signer-guide",
+    title: "Mortgage Co Signer Guide for Loan Assistance (2026)",
+    description:
+      "Understand mortgage co signer: qualification requirements, credit impact, liability risk, and loan assistance options.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Co-signer helps borrower qualify but takes on risk. This guide explains requirements, impact, and liability.",
+    steps: [
+      "Understand role: co-signer equally responsible for mortgage debt.",
+      "Credit impact: mortgage appears on co-signer's credit report.",
+      "Qualification requirement: co-signer must meet lender credit/income standards.",
+      "Release options: some loans allow co-signer release after borrower proves credit.",
+      "Consider risks: co-signer liable if borrower defaults, credit damaged.",
+    ],
+  },
+  {
+    slug: "tax-investment-income-guide",
+    title: "Tax Investment Income Guide for Dividend and Interest (2026)",
+    description:
+      "Report investment income tax: dividends, interest, capital gains, qualified vs ordinary, and investment income taxation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Investment income has specific tax treatment. This guide explains dividends, interest, and capital gains reporting.",
+    steps: [
+      "Qualified dividends: taxed at capital gains rates, 0%, 15%, 20%.",
+      "Ordinary dividends: taxed at regular income tax rates.",
+      "Interest income: taxable as ordinary income, reported on 1099-INT.",
+      "Capital gains: short-term ordinary rates, long-term capital rates.",
+      "Schedule B required: report interest/dividends exceeding $1,500.",
+    ],
+  },
+  {
+    slug: "retirement-bucket-strategy-guide",
+    title: "Retirement Bucket Strategy Guide for Portfolio Allocation (2026)",
+    description:
+      "Implement retirement bucket strategy: cash bucket, income bucket, growth bucket, and retirement withdrawal approach.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Bucket strategy organizes retirement assets. This guide explains cash, income, and growth buckets for withdrawals.",
+    steps: [
+      "Cash bucket: 2-3 years expenses in cash, no market risk.",
+      "Income bucket: 3-7 years in bonds/dividend stocks, moderate risk.",
+      "Growth bucket: remaining in stocks, long-term growth potential.",
+      "Withdraw from cash: replenish from income bucket periodically.",
+      "Rebalance annually: move gains from growth to income to cash.",
+    ],
+  },
+  {
+    slug: "motorcycle-insurance-guide",
+    title: "Motorcycle Insurance Guide for Bike Coverage (2026)",
+    description:
+      "Understand motorcycle insurance: liability requirements, coverage options, premium factors, and bike protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Motorcycle insurance protects riders. This guide explains liability, coverage, and premium factors.",
+    steps: [
+      "Liability required: state minimum liability coverage mandatory.",
+      "Collision coverage: repairs/replacement for at-fault accidents.",
+      "Comprehensive coverage: theft, vandalism, weather damage protection.",
+      "Uninsured motorist: coverage if hit by driver without insurance.",
+      "Premium factors: bike type, engine size, rider age, riding history.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
