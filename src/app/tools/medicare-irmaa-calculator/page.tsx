@@ -1,0 +1,14 @@
+'use client'
+
+import MedicareIRMAACalculator from '@/components/MedicareIRMAACalculator'
+
+export default function MedicareIRMAACalculatorPage() {
+  const faqs = [
+    { question: 'What is Medicare IRMAA?', answer: 'IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare Part B/D premium surcharge for high-income beneficiaries. Based on MAGI from 2 years prior (2022 income affects 2024 IRMAA). Thresholds 2024 (single): under $103K = standard, $103K-$129K = +$74.90, $129K-$161K = +$209.90, $161K-$193K = +$344.90, $193K-$500K = +$479.90. Married thresholds double. Part D surcharge added separately. Affects Medicare Part B and Part D premiums.' },
+    { question: 'How to avoid Medicare IRMAA?', answer: 'Reduce MAGI 2 years before Medicare enrollment. Strategies: use Roth withdrawals (not counted), tax-loss harvesting, Qualified Charitable Distribution (QCD), delay capital gains, convert Traditional to Roth before age 63. Roth conversions increase MAGI in conversion year but reduce future RMDs. Plan ahead: IRMAA based on income from 2 prior years. Appeal for life-changing events: marriage, divorce, death of spouse, work stoppage, reduced income.' },
+    { question: 'Does Roth IRA withdrawal affect IRMAA?', answer: 'Roth IRA withdrawals do NOT count toward MAGI for IRMAA. Traditional IRA/401(k) withdrawals, capital gains, interest, dividends all count. Use Roth for income in years affecting IRMAA calculation. Example: need $50K in 2026 (affects 2028 IRMAA): Roth withdrawal keeps MAGI low, Traditional withdrawal increases MAGI and triggers IRMAA surcharge. Roth ideal for managing Medicare premium costs.' },
+    { question: 'Can I appeal Medicare IRMAA?', answer: 'Yes, appeal for life-changing events: marriage, divorce, annulment, death of spouse, work stoppage/retirement, loss of income-producing property, reduction/loss of pension income. File SSA-44 form within 60 days of IRMAA determination. Provide documentation of event and income reduction. Appeal can reduce IRMAA to standard premium level. Not appealable for: market losses, business losses (unless complete closure), voluntary income reduction without life-changing event.' },
+    { question: 'How much is Medicare Part B with IRMAA?', answer: 'Standard Part B premium 2024: $174.70/month. IRMAA surcharges (single): Bracket 1 (under $103K): $0 surcharge, total $174.70. Bracket 2 ($103K-$129K): +$74.00, total $248.70. Bracket 3 ($129K-$161K): +$209.40, total $384.10. Bracket 4 ($161K-$193K): +$344.70, total $519.40. Bracket 5 ($193K-$500K): +$479.40, total $654.10. Bracket 6 (over $500K): +$479.40, total $654.10. Part D adds separate surcharge.' },
+  ]
+  return (<><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity: faqs.map(faq => ({'@type':'Question',name: faq.question,acceptedAnswer:{'@type':'Answer',text: faq.answer}}))})}}/><MedicareIRMAACalculator /></>)
+}

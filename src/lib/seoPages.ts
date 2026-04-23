@@ -2993,6 +2993,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Consider spousal benefit: annuity can include survivor benefit, lump sum inheritance.",
     ],
   },
+  {
+    slug: "crypto-wallet-security-best-practices-guide",
+    title: "Crypto Wallet Security Best Practices Guide for Asset Protection (2026)",
+    description:
+      "Implement crypto wallet security best practices: seed phrase storage, hardware wallet usage, phishing prevention, and security protocols for digital asset protection.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Wallet security protects crypto from theft and loss. This guide explains seed phrase storage, hardware wallets, and security protocols.",
+    steps: [
+      "Store seed phrase offline: metal storage, multiple locations, never digital.",
+      "Use hardware wallet: Ledger, Trezor for significant holdings, cold storage.",
+      "Avoid phishing: verify URLs, bookmark official sites, never share seed phrase.",
+      "Enable security features: multi-factor authentication, withdrawal whitelists.",
+      "Test recovery: verify seed phrase recovery works before storing large amounts.",
+    ],
+  },
+  {
+    slug: "mortgage-assumption-vs-new-mortgage-guide",
+    title: "Mortgage Assumption vs New Mortgage Guide for Home Buyer Decision (2026)",
+    description:
+      "Compare mortgage assumption vs new mortgage: assumable loan types, qualification requirements, rate comparison, and buyer decision criteria.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Mortgage assumption transfers existing loan to buyer. This guide explains assumable types, qualification, and comparison to new financing.",
+    steps: [
+      "Check loan assumability: FHA, VA loans assumable, most conventional not assumable.",
+      "Verify qualification: buyer must meet lender credit and income requirements.",
+      "Compare rate benefit: assumption worthwhile if existing rate lower than current rates.",
+      "Calculate assumption fee: typically 0.5-1% assumption fee plus processing costs.",
+      "Consider equity payment: buyer pays seller difference between price and loan balance.",
+    ],
+  },
+  {
+    slug: "tax-identity-theft-protection-guide",
+    title: "Tax Identity Theft Protection Guide for IRS Fraud Prevention (2026)",
+    description:
+      "Protect against tax identity theft: early filing, IP PIN registration, refund monitoring, and fraud prevention strategies for IRS return security.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Tax identity theft causes refund theft and fraud. This guide explains protection strategies, IP PIN, and fraud prevention for return security.",
+    steps: [
+      "File early: submit return before thieves can file fraudulent return.",
+      "Register IP PIN: IRS identity protection PIN prevents fraudulent filing.",
+      "Monitor refund status: check IRS refund tracker for processing delays.",
+      "Protect personal info: secure SSN, avoid phishing, use identity theft protection.",
+      "Report fraud immediately: contact IRS if receive fraudulent return notice.",
+    ],
+  },
+  {
+    slug: "401k-match-maximization-guide",
+    title: "401(k) Match Maximization Guide for Employer Benefit Capture (2026)",
+    description:
+      "Maximize 401(k) employer match: match formula understanding, contribution timing, true-up provisions, and full benefit capture strategies.",
+    category: "retirement",
+    targetProductHref: "/tools/401k-contribution-calculator",
+    targetProductLabel: "401(k) Contribution Calculator",
+    summary:
+      "Employer match is free retirement money. This guide explains match formulas, timing, and strategies to capture full employer benefit.",
+    steps: [
+      "Understand match formula: common formulas 50% up to 6%, 100% up to 3-5%.",
+      "Calculate required contribution: contribute enough to receive full employer match.",
+      "Check true-up provision: some plans true-up match at year-end if front-loaded.",
+      "Avoid missing match: contribute at least match threshold, don't leave money unclaimed.",
+      "Consider immediate vesting: some plans immediately vest match, others require years.",
+    ],
+  },
+  {
+    slug: "flood-insurance-coverage-guide",
+    title: "Flood Insurance Coverage Guide for Property Protection (2026)",
+    description:
+      "Understand flood insurance coverage: NFIP vs private, coverage limits, waiting period, and flood zone requirements for property protection.",
+    category: "insurance",
+    targetProductHref: "/tools/homeowners-insurance-calculator",
+    targetProductLabel: "Homeowners Insurance Calculator",
+    summary:
+      "Flood insurance covers water damage not included in homeowners policy. This guide explains NFIP, private options, coverage, and requirements.",
+    steps: [
+      "Check flood zone: FEMA flood maps determine zone and insurance requirements.",
+      "Compare NFIP vs private: NFIP max $250K building, $100K contents, private higher limits.",
+      "Understand waiting period: NFIP 30-day waiting period, private may be shorter.",
+      "Verify mortgage requirement: flood zones require flood insurance for mortgage.",
+      "Evaluate coverage gaps: both options exclude certain flood damage types.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {

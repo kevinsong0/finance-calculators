@@ -17,7 +17,10 @@ export default function Home() {
     const texts: Record<string, Record<string, string>> = {
       title: { en: 'Professional Financial Calculators', zh: '专业金融计算工具' },
       subtitle: { en: 'Accurate calculations for smarter financial decisions', zh: '精准计算、智能分析，助您做出更明智的财务决策' },
-      cta: { en: 'Start Calculating', zh: '立即开始计算' },
+      cta: { en: 'Open Finance Hub', zh: '进入总入口' },
+      ctaSecondary: { en: 'Mortgage Calculator', zh: '房贷计算器' },
+      hubTitle: { en: 'Finance Hub', zh: '金融总入口' },
+      hubDesc: { en: 'Start with tax, mortgage, investment, or budgeting hubs to reach the right tool faster', zh: '先进入税务、房贷、投资或预算总入口，更快找到对应工具' },
       mortgageTitle: { en: 'Mortgage Calculator', zh: '房贷计算器' },
       mortgageDesc: { en: 'Calculate payments, interest, and early repayment strategies', zh: '计算月供、总利息，分析提前还款策略' },
       compoundTitle: { en: 'Compound Interest', zh: '复利计算器' },
@@ -40,7 +43,50 @@ export default function Home() {
       <section className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{t('title')}</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">{t('subtitle')}</p>
-        <Link href="/tools/mortgage-calculator" className="btn-primary">{t('cta')}</Link>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link href="/tools/finance-hub" className="btn-primary">{t('cta')}</Link>
+          <Link href="/tools/mortgage-calculator" className="rounded-full border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-gray-900 transition">
+            {t('ctaSecondary')}
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-white border border-gray-200 rounded-2xl p-8 mb-16 shadow-sm">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600 mb-2">{t('hubTitle')}</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">{t('hubDesc')}</h2>
+            <p className="text-gray-600 max-w-2xl">
+              Use the hubs to move through tax, mortgage, and investment decisions without getting lost in the long tail of tools.
+            </p>
+          </div>
+          <Link href="/tools/finance-hub" className="text-primary-700 font-semibold hover:underline">
+            Open the full hub →
+          </Link>
+        </div>
+      </section>
+
+      <section className="grid md:grid-cols-4 gap-4 mb-16">
+        <Link href="/tools/finance-hub" className="card hover:shadow-md">
+          <div className="text-4xl mb-4">🧭</div>
+          <h2 className="text-xl font-semibold mb-2">{t('hubTitle')}</h2>
+          <p className="text-gray-600">{t('hubDesc')}</p>
+        </Link>
+        <Link href="/tools/tax-hub" className="card hover:shadow-md">
+          <div className="text-4xl mb-4">🧾</div>
+          <h2 className="text-xl font-semibold mb-2">Tax Hub</h2>
+          <p className="text-gray-600">Crypto, IRS, capital gains, and deduction planning</p>
+        </Link>
+        <Link href="/tools/mortgage-hub" className="card hover:shadow-md">
+          <div className="text-4xl mb-4">🏡</div>
+          <h2 className="text-xl font-semibold mb-2">Mortgage Hub</h2>
+          <p className="text-gray-600">Payment, refinance, HELOC, and home affordability</p>
+        </Link>
+        <Link href="/tools/investment-hub" className="card hover:shadow-md">
+          <div className="text-4xl mb-4">📊</div>
+          <h2 className="text-xl font-semibold mb-2">Investment Hub</h2>
+          <p className="text-gray-600">ROI, portfolio analysis, compound growth, and retirement</p>
+        </Link>
       </section>
 
       <section className="grid md:grid-cols-3 gap-6 mb-16">

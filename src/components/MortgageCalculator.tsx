@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import {
   LineChart,
   Line,
@@ -13,6 +13,12 @@ import {
   AreaChart,
   Area,
 } from 'recharts';
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 // 房贷计算核心逻辑
 function calculateMortgage(
@@ -90,6 +96,9 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
   const [earlyPayMonth, setEarlyPayMonth] = useState(12);
   const [earlyPayAmount, setEarlyPayAmount] = useState(50000);
   const [earlyPayMethod, setEarlyPayMethod] = useState<'reduce-term' | 'reduce-payment'>('reduce-term');
+  const hasInteractionRef = useRef(false);
+  const leadTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastLeadSignatureRef = useRef('');
 
   const months = years * 12;
   const result = useMemo(() => calculateMortgage(principal, rate, months, method), [principal, rate, months, method]);
@@ -143,6 +152,90 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
       maximumFractionDigits: 0,
     }).format(n);
   };
+
+  const markInteraction = () => {
+    hasInteractionRef.current = true;
+  };
+
+  const updatePrincipal = (value: number) => {
+    markInteraction();
+    setPrincipal(value);
+  };
+
+  const updateYears = (value: number) => {
+    markInteraction();
+    setYears(value);
+  };
+
+  const updateRate = (value: number) => {
+    markInteraction();
+    setRate(value);
+  };
+
+  const updateMethod = (value: 'equal-interest' | 'equal-principal') => {
+    markInteraction();
+    setMethod(value);
+  };
+
+  const toggleEarlyPay = () => {
+    markInteraction();
+    setShowEarlyPay((prev) => !prev);
+  };
+
+  const updateEarlyPayMonth = (value: number) => {
+    markInteraction();
+    setEarlyPayMonth(value);
+  };
+
+  const updateEarlyPayAmount = (value: number) => {
+    markInteraction();
+    setEarlyPayAmount(value);
+  };
+
+  const updateEarlyPayMethod = (value: 'reduce-term' | 'reduce-payment') => {
+    markInteraction();
+    setEarlyPayMethod(value);
+  };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!hasInteractionRef.current) return;
+    if (!Number.isFinite(principal) || !Number.isFinite(rate) || !Number.isFinite(years)) return;
+    if (principal <= 0 || rate <= 0 || years <= 0) return;
+
+    if (leadTimerRef.current) clearTimeout(leadTimerRef.current);
+    leadTimerRef.current = setTimeout(() => {
+      const signature = [
+        principal,
+        years,
+        rate,
+        method,
+        showEarlyPay ? 1 : 0,
+        earlyPayMonth,
+        earlyPayAmount,
+        earlyPayMethod,
+      ].join('|');
+
+      if (signature === lastLeadSignatureRef.current) return;
+      lastLeadSignatureRef.current = signature;
+
+      window.gtag?.('event', 'generate_lead_signal', {
+        source_site: 'finance',
+        tool_name: 'mortgage_calculator',
+        lead_type: 'calculation',
+        loan_amount: principal,
+        interest_rate: rate,
+        term_years: years,
+        payment_method: method,
+        has_early_pay: showEarlyPay,
+        page_path: window.location.pathname,
+      });
+    }, 450);
+
+    return () => {
+      if (leadTimerRef.current) clearTimeout(leadTimerRef.current);
+    };
+  }, [principal, years, rate, method, showEarlyPay, earlyPayMonth, earlyPayAmount, earlyPayMethod]);
 
   // 翻译文本
   const t = (key: string) => {
@@ -206,7 +299,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
                 <input
                   type="number"
                   value={principal}
-                  onChange={(e) => setPrincipal(Number(e.target.value))}
+                  onChange={(e) => updatePrincipal(Number(e.target.value))}
                   className="w-full pl-8"
                 />
               </div>
@@ -214,7 +307,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
                 {[100000, 300000, 500000, 750000].map((v) => (
                   <button
                     key={v}
-                    onClick={() => setPrincipal(v)}
+                    onClick={() => updatePrincipal(v)}
                     className="px-3 py-1 text-xs bg-gray-100 rounded hover:bg-gray-200"
                   >
                     ${formatMoneyShort(v)}
@@ -228,7 +321,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
               <input
                 type="number"
                 value={rate}
-                onChange={(e) => setRate(Number(e.target.value))}
+                onChange={(e) => updateRate(Number(e.target.value))}
                 step={0.125}
                 className="w-full"
               />
@@ -236,7 +329,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
                 {[5.5, 6.0, 6.5, 7.0, 7.5].map((r) => (
                   <button
                     key={r}
-                    onClick={() => setRate(r)}
+                    onClick={() => updateRate(r)}
                     className="px-3 py-1 text-xs bg-gray-100 rounded hover:bg-gray-200"
                   >
                     {r}%
@@ -247,7 +340,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
 
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 mb-2">{t('loanTerm')}</label>
-              <select value={years} onChange={(e) => setYears(Number(e.target.value))}>
+              <select value={years} onChange={(e) => updateYears(Number(e.target.value))}>
                 {[10, 15, 20, 25, 30].map((y) => (
                   <option key={y} value={y}>{y} {t('years')} ({y * 12} {locale === 'en' ? 'months' : '个月'})</option>
                 ))}
@@ -258,7 +351,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
               <label className="block text-sm font-medium text-gray-700 mb-2">{t('paymentMethod')}</label>
               <div className="grid grid-cols-2 gap-2">
                 <button
-                  onClick={() => setMethod('equal-interest')}
+                  onClick={() => updateMethod('equal-interest')}
                   className={`py-2 px-3 rounded-lg text-sm transition-colors ${
                     method === 'equal-interest' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
@@ -266,7 +359,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
                   {t('equalInterest')}
                 </button>
                 <button
-                  onClick={() => setMethod('equal-principal')}
+                  onClick={() => updateMethod('equal-principal')}
                   className={`py-2 px-3 rounded-lg text-sm transition-colors ${
                     method === 'equal-principal' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
@@ -282,7 +375,7 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
             {/* 提前还款 */}
             <div className="border-t pt-4">
               <button
-                onClick={() => setShowEarlyPay(!showEarlyPay)}
+                onClick={toggleEarlyPay}
                 className="flex items-center gap-2 text-sm font-medium text-gray-700"
               >
                 <svg className={`w-4 h-4 transition-transform ${showEarlyPay ? 'rotate-90' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -294,26 +387,26 @@ export default function MortgageCalculator({ locale }: { locale: 'en' | 'zh' }) 
                 <div className="mt-4 space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">{t('earlyPayMonth')}</label>
-                    <input type="number" value={earlyPayMonth} onChange={(e) => setEarlyPayMonth(Number(e.target.value))} className="w-full" />
+                    <input type="number" value={earlyPayMonth} onChange={(e) => updateEarlyPayMonth(Number(e.target.value))} className="w-full" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">{t('earlyPayAmount')}</label>
                     <div className="relative">
                       <span className="absolute left-3 top-3 text-gray-500">$</span>
-                      <input type="number" value={earlyPayAmount} onChange={(e) => setEarlyPayAmount(Number(e.target.value))} className="w-full pl-8" />
+                      <input type="number" value={earlyPayAmount} onChange={(e) => updateEarlyPayAmount(Number(e.target.value))} className="w-full pl-8" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">{t('earlyPayMethod')}</label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
-                        onClick={() => setEarlyPayMethod('reduce-term')}
+                        onClick={() => updateEarlyPayMethod('reduce-term')}
                         className={`py-2 px-3 rounded-lg text-sm transition-colors ${earlyPayMethod === 'reduce-term' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-600'}`}
                       >
                         {t('reduceTerm')}
                       </button>
                       <button
-                        onClick={() => setEarlyPayMethod('reduce-payment')}
+                        onClick={() => updateEarlyPayMethod('reduce-payment')}
                         className={`py-2 px-3 rounded-lg text-sm transition-colors ${earlyPayMethod === 'reduce-payment' ? 'bg-primary-600 text-white' : 'bg-gray-100 text-gray-600'}`}
                       >
                         {t('reducePayment')}
