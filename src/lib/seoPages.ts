@@ -4973,6 +4973,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Quick payout: designed for fast claim processing for immediate needs.",
     ],
   },
+  {
+    slug: "crypto-margin-trading-tax-guide",
+    title: "Crypto Margin Trading Tax Guide for Leveraged Gains (2026)",
+    description:
+      "Report crypto margin trading tax: leveraged gains, interest deduction, liquidation events, and margin loan tax treatment.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Margin trading amplifies gains and losses. This guide explains leveraged taxation, interest deduction, and liquidation.",
+    steps: [
+      "Understand margin: borrow funds to amplify trading position.",
+      "Report gains/losses: amplified by leverage factor, standard capital gains.",
+      "Deduct interest: margin loan interest reduces net gains.",
+      "Liquidation events: forced sale creates taxable event at liquidation price.",
+      "Track carefully: margin positions complex, multiple taxable events.",
+    ],
+  },
+  {
+    slug: "mortgage-interim-interest-guide",
+    title: "Mortgage Interim Interest Guide for Closing Costs (2026)",
+    description:
+      "Understand mortgage interim interest: per-diem calculation, closing timing, prepaid interest, and loan closing costs.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Interim interest covers gap between closing and first payment. This guide explains per-diem calculation and timing.",
+    steps: [
+      "Understand interim: interest from closing date to first payment date.",
+      "Calculate per-diem: annual interest ÷ 365 = daily interest rate.",
+      "Multiply by days: per-diem × days until first payment.",
+      "Pay at closing: interim interest part of closing costs, prepaid.",
+      "Reduce cost: close late in month to minimize interim interest days.",
+    ],
+  },
+  {
+    slug: "tax-filing-status-guide",
+    title: "Tax Filing Status Guide for Return Selection (2026)",
+    description:
+      "Choose tax filing status: single, married filing jointly, head of household, and filing status tax implications.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Filing status affects tax brackets and deductions. This guide explains options and selection criteria.",
+    steps: [
+      "Single status: unmarried or legally separated as of December 31.",
+      "Married filing jointly: married couples file one return, lower tax.",
+      "Married filing separately: higher tax, may benefit for certain situations.",
+      "Head of household: unmarried with dependent, lower tax than single.",
+      "Qualifying widow(er): use joint rates for 2 years after spouse death.",
+    ],
+  },
+  {
+    slug: "retirement-early-retirement-guide",
+    title: "Retirement Early Retirement Guide for Planning (2026)",
+    description:
+      "Plan early retirement: withdrawal strategies, healthcare coverage, income sources, and retirement before age 65.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Early retirement requires careful planning. This guide explains withdrawal, healthcare, and income strategies.",
+    steps: [
+      "Calculate needs: 70-80% of working income typically needed.",
+      "Plan withdrawals: 4% rule sustainable withdrawal rate.",
+      "Address healthcare: private insurance until Medicare at age 65.",
+      "Sequence withdrawals: taxable accounts first, tax-deferred later.",
+      "Consider part-time work: bridge income reduces withdrawal pressure.",
+    ],
+  },
+  {
+    slug: "travel-insurance-guide",
+    title: "Travel Insurance Guide for Trip Protection (2026)",
+    description:
+      "Understand travel insurance: trip cancellation, medical coverage, baggage loss, and travel protection coverage.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Travel insurance protects against trip disruptions. This guide explains cancellation, medical, and coverage options.",
+    steps: [
+      "Understand cancellation: reimbursement for covered trip cancellation.",
+      "Medical coverage: emergency medical care while traveling abroad.",
+      "Baggage protection: coverage for lost, stolen, or delayed luggage.",
+      "Know exclusions: pre-existing conditions, cancel for any reason rider.",
+      "Compare policies: cost typically 4-8% of total trip cost.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
