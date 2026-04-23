@@ -5153,6 +5153,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Monitor proactively: prevention services monitor credit, alerts on activity.",
     ],
   },
+  {
+    slug: "crypto-cross-chain-tax-guide",
+    title: "Crypto Cross Chain Tax Guide for Bridge Transfers (2026)",
+    description:
+      "Report crypto cross chain tax: bridge transfers, chain swapping, taxable events, and multi-chain cryptocurrency taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Cross-chain bridges may trigger taxable events. This guide explains transfers, swapping, and multi-chain reporting.",
+    steps: [
+      "Understand bridges: move crypto between different blockchain networks.",
+      "Evaluate tax treatment: wrapped tokens may create taxable event.",
+      "Track source chain: original token has established cost basis.",
+      "Document destination: wrapped token on new chain, same or new basis.",
+      "Consult guidance: IRS hasn't issued specific bridge rules, professional advice.",
+    ],
+  },
+  {
+    slug: "mortgage-second-home-guide",
+    title: "Mortgage Second Home Guide for Vacation Property (2026)",
+    description:
+      "Finance mortgage second home: loan requirements, down payment, interest rates, and vacation property financing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Second home mortgage has specific requirements. This guide explains financing, down payment, and interest rates.",
+    steps: [
+      "Understand classification: vacation home, not rental property.",
+      "Expect higher requirements: larger down payment, higher interest rates.",
+      "Typical down payment: 10-20% minimum for second home purchase.",
+      "Interest rates: 0.5-1% higher than primary residence mortgage.",
+      "Tax implications: mortgage interest deductible up to $750,000 total.",
+    ],
+  },
+  {
+    slug: "tax-education-credit-guide",
+    title: "Tax Education Credit Guide for Student Tax Benefit (2026)",
+    description:
+      "Claim education tax credit: American Opportunity, Lifetime Learning, eligibility, and student tax benefits.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Education credits reduce tax for students. This guide explains American Opportunity, Lifetime Learning, and eligibility.",
+    steps: [
+      "American Opportunity: up to $2,500 per student, first 4 years of college.",
+      "Lifetime Learning: up to $2,000 per return, any post-secondary education.",
+      "Eligibility: enrolled at eligible institution, paying qualified expenses.",
+      "Refundable portion: American Opportunity 40% refundable ($1,000 max).",
+      "Cannot double claim: same student, same expenses, choose one credit.",
+    ],
+  },
+  {
+    slug: "retirement-health-savings-account-guide",
+    title: "Retirement Health Savings Account Guide for Medical Savings (2026)",
+    description:
+      "Use HSA for retirement: triple tax advantage, contribution limits, medical savings, and healthcare retirement planning.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "HSA offers triple tax advantage for healthcare. This guide explains contributions, withdrawals, and retirement use.",
+    steps: [
+      "Understand HSA: tax-deductible contributions, tax-free growth, tax-free withdrawals.",
+      "Contribution limits: $4,150 individual, $8,300 family, $1,000 catch-up 55+.",
+      "Must have HDHP: high deductible health plan required to contribute.",
+      "Use for medical: withdrawals tax-free for qualified medical expenses.",
+      "After age 65: can withdraw for non-medical, taxed as ordinary income.",
+    ],
+  },
+  {
+    slug: "flood-insurance-guide",
+    title: "Flood Insurance Guide for Property Protection (2026)",
+    description:
+      "Understand flood insurance: coverage scope, NFIP program, premium cost, and property flood protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Flood insurance covers water damage not in standard policies. This guide explains NFIP, coverage, and costs.",
+    steps: [
+      "Understand need: standard home insurance excludes flood damage.",
+      "NFIP coverage: National Flood Insurance Program, federal program.",
+      "Coverage limits: $250,000 building, $100,000 contents maximum.",
+      "Premium factors: flood zone, building type, elevation, coverage amount.",
+      "Waiting period: 30-day waiting period before coverage effective.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
