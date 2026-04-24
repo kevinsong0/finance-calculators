@@ -6233,6 +6233,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Seasonal coverage: policies may be seasonal for winter storage.",
     ],
   },
+  {
+    slug: "crypto-mining-tax-guide",
+    title: "Crypto Mining Tax Guide for Bitcoin and Ethereum Miners (2026)",
+    description:
+      "Understand crypto mining taxes: mined coins taxable as income, business vs hobby, equipment depreciation, and mining tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto mining creates taxable income at FMV when coins are mined. This guide explains business classification, deductions, and reporting.",
+    steps: [
+      "Income recognition: mined coins taxable at FMV when received.",
+      "Business vs hobby: mining as business allows expense deductions.",
+      "Deductible expenses: electricity, equipment depreciation, pool fees.",
+      "Self-employment tax: mining income subject to SE tax if business.",
+      "Track basis: FMV at mining becomes cost basis for future sales.",
+    ],
+  },
+  {
+    slug: "mortgage-assumability-guide",
+    title: "Mortgage Assumability Guide for FHA and VA Loan Transfer (2026)",
+    description:
+      "Understand mortgage assumption: FHA assumable loans, VA loan transfer, qualification requirements, and assuming an existing mortgage.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Some mortgages are assumable - buyer takes over seller's existing loan. This guide explains FHA, VA assumability and qualification.",
+    steps: [
+      "FHA loans assumable: buyer must qualify and meet FHA credit standards.",
+      "VA loans assumable: buyer must be VA-eligible (veteran/military).",
+      "Conventional loans: rarely assumable, check loan documents.",
+      "Qualification required: credit, income, assets verified by lender.",
+      "Compare rates: assuming lower-rate loan may beat current market rates.",
+    ],
+  },
+  {
+    slug: "tax-alimony-deduction-guide",
+    title: "Tax Alimony Deduction Guide for Divorce Settlements (2026)",
+    description:
+      "Understand alimony tax rules: pre-2019 deduction, post-2019 changes, divorce agreement timing, and alimony tax treatment.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Alimony tax treatment changed in 2019. This guide explains deduction rules based on divorce agreement date.",
+    steps: [
+      "Pre-2019 agreements: payer deducts, recipient reports as income.",
+      "Post-2019 agreements: no deduction for payer, no income for recipient.",
+      "Modification rules: modifying pre-2019 agreement may change treatment.",
+      "Child support: never deductible, always tax-free to recipient.",
+      "Property settlement: transferring assets between spouses is tax-free.",
+    ],
+  },
+  {
+    slug: "retirement-phased-retirement-guide",
+    title: "Retirement Phased Retirement Guide for Partial Retirement (2026)",
+    description:
+      "Understand phased retirement: gradual transition, part-time work, pension bridge, and phased retirement programs.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Phased retirement allows gradual transition from full-time work. This guide explains programs, pension bridges, and planning.",
+    steps: [
+      "Gradual transition: reduce hours gradually rather than abrupt stop.",
+      "Pension bridge: some employers offer partial pension during transition.",
+      "Part-time work: supplement pension/Social Security with part-time income.",
+      "Health benefits: check if part-time status maintains health coverage.",
+      "Test retirement lifestyle: phased approach lets you adjust gradually.",
+    ],
+  },
+  {
+    slug: "insurance-gap-insurance-guide",
+    title: "Insurance Gap Insurance Guide for Auto Loan Coverage (2026)",
+    description:
+      "Understand gap insurance: auto loan coverage, lease gap protection, when to buy, and gap insurance cost.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Gap insurance covers difference between car value and loan balance. This guide explains when needed and cost considerations.",
+    steps: [
+      "Coverage purpose: pays difference if car totaled with loan balance.",
+      "When needed: long loan term, low down payment, fast depreciation.",
+      "Lease gap: typically included in lease contracts automatically.",
+      "Purchase options: dealer (expensive) or insurer (cheaper).",
+      "Cancel when equity positive: drop coverage once loan <= car value.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
