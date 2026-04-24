@@ -6323,6 +6323,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Cancel when equity positive: drop coverage once loan <= car value.",
     ],
   },
+  {
+    slug: "crypto-lending-tax-guide",
+    title: "Crypto Lending Tax Guide for DeFi and CeFi Interest (2026)",
+    description:
+      "Understand crypto lending taxes: interest income, collateral tax, DeFi lending, and CeFi platform taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto lending generates taxable interest income. This guide explains DeFi, CeFi, and collateral tax treatment.",
+    steps: [
+      "Interest income: crypto earned from lending taxable at FMV when received.",
+      "CeFi platforms: interest reported as ordinary income like bank interest.",
+      "DeFi lending: same tax treatment, track interest received in each token.",
+      "Collateral tax: using crypto as collateral doesn't trigger taxable event.",
+      "Liquidation events: collateral liquidation creates capital gain/loss.",
+    ],
+  },
+  {
+    slug: "mortgage-recast-guide",
+    title: "Mortgage Recast Guide for Lower Monthly Payments (2026)",
+    description:
+      "Understand mortgage recast: lump sum payment, lower payments, keep same rate, and recast vs refinance comparison.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Mortgage recast reduces payments after lump sum without refinancing. This guide explains process and cost comparison.",
+    steps: [
+      "What is recast: large payment applied to principal, payments recalculated.",
+      "Keep same rate: unlike refinance, original interest rate preserved.",
+      "Lower fees: recast fees $100-500 vs refinance closing costs 2-5%.",
+      "Qualification: most lenders allow, check eligibility requirements.",
+      "Compare options: recast for payment reduction, refinance for rate change.",
+    ],
+  },
+  {
+    slug: "tax-jury-duty-income-guide",
+    title: "Tax Jury Duty Income Guide for Court Service Pay (2026)",
+    description:
+      "Understand jury duty tax: court pay taxable, employer pay policy, mileage reimbursement, and jury duty income reporting.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Jury duty pay is taxable income. This guide explains reporting, employer policies, and mileage treatment.",
+    steps: [
+      "Taxable income: jury duty pay reported as miscellaneous income.",
+      "Employer policy: some employers pay full salary minus jury pay.",
+      "Report on return: include on Form 1040 as 'other income'.",
+      "Mileage non-taxable: transportation reimbursement not taxable.",
+      "Keep records: retain jury duty payment documentation for filing.",
+    ],
+  },
+  {
+    slug: "retirement-roth-ladder-guide",
+    title: "Retirement Roth Ladder Guide for Early Access (2026)",
+    description:
+      "Understand Roth conversion ladder: 5-year rule, early retirement access, tax planning, and Roth ladder strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/roth-conversion-calculator",
+    targetProductLabel: "Roth Conversion Calculator",
+    summary:
+      "Roth conversion ladder enables early access to retirement funds. This guide explains 5-year rule and strategy.",
+    steps: [
+      "Strategy: convert Traditional IRA to Roth each year in early retirement.",
+      "5-year rule: converted amount accessible penalty-free after 5 years.",
+      "Tax planning: pay conversion tax with non-retirement funds.",
+      "Early access: ladder provides penalty-free income before 59.5.",
+      "Annual conversions: start ladder 5 years before planned early retirement.",
+    ],
+  },
+  {
+    slug: "insurance-umbrella-policy-guide",
+    title: "Insurance Umbrella Policy Guide for Liability Coverage (2026)",
+    description:
+      "Understand umbrella insurance: liability excess coverage, high net worth protection, umbrella policy cost, and coverage limits.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Umbrella insurance provides liability coverage above home/auto limits. This guide explains when needed and cost.",
+    steps: [
+      "Coverage purpose: liability protection above underlying policy limits.",
+      "When needed: high net worth, rental properties, high-risk activities.",
+      "Typical cost: $150-300/year for $1 million coverage.",
+      "Underlying requirement: need max liability on home/auto first.",
+      "Coverage scope: includes libel, slander, some business liability.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
