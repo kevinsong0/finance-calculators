@@ -50,6 +50,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Crypto Tax Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate cryptocurrency capital gains tax for 2026 based on holding period, tax bracket, and cost basis method.",
+  "featureList": ["Short-term vs long-term tax rates", "Cost basis methods (FIFO, LIFO, Specific ID)", "Form 8949 reporting", "Crypto loss harvesting"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Tax Hub", "item": "https://finance.128345827.xyz/tools/tax-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Crypto Tax Calculator", "item": "https://finance.128345827.xyz/tools/crypto-tax-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Crypto Tax Calculator (2026) - Cryptocurrency Capital Gains & Reporting',
   description: 'Calculate cryptocurrency capital gains tax for 2026 based on holding period, tax bracket, and cost basis method. Short-term vs long-term crypto tax rates. Form 8949 reporting.',
@@ -67,6 +94,8 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
         <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
           <CryptoTaxCalculator />

@@ -36,6 +36,33 @@ const faqJsonLd = {
   })),
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mortgage Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate mortgage monthly payment, total interest, amortization schedule, and early repayment savings.",
+  "featureList": ["Monthly payment calculation", "Amortization schedule", "Equal payment vs equal principal", "Early repayment analysis", "PMI estimation"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Mortgage Hub", "item": "https://finance.128345827.xyz/tools/mortgage-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Mortgage Calculator", "item": "https://finance.128345827.xyz/tools/mortgage-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Mortgage Calculator (2026) - Monthly Payment, Interest & Amortization',
   description: 'Calculate mortgage monthly payment, total interest, amortization, and early repayment impact. Compare equal payment vs equal principal methods.',
@@ -56,6 +83,8 @@ export default function MortgageLayout({
     <>
       {children}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </>
   )
 }
