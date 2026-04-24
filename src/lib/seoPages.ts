@@ -5873,6 +5873,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Timing: purchase early, coverage begins from purchase date.",
     ],
   },
+  {
+    slug: "crypto-inheritance-tax-guide",
+    title: "Crypto Inheritance Tax Guide for Digital Asset Transfer (2026)",
+    description:
+      "Report crypto inheritance tax: stepped-up basis, estate transfer, beneficiary reporting, and cryptocurrency inheritance.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Inherited crypto gets stepped-up basis. This guide explains basis adjustment, estate transfer, and beneficiary reporting.",
+    steps: [
+      "Stepped-up basis: inherited crypto valued at decedent's date of death.",
+      "No immediate tax: beneficiary owes no tax at inheritance receipt.",
+      "Track FMV: obtain date-of-death valuation from exchange records.",
+      "Future sale: use stepped-up basis, not decedent's original cost.",
+      "Estate tax: large estates may owe estate tax before distribution.",
+    ],
+  },
+  {
+    slug: "mortgage-portability-guide",
+    title: "Mortgage Portability Guide for Loan Transfer (2026)",
+    description:
+      "Understand mortgage portability: transferability, qualifying conditions, fee structure, and mortgage loan transfer.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Some mortgages are portable. This guide explains transferability, conditions, and fees for moving loan to new property.",
+    steps: [
+      "Understand portability: transfer existing mortgage to new home purchase.",
+      "Lender discretion: not all mortgages portable, lender approval required.",
+      "Same terms: ported mortgage retains original rate, term, conditions.",
+      "Bridge financing: temporary loan if portability not immediate.",
+      "Fee structure: portability fees vary by lender, typically $500-$1,000.",
+    ],
+  },
+  {
+    slug: "tax-gambling-income-guide",
+    title: "Tax Gambling Income Guide for Wager Winnings (2026)",
+    description:
+      "Report gambling income tax: winnings reporting, loss deduction, documentation, and wager activity taxation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Gambling winnings are taxable income. This guide explains reporting, loss deduction limits, and documentation.",
+    steps: [
+      "Report all winnings: gambling income fully taxable on Schedule 1.",
+      "Deduct losses: losses deductible only to extent of winnings.",
+      "W-2G threshold: casino issues W-2G for winnings over thresholds.",
+      "Keep records: track all sessions, wins, losses for documentation.",
+      "No carryover: gambling losses cannot exceed winnings, no loss carryforward.",
+    ],
+  },
+  {
+    slug: "retirement-social-security-taxation-guide",
+    title: "Retirement Social Security Taxation Guide for Benefit Tax (2026)",
+    description:
+      "Calculate Social Security taxation: provisional income, tax thresholds, benefit percentage, and retirement income tax.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Social Security may be taxable. This guide explains provisional income, thresholds, and benefit taxation percentage.",
+    steps: [
+      "Calculate provisional income: AGI + tax-free interest + 50% of SS.",
+      "Single threshold: $25,000-$34,000 taxable 50%, over $34,000 taxable 85%.",
+      "Married threshold: $32,000-$44,000 taxable 50%, over $44,000 taxable 85%.",
+      "Maximum taxation: up to 85% of benefits subject to income tax.",
+      "Plan withdrawals: manage other income to minimize SS taxation.",
+    ],
+  },
+  {
+    slug: "event-insurance-guide",
+    title: "Event Insurance Guide for Special Occasion Protection (2026)",
+    description:
+      "Understand event insurance: cancellation coverage, liability protection, vendor failure, and special occasion protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Event insurance protects special occasions. This guide explains cancellation, liability, and vendor coverage.",
+    steps: [
+      "Understand coverage: cancellation due to illness, weather, venue closure.",
+      "Liability protection: covers injury to attendees, property damage.",
+      "Vendor failure: covers deposits lost if vendors fail to perform.",
+      "Coverage limits: varies by policy, typically covers up to event cost.",
+      "Timing critical: purchase at event booking, not after problems arise.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
