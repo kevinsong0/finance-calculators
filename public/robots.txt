@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.next/
+
+Sitemap: https://finance.128345827.xyz/sitemap.xml
