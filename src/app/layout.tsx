@@ -30,9 +30,55 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Organization and WebSite schema for GEO (Generative Engine Optimization)
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Finance Tools",
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/logo.png`,
+    "description": "Free online financial calculators and guides for personal finance, tax planning, retirement, mortgage, and cryptocurrency taxation.",
+    "sameAs": [
+      "https://github.com/kevinsong0/finance-calculators"
+    ],
+    "contactInfo": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@finance.128345827.xyz"
+    }
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Finance Tools",
+    "url": SITE_URL,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${SITE_URL}/tools?q={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    },
+    "about": [
+      {"@type": "Thing", "name": "Financial Calculator"},
+      {"@type": "Thing", "name": "Mortgage Calculator"},
+      {"@type": "Thing", "name": "Tax Calculator"},
+      {"@type": "Thing", "name": "Retirement Calculator"},
+      {"@type": "Thing", "name": "Crypto Tax Calculator"}
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
+        {/* Organization and WebSite structured data for AI crawlers */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         {GA_ID ? (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />

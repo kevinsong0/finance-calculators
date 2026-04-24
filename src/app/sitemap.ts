@@ -731,6 +731,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/mortgage-hub',
     '/tools/finance-hub',
     '/tools/investment-hub',
+    '/guides',
+    '/faq',
     '/about',
     '/contact',
     '/privacy-policy',

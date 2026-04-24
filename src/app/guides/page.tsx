@@ -3,24 +3,26 @@ import Link from "next/link";
 import { SEO_GUIDE_PAGES } from "@/lib/seoPages";
 
 export const metadata: Metadata = {
-  title: "Finance Guides Hub",
+  title: "Finance Guides Hub | 333+ Tax, Mortgage, Crypto, Retirement Guides",
   description:
-    "Browse financial planning guides covering mortgage, tax, investment, and retirement strategies.",
+    "Browse 333+ financial planning guides covering crypto tax, mortgage refinancing, tax deductions, retirement planning, and insurance strategies. Free expert guides with calculator integration.",
   alternates: { canonical: "/guides" },
   openGraph: {
-    title: "Finance Guides Hub",
+    title: "Finance Guides Hub | 333+ Expert Financial Guides",
     description:
-      "Browse financial planning guides covering mortgage, tax, investment, and retirement strategies.",
+      "Browse 333+ financial planning guides covering crypto tax, mortgage refinancing, tax deductions, retirement planning, and insurance strategies.",
     url: "/guides",
     type: "website",
   },
+  keywords: ['crypto tax guide', 'mortgage guide', 'tax deduction guide', 'retirement planning guide', 'insurance guide', 'financial literacy', 'tax planning', 'investment guide'],
 };
 
 const groupedGuides = {
-  "Mortgage & Refinance": SEO_GUIDE_PAGES.filter((p) => p.category === "mortgage"),
+  "Crypto Tax & DeFi": SEO_GUIDE_PAGES.filter((p) => p.category === "crypto"),
+  "Mortgage & Home": SEO_GUIDE_PAGES.filter((p) => p.category === "mortgage"),
   "Tax Planning": SEO_GUIDE_PAGES.filter((p) => p.category === "tax"),
-  "Investment Strategy": SEO_GUIDE_PAGES.filter((p) => p.category === "investment"),
   "Retirement Planning": SEO_GUIDE_PAGES.filter((p) => p.category === "retirement"),
+  "Insurance": SEO_GUIDE_PAGES.filter((p) => p.category === "insurance"),
 } as const;
 
 export default function GuidesHubPage() {
