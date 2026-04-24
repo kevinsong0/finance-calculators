@@ -5603,6 +5603,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Premium factors: boat type, length, engine horsepower, experience.",
     ],
   },
+  {
+    slug: "crypto-gift-tax-guide",
+    title: "Crypto Gift Tax Guide for Digital Asset Transfers (2026)",
+    description:
+      "Report crypto gift tax: annual exclusion, lifetime limit, basis transfer, and cryptocurrency gift reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto gifts have tax implications. This guide explains annual exclusion, lifetime limit, and basis transfer.",
+    steps: [
+      "Annual exclusion: $18,000 per recipient per year, no gift tax filing.",
+      "Lifetime limit: $13.61 million lifetime exemption, tracks cumulative gifts.",
+      "Basis transfer: recipient inherits giver's cost basis for future sale.",
+      "No immediate tax: gift recipient owes no tax at receipt.",
+      "File Form 709: required when gift exceeds annual exclusion.",
+    ],
+  },
+  {
+    slug: "mortgage- assumable-loan-guide",
+    title: "Mortgage Assumable Loan Guide for Loan Transfer (2026)",
+    description:
+      "Understand assumable mortgage: loan transfer, qualification requirements, fee structure, and mortgage assumption.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Some mortgages can be assumed by buyer. This guide explains transfer, qualification, and assumption costs.",
+    steps: [
+      "Understand assumption: buyer takes over existing mortgage terms.",
+      "Qualifying loans: FHA, VA loans typically assumable, conventional rarely.",
+      "Qualification required: buyer must meet lender credit/income standards.",
+      "Assumption fee: typically 0.5-1% of loan amount, processing fee.",
+      "Benefits: lower rate than current market, saves closing costs.",
+    ],
+  },
+  {
+    slug: "tax-foreign-income-guide",
+    title: "Tax Foreign Income Guide for International Earnings (2026)",
+    description:
+      "Report foreign income tax: foreign earned income exclusion, foreign tax credit, and international income reporting.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Foreign income has special tax treatment. This guide explains exclusion, credit, and reporting requirements.",
+    steps: [
+      "Foreign earned income exclusion: up to $120,000 excluded if qualify.",
+      "Physical presence test: 330 days abroad in 12-month period.",
+      "Foreign tax credit: credit for taxes paid to foreign governments.",
+      "Choose method: exclusion or credit, maximize tax benefit.",
+      "FBAR filing: report foreign bank accounts over $10,000.",
+    ],
+  },
+  {
+    slug: "retirement-tax-efficient-withdrawal-guide",
+    title: "Retirement Tax Efficient Withdrawal Guide for Distribution Strategy (2026)",
+    description:
+      "Plan tax efficient retirement withdrawals: account sequence, tax bracket management, and distribution optimization.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Withdrawal sequence affects taxes. This guide explains account order, bracket management, and optimization.",
+    steps: [
+      "Withdraw taxable first: minimize taxes by using taxable accounts.",
+      "Tap tax-deferred next: Traditional IRA/401(k) taxed as ordinary income.",
+      "Use Roth last: tax-free withdrawals, preserve for later years.",
+      "Manage brackets: control withdrawals to stay in lower tax bracket.",
+      "Consider RMDs: required distributions after 73 affect sequence.",
+    ],
+  },
+  {
+    slug: "rv-insurance-guide",
+    title: "RV Insurance Guide for Recreational Vehicle Coverage (2026)",
+    description:
+      "Understand RV insurance: vehicle coverage, liability protection, full-timer coverage, and recreational vehicle protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "RV insurance protects recreational vehicles. This guide explains coverage, liability, and full-timer options.",
+    steps: [
+      "Understand coverage: combines auto and home insurance elements.",
+      "Liability required: covers injury/damage while driving RV.",
+      "Comprehensive/collision: physical damage coverage for RV.",
+      "Full-timer coverage: additional for RV as primary residence.",
+      "Personal belongings: contents coverage for items in RV.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
