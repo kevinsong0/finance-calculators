@@ -5963,6 +5963,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Timing critical: purchase at event booking, not after problems arise.",
     ],
   },
+  {
+    slug: "crypto-ico-tax-guide",
+    title: "Crypto ICO Tax Guide for Initial Coin Offering (2026)",
+    description:
+      "Report crypto ICO tax: token purchase taxation, vesting schedule, token distribution, and initial coin offering reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "ICO tokens create taxable events. This guide explains purchase taxation, vesting, and distribution reporting.",
+    steps: [
+      "Token purchase: tokens purchased in ICO taxed like regular crypto purchase.",
+      "Receipt timing: tax liability when tokens become accessible and tradeable.",
+      "Vesting tokens: tokens with vesting taxed when each tranche unlocks.",
+      "Track purchase price: ICO purchase price becomes cost basis.",
+      "Document transaction: ICO participation, token amount, price, vesting terms.",
+    ],
+  },
+  {
+    slug: "mortgage-subordinate-financing-guide",
+    title: "Mortgage Subordinate Financing Guide for Second Position (2026)",
+    description:
+      "Understand subordinate mortgage: second lien position, rate comparison, equity access, and second position financing.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Subordinate mortgages sit behind first lien. This guide explains second position, rates, and equity access.",
+    steps: [
+      "Understand position: subordinate loan behind primary mortgage lien.",
+      "Higher risk: subordinate loans have higher rates due to secondary position.",
+      "Equity access: HELOC or second mortgage taps home equity.",
+      "Combined LTV: total debt ratio affects subordinate loan approval.",
+      "Subordination agreement: required if refinancing first mortgage.",
+    ],
+  },
+  {
+    slug: "tax-jury-duty-income-guide",
+    title: "Tax Jury Duty Income Guide for Court Service (2026)",
+    description:
+      "Report jury duty income tax: daily compensation, employer paid, mileage reimbursement, and court service taxation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Jury duty pay is taxable income. This guide explains compensation, employer payments, and mileage treatment.",
+    steps: [
+      "Report compensation: jury duty daily pay taxable as miscellaneous income.",
+      "Employer paid: if employer continues salary, jury pay may offset salary.",
+      "Mileage reimbursement: typically non-taxable travel reimbursement.",
+      "Schedule 1 reporting: jury duty pay reported as other income.",
+      "Deduction limited: expenses to serve not deductible for most.",
+    ],
+  },
+  {
+    slug: "retirement-investment-order-guide",
+    title: "Retirement Investment Order Guide for Priority Sequence (2026)",
+    description:
+      "Prioritize retirement investments: emergency fund, employer match, tax-advantaged, taxable, and investment sequence.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Investment order maximizes returns. This guide explains emergency fund, employer match, and account priority.",
+    steps: [
+      "Emergency fund first: 3-6 months expenses in accessible savings.",
+      "Employer match priority: 401(k) match is free money, maximize first.",
+      "High-interest debt: pay off debts >7% interest before investing.",
+      "Tax-advantaged accounts: IRA, 401(k) beyond match, HSA.",
+      "Taxable accounts: additional investments after maximizing tax-advantaged.",
+    ],
+  },
+  {
+    slug: "classic-car-insurance-guide",
+    title: "Classic Car Insurance Guide for Collector Vehicle (2026)",
+    description:
+      "Understand classic car insurance: agreed value, usage restrictions, storage requirements, and collector vehicle coverage.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Classic cars need specialized insurance. This guide explains agreed value, usage limits, and collector coverage.",
+    steps: [
+      "Agreed value coverage: policy pays agreed value, not actual cash value.",
+      "Usage restrictions: limited mileage, pleasure driving, no daily commute.",
+      "Storage requirements: secure garage storage typically required.",
+      "Appraisal needed: professional appraisal establishes agreed value.",
+      "Specialized insurer: classic car insurers offer tailored coverage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
