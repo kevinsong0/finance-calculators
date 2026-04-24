@@ -6143,6 +6143,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Vacation liability: covers liability when parked at campsite.",
     ],
   },
+  {
+    slug: "crypto-move-to-earn-tax-guide",
+    title: "Crypto Move to Earn Tax Guide for Activity Rewards (2026)",
+    description:
+      "Report crypto move to earn tax: walking rewards, fitness tokens, activity income, and blockchain fitness taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Move-to-earn apps create taxable income. This guide explains fitness rewards, token taxation, and reporting requirements.",
+    steps: [
+      "Activity rewards taxable: tokens earned from walking/fitness taxed as income.",
+      "Track daily earnings: document each reward with date and FMV.",
+      "Report as ordinary income: fitness tokens not capital gains at receipt.",
+      "Establish cost basis: FMV at receipt becomes basis for future sales.",
+      "Gas fees deduction: transaction fees reduce gains on token sales.",
+    ],
+  },
+  {
+    slug: "mortgage-balloon-payment-guide",
+    title: "Mortgage Balloon Payment Guide for Large Final Payment (2026)",
+    description:
+      "Understand balloon mortgage: large final payment, refinancing options, qualification, and balloon loan structure.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Balloon mortgages end with large payment. This guide explains structure, refinancing, and planning for balloon payment.",
+    steps: [
+      "Understand balloon: small monthly payments, large final payment due.",
+      "Typical term: 5-7 years of payments, then balloon payment required.",
+      "Lower initial payments: balloon loans have lower monthly costs.",
+      "Refinance required: most borrowers refinance before balloon due.",
+      "Risk assessment: if rates rise, refinancing may be expensive or unavailable.",
+    ],
+  },
+  {
+    slug: "tax-barter-income-guide",
+    title: "Tax Barter Income Guide for Exchange Transactions (2026)",
+    description:
+      "Report barter income tax: exchange transactions, FMV reporting, trade credit, and barter club taxation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Barter transactions are taxable. This guide explains FMV reporting, exchange clubs, and trade income.",
+    steps: [
+      "Barter is taxable: value of goods/services received taxable as income.",
+      "Report FMV: fair market value of what you received equals income.",
+      "Barter clubs: barter exchange clubs report transactions on Form 1099-B.",
+      "Business barter: deductible as business expense if related to trade.",
+      "Document exchanges: record each transaction with date, parties, FMV.",
+    ],
+  },
+  {
+    slug: "retirement-pension-annuity-guide",
+    title: "Retirement Pension Annuity Guide for Income Conversion (2026)",
+    description:
+      "Convert pension to annuity: annuity purchase, income stream, tax treatment, and pension annuity conversion.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Pension annuities provide guaranteed income. This guide explains purchase, taxation, and conversion options.",
+    steps: [
+      "Understand conversion: pension lump sum to annuity for guaranteed income.",
+      "Purchase options: immediate annuity starts payments right away.",
+      "Tax treatment: annuity payments partially taxable (earnings portion).",
+      "Compare options: lump sum flexibility vs annuity income security.",
+      "Consider inflation: fixed annuity loses purchasing power over time.",
+    ],
+  },
+  {
+    slug: "watercraft-insurance-guide",
+    title: "Watercraft Insurance Guide for Boat and Jet Ski (2026)",
+    description:
+      "Understand watercraft insurance: boat coverage, jet ski protection, liability, and personal watercraft insurance.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Watercraft insurance covers boats and jet skis. This guide explains coverage, liability, and protection options.",
+    steps: [
+      "Coverage types: hull coverage for damage, liability for injury/damage.",
+      "Jet ski insurance: personal watercraft treated similarly to boats.",
+      "Navigation limits: policy specifies where watercraft can operate.",
+      "Safety equipment: may reduce premiums with safety gear installed.",
+      "Seasonal coverage: policies may be seasonal for winter storage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
