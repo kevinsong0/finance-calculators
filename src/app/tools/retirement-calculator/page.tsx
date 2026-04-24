@@ -38,6 +38,33 @@ const faqJsonLd = {
   })),
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Retirement Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Estimate retirement savings growth, withdrawal timeline, and income planning.",
+  "featureList": ["Savings growth projection", "Withdrawal timeline", "Social Security integration", "401k/IRA planning"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Retirement Calculator", "item": "https://finance.128345827.xyz/tools/retirement-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Retirement Calculator (2026) - Savings Growth & Income Plan',
   description: 'Estimate retirement savings growth, withdrawal timeline, and whether your money lasts based on return, inflation, and annual spending.',
@@ -54,6 +81,8 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="min-h-screen bg-gray-50 py-8 px-4">
         <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading calculator...</div>}>
           <RetirementCalculator locale="en" />

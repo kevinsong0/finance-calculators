@@ -36,6 +36,33 @@ const faqJsonLd = {
   })),
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Compound Interest Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate compound interest growth with different compounding frequencies and monthly contributions.",
+  "featureList": ["Compound growth projection", "Monthly contribution analysis", "Multiple compounding frequencies", "Rule of 72 visualization"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Compound Interest Calculator", "item": "https://finance.128345827.xyz/tools/compound-interest" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Compound Interest Calculator - Investment Growth Calculator',
   description: 'Calculate compound interest growth with monthly contributions. Visualize how your investments grow over time. Free compound interest calculator.',
@@ -56,6 +83,8 @@ export default function CompoundLayout({
     <>
       {children}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </>
   )
 }

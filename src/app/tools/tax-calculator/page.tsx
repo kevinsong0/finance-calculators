@@ -49,6 +49,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Income Tax Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate federal and state income taxes with deductions, credits, and filing status options.",
+  "featureList": ["Tax bracket calculation", "Deduction comparison", "Capital gains tax", "Filing status options"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Tax Hub", "item": "https://finance.128345827.xyz/tools/tax-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Tax Calculator", "item": "https://finance.128345827.xyz/tools/tax-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Income Tax Calculator - Federal & State Tax Estimator',
   description: 'Calculate federal and state income taxes with deductions, credits, capital gains, and filing status options.',
@@ -56,12 +83,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <TaxCalculator />
-    </Suspense>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main className="min-h-screen">
+        <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+          <TaxCalculator />
+        </Suspense>
+      </main>
+    </>
   );
 }
