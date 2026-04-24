@@ -5693,6 +5693,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Personal belongings: contents coverage for items in RV.",
     ],
   },
+  {
+    slug: "crypto-borrowing-tax-guide",
+    title: "Crypto Borrowing Tax Guide for Loan Collateral (2026)",
+    description:
+      "Report crypto borrowing tax: collateral treatment, loan interest, liquidation events, and cryptocurrency loan taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Borrowing against crypto has tax implications. This guide explains collateral, interest, and liquidation treatment.",
+    steps: [
+      "Collateral not sold: pledging crypto as collateral not taxable event.",
+      "Track cost basis: collateral crypto retains original cost basis.",
+      "Interest deduction: loan interest may be deductible if loan used for investment.",
+      "Liquidation events: forced sale creates taxable gain/loss at liquidation price.",
+      "Document carefully: track all collateral, liquidation, and repayment events.",
+    ],
+  },
+  {
+    slug: "mortgage-remodeling-financing-guide",
+    title: "Mortgage Remodeling Financing Guide for Home Improvement (2026)",
+    description:
+      "Finance home remodeling: cash-out refinance, HELOC, home equity loan, and improvement financing options.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Multiple options fund home improvements. This guide explains cash-out, HELOC, and equity loan comparison.",
+    steps: [
+      "Cash-out refinance: replace current mortgage, extract equity in new loan.",
+      "HELOC: revolving credit line, draw period 5-10 years, flexible access.",
+      "Home equity loan: lump sum, fixed rate, fixed term, predictable payments.",
+      "Compare rates: HELOC variable, cash-out typically lower than equity loan.",
+      "Tax deduction: interest deductible if funds improve home structure.",
+    ],
+  },
+  {
+    slug: "tax-hobby-income-guide",
+    title: "Tax Hobby Income Guide for Non-Business Activity (2026)",
+    description:
+      "Report hobby income tax: income vs expense, deduction limits, hobby vs business, and non-business activity taxation.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Hobby income is taxable but deductions limited. This guide explains income, expenses, and hobby vs business.",
+    steps: [
+      "Report all income: hobby income fully taxable on Schedule 1.",
+      "Limited deductions: hobby expenses deductible only to extent of income.",
+      "No loss carryover: hobby expenses cannot exceed income, no loss.",
+      "Business vs hobby: profit motive, regularity, expertise indicate business.",
+      "Schedule C business: profitable hobby may qualify as business, full deductions.",
+    ],
+  },
+  {
+    slug: "retirement-pension-maximization-guide",
+    title: "Retirement Pension Maximization Guide for Benefit Strategy (2026)",
+    description:
+      "Maximize pension benefits: survivor benefit option, life insurance alternative, annuity comparison, and pension strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Pension choices affect lifetime income. This guide explains survivor options, insurance alternative, and strategies.",
+    steps: [
+      "Understand options: single life (maximum), joint/survivor (reduced for spouse).",
+      "Survivor benefit: pension continues to spouse after retiree death.",
+      "Maximization strategy: take single life, buy life insurance for spouse.",
+      "Analyze break-even: compare pension reduction vs insurance cost.",
+      "Consider health: spouse health affects survivor benefit value.",
+    ],
+  },
+  {
+    slug: "pet-insurance-guide",
+    title: "Pet Insurance Guide for Animal Healthcare (2026)",
+    description:
+      "Understand pet insurance: coverage types, premium cost, pre-existing conditions, and animal healthcare protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Pet insurance covers veterinary costs. This guide explains coverage, premiums, and pre-existing condition exclusions.",
+    steps: [
+      "Understand coverage: accident and illness, some include wellness.",
+      "Premium factors: pet age, breed, species, coverage level, deductible.",
+      "Pre-existing conditions: not covered, enroll while pet healthy.",
+      "Claims process: pay vet, submit claim, receive reimbursement.",
+      "Compare plans: coverage limits, deductible types, reimbursement percentage.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
