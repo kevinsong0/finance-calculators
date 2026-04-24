@@ -732,6 +732,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/finance-hub',
     '/tools/investment-hub',
     '/guides',
+    '/guides/crypto',
+    '/guides/mortgage',
+    '/guides/tax',
+    '/guides/retirement',
+    '/guides/insurance',
     '/faq',
     '/about',
     '/contact',
@@ -748,13 +753,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const items: MetadataRoute.Sitemap = routes.map((route) => {
     const isToolRoute = route.startsWith('/tools')
     const isGuideRoute = route.startsWith('/guides')
+    const isCategoryHub = ['crypto', 'mortgage', 'tax', 'retirement', 'insurance'].some(cat => route === `/guides/${cat}`)
     const changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] = isToolRoute || isGuideRoute ? 'monthly' : 'weekly'
 
     return {
       url: `${SITE_URL}${route === '/' ? '' : route}`,
       lastModified: new Date(),
       changeFrequency,
-      priority: route === '/' ? 1 : isToolRoute ? 0.9 : isGuideRoute ? 0.8 : 0.5,
+      priority: route === '/' ? 1 : isToolRoute ? 0.9 : isCategoryHub ? 0.85 : isGuideRoute ? 0.8 : 0.5,
     }
   })
 
