@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import HELOCCalculator from '@/components/HELOCCalculator';
+import Link from 'next/link';
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -50,16 +51,52 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'HELOC Calculator - Calculate Home Equity Line of Credit',
-  description: 'Calculate your HELOC borrowing capacity, draw period payments, repayment costs, and total interest. Compare HELOC vs cash-out refinance options.',
-  keywords: ['HELOC calculator', 'home equity line of credit', 'HELOC payment', 'home equity', 'second mortgage', 'draw period', 'repayment period', 'variable rate loan'],
+  title: 'HELOC Calculator (2026) - Home Equity Line of Credit',
+  description: 'Calculate your HELOC borrowing capacity, draw period payments, repayment costs, and total interest for 2026. Compare HELOC vs cash-out refinance options.',
+  keywords: ['HELOC calculator 2026', 'home equity line of credit', 'HELOC payment', 'home equity', 'second mortgage', 'draw period', 'repayment period', 'variable rate loan'],
 };
+
+const relatedTools = [
+  { href: '/tools/mortgage-calculator', name: 'Mortgage Calculator', desc: 'Monthly payment calculation' },
+  { href: '/tools/cash-out-refinance-calculator', name: 'Cash-Out Refinance', desc: 'Compare vs HELOC' },
+  { href: '/tools/home-equity-loan-calculator', name: 'Home Equity Loan', desc: 'Fixed lump sum option' },
+  { href: '/tools/mortgage-hub', name: 'Mortgage Hub', desc: 'All mortgage tools' },
+];
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <HELOCCalculator />
-    </Suspense>
+      <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
+        <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+          <HELOCCalculator />
+        </Suspense>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">Related Equity Tools</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {relatedTools.map(tool => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group rounded-lg border border-zinc-200 dark:border-zinc-800 p-4 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition"
+              >
+                <h3 className="font-medium group-hover:underline">{tool.name}</h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex gap-4">
+          <Link href="/tools/mortgage-hub" className="text-blue-600 dark:text-blue-400 hover:underline">
+            ← Mortgage Calculators Hub
+          </Link>
+          <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">
+            Home →
+          </Link>
+        </section>
+      </main>
+    </>
   );
 }
