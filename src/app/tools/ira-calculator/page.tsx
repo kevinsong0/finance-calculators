@@ -49,6 +49,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "IRA Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate IRA retirement savings and compare Traditional vs Roth tax benefits.",
+  "featureList": ["Traditional vs Roth comparison", "Contribution limits", "Tax deduction analysis", "Retirement growth projection"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "IRA Calculator", "item": "https://finance.128345827.xyz/tools/ira-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'IRA Calculator - Calculate Traditional & Roth IRA Growth',
   description: 'Calculate IRA retirement savings and compare Traditional vs Roth tax benefits.',
@@ -56,9 +83,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <IRACalculator />
-    </Suspense>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main className="max-w-5xl mx-auto px-4 py-8">
+        <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+          <IRACalculator />
+        </Suspense>
+      </main>
+    </>
   );
 }

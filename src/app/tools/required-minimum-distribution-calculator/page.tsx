@@ -49,6 +49,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Required Minimum Distribution Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate IRS required minimum distribution for Traditional IRA, 401(k), and retirement accounts.",
+  "featureList": ["SECURE Act 2.0 age rules", "IRS Uniform Lifetime Table", "Penalty calculation", "QCD strategies"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "RMD Calculator", "item": "https://finance.128345827.xyz/tools/required-minimum-distribution-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Required Minimum Distribution Calculator - RMD Calculator 2026',
   description: 'Calculate IRS required minimum distribution for Traditional IRA, 401(k), and retirement accounts based on SECURE Act 2.0 age rules.',
@@ -56,9 +83,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <RequiredMinimumDistributionCalculator />
-    </Suspense>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main className="max-w-5xl mx-auto px-4 py-8">
+        <Suspense fallback={<div>Loading...</div>}>
+          <RequiredMinimumDistributionCalculator />
+        </Suspense>
+      </main>
+    </>
   );
 }
