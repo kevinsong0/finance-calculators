@@ -6053,6 +6053,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Specialized insurer: classic car insurers offer tailored coverage.",
     ],
   },
+  {
+    slug: "crypto-play-to-earn-tax-guide",
+    title: "Crypto Play to Earn Tax Guide for Gaming Income (2026)",
+    description:
+      "Report crypto play to earn tax: gaming rewards, token income, NFT earnings, and blockchain game taxation.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Play-to-earn gaming creates taxable income. This guide explains rewards, NFT earnings, and reporting requirements.",
+    steps: [
+      "Game tokens taxable: rewards earned in-game taxed as ordinary income.",
+      "NFT earnings: items sold or traded create capital gains/losses.",
+      "Track all earnings: document each reward with date and FMV.",
+      "Report on Schedule 1: gaming income as other income.",
+      "Professional gaming: may qualify as self-employment for Schedule C.",
+    ],
+  },
+  {
+    slug: "mortgage-graduated-payment-guide",
+    title: "Mortgage Graduated Payment Guide for Rising Income (2026)",
+    description:
+      "Understand graduated payment mortgage: initial lower payments, payment increases, qualification, and rising income mortgage.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "GPM starts with lower payments that increase over time. This guide explains payment schedule and qualification.",
+    steps: [
+      "Understand GPM: payments start low, increase annually for 5-10 years.",
+      "Initial benefit: lower early payments help young borrowers.",
+      "Negative amortization: early payments may not cover full interest.",
+      "Payment schedule: increases typically 2.5-7.5% annually.",
+      "Qualify early: income expected to rise over loan term.",
+    ],
+  },
+  {
+    slug: "tax-disaster-loss-deduction-guide",
+    title: "Tax Disaster Loss Deduction Guide for Casualty Loss (2026)",
+    description:
+      "Claim tax disaster loss: casualty deduction, FEMA disaster, insurance reimbursement, and property damage tax relief.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Disaster losses may be deductible. This guide explains casualty loss, FEMA declarations, and claiming procedures.",
+    steps: [
+      "Federally declared disaster: casualty loss deductible for federal disasters.",
+      "Calculate loss: FMV before disaster minus FMV after, minus insurance.",
+      "$100 rule: subtract $100 from each casualty loss.",
+      "10% AGI floor: total losses must exceed 10% of AGI.",
+      "Timing choice: deduct in year of loss or prior year for faster refund.",
+    ],
+  },
+  {
+    slug: "retirement-rule-of-72-guide",
+    title: "Retirement Rule of 72 Guide for Doubling Investments (2026)",
+    description:
+      "Apply Rule of 72 for retirement: doubling time calculation, compound growth, rate estimation, and investment growth math.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Rule of 72 estimates doubling time. This guide explains calculation, compound growth, and retirement planning.",
+    steps: [
+      "Understand rule: 72 ÷ interest rate = years to double.",
+      "Example: 72 ÷ 8% = 9 years to double at 8% return.",
+      "Apply to retirement: estimate portfolio growth over time.",
+      "Compare rates: higher rate means faster doubling.",
+      "Use for planning: set rate targets to achieve doubling goals.",
+    ],
+  },
+  {
+    slug: "motorhome-insurance-guide",
+    title: "Motorhome Insurance Guide for RV Coverage (2026)",
+    description:
+      "Understand motorhome insurance: vehicle coverage, liability protection, contents coverage, and motorized RV protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Motorhome insurance combines auto and home coverage. This guide explains vehicle, liability, and contents protection.",
+    steps: [
+      "Class A/B/C coverage: motorhome treated as vehicle, needs auto coverage.",
+      "Liability required: covers injury/damage while driving motorhome.",
+      "Comprehensive/collision: physical damage protection for motorhome.",
+      "Contents coverage: personal belongings inside motorhome.",
+      "Vacation liability: covers liability when parked at campsite.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
