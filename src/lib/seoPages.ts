@@ -6503,6 +6503,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Waiting period: NFIP 30-day wait unless lender-required.",
     ],
   },
+  {
+    slug: "crypto-ico-token-tax-guide",
+    title: "Crypto ICO Token Tax Guide for Initial Coin Offering (2026)",
+    description:
+      "Understand ICO token taxes: initial coin offering taxation, token purchase, ICO investment, and token tax treatment.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "ICO tokens have specific tax treatment. This guide explains purchase taxation, holding, and sale rules.",
+    steps: [
+      "ICO purchase: buying tokens is like any crypto purchase, establish cost basis.",
+      "Token type matters: utility tokens vs security tokens may have different treatment.",
+      "Holding period: same capital gains rules apply based on holding duration.",
+      "Airdrops from ICOs: additional tokens received may be taxable as income.",
+      "Failed ICOs: loss deduction available if tokens become worthless.",
+    ],
+  },
+  {
+    slug: "mortgage-piggyback-loan-guide",
+    title: "Mortgage Piggyback Loan Guide for 80-10-10 Strategy (2026)",
+    description:
+      "Understand piggyback loans: 80-10-10 mortgage, avoid PMI, second mortgage, and piggyback loan structure.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Piggyback loans combine first and second mortgages to avoid PMI. This guide explains 80-10-10 structure and costs.",
+    steps: [
+      "Structure: 80% first mortgage, 10% second mortgage, 10% down payment.",
+      "Avoid PMI: second mortgage replaces PMI requirement for <20% down.",
+      "Second mortgage: higher rate, often adjustable or HELOC style.",
+      "Compare costs: calculate if piggyback saves vs PMI over expected holding period.",
+      "Refinance option: can refinance second mortgage when equity reaches 20%.",
+    ],
+  },
+  {
+    slug: "tax-artist-income-guide",
+    title: "Tax Artist Income Guide for Creative Professionals (2026)",
+    description:
+      "Understand artist taxes: creative income, royalty taxation, artist deductions, and self-employment for artists.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Artists have unique tax considerations. This guide explains income types, deductions, and self-employment.",
+    steps: [
+      "Income types: sales, commissions, royalties, licensing fees all taxable.",
+      "Business expenses: materials, studio, equipment, marketing deductible.",
+      "Self-employment: artists typically file Schedule C, pay SE tax.",
+      "Home studio: deductible if dedicated space for art business.",
+      "Royalties: taxed as ordinary income or self-employment income.",
+    ],
+  },
+  {
+    slug: "retirement-fire-movement-guide",
+    title: "Retirement FIRE Movement Guide for Financial Independence (2026)",
+    description:
+      "Understand FIRE movement: financial independence retire early, FIRE calculation, 4% rule, and early retirement planning.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "FIRE aims for early retirement through aggressive saving. This guide explains calculation, strategies, and challenges.",
+    steps: [
+      "FIRE number: annual expenses × 25 (based on 4% withdrawal rule).",
+      "Savings rate: typical FIRE requires 50-70% savings rate.",
+      "Lean FIRE vs Fat FIRE: different lifestyle targets, different numbers.",
+      "Withdrawal strategies: Roth ladder, taxable accounts, then tax-deferred.",
+      "Healthcare challenge: plan for coverage before Medicare eligibility.",
+    ],
+  },
+  {
+    slug: "insurance-earthquake-insurance-guide",
+    title: "Insurance Earthquake Insurance Guide for Home Protection (2026)",
+    description:
+      "Understand earthquake insurance: seismic coverage, deductible, California earthquake, and earthquake insurance cost.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Earthquake insurance is separate from homeowners. This guide explains coverage, deductibles, and California options.",
+    steps: [
+      "Not in homeowners: standard policies exclude earthquake damage.",
+      "Coverage scope: structural damage, contents, additional living expenses.",
+      "High deductible: typically 10-15% of coverage amount, not flat fee.",
+      "California: CEA (California Earthquake Authority) offers standardized policies.",
+      "Risk assessment: consider location, building type, retrofit status.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
