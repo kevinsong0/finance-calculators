@@ -5783,6 +5783,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Compare plans: coverage limits, deductible types, reimbursement percentage.",
     ],
   },
+  {
+    slug: "crypto-donation-tax-guide",
+    title: "Crypto Donation Tax Guide for Charitable Giving (2026)",
+    description:
+      "Report crypto donation tax: charitable deduction, fair market value, basis transfer, and cryptocurrency gift reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Crypto donations are tax-deductible. This guide explains FMV deduction, documentation, and capital gains bypass.",
+    steps: [
+      "Deduct FMV: donate held >1 year crypto, deduct fair market value.",
+      "Avoid capital gains: donation bypasses capital gains tax on appreciation.",
+      "Document donation: written acknowledgment from charity required.",
+      "Deduction limit: 30% of AGI for appreciated property donations.",
+      "Short-term holdings: held <1 year crypto, deduction limited to cost basis.",
+    ],
+  },
+  {
+    slug: "mortgage-servicer-switch-guide",
+    title: "Mortgage Servicer Switch Guide for Loan Management (2026)",
+    description:
+      "Understand mortgage servicer change: servicer duties, transition process, payment handling, and loan management changes.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Mortgage servicer may change during loan term. This guide explains duties, transition, and payment handling.",
+    steps: [
+      "Understand servicer: company managing loan payments, not necessarily lender.",
+      "Notification: servicer must notify 15 days before transfer.",
+      "Payment transition: grace period for late fees during switch.",
+      "Update autopay: new servicer requires new payment setup.",
+      "Track payments: confirm all payments credited correctly after switch.",
+    ],
+  },
+  {
+    slug: "tax-alimony-tax-guide",
+    title: "Tax Alimony Tax Guide for Divorce Payments (2026)",
+    description:
+      "Report alimony tax: deductibility, income reporting, divorce date, and spousal support tax treatment.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Alimony tax treatment depends on divorce date. This guide explains deductibility, income, and reporting rules.",
+    steps: [
+      "Pre-2019 divorce: payer deducts, recipient reports income.",
+      "Post-2018 divorce: no deduction for payer, not income for recipient.",
+      "Modification rules: modified agreement follows original divorce date rules.",
+      "Separate instruments: not alimony if not in divorce decree/agreement.",
+      "Report correctly: payer Schedule 1 deduction, recipient Schedule 1 income.",
+    ],
+  },
+  {
+    slug: "retirement-target-date-funds-guide",
+    title: "Retirement Target Date Funds Guide for Automatic Investing (2026)",
+    description:
+      "Understand target date funds: glide path, automatic rebalancing, expense ratio, and retirement portfolio simplification.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Target date funds simplify retirement investing. This guide explains glide path, rebalancing, and selection.",
+    steps: [
+      "Select target year: choose fund matching expected retirement year.",
+      "Understand glide path: automatically shifts from stocks to bonds over time.",
+      "Automatic rebalancing: no manual portfolio management required.",
+      "Compare expense ratios: different providers, similar funds, different costs.",
+      "All-in-one solution: single fund provides diversified retirement allocation.",
+    ],
+  },
+  {
+    slug: "wedding-insurance-guide",
+    title: "Wedding Insurance Guide for Event Protection (2026)",
+    description:
+      "Understand wedding insurance: cancellation coverage, vendor failure, liability protection, and wedding event protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Wedding insurance protects event investment. This guide explains cancellation, vendor failure, and coverage options.",
+    steps: [
+      "Understand coverage: cancellation/postponement due to illness, weather, vendor.",
+      "Vendor failure: covers deposits lost if vendor fails to perform.",
+      "Liability protection: covers injury/damage at wedding venue.",
+      "Coverage cost: typically 1-2% of total wedding budget.",
+      "Timing: purchase early, coverage begins from purchase date.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
