@@ -6413,6 +6413,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Coverage scope: includes libel, slander, some business liability.",
     ],
   },
+  {
+    slug: "crypto-defi-liquidity-pool-tax-guide",
+    title: "Crypto DeFi Liquidity Pool Tax Guide for LP Tokens (2026)",
+    description:
+      "Understand DeFi liquidity pool taxes: LP token taxation, impermanent loss, pool rewards, and DeFi LP tax reporting.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "DeFi liquidity pools create complex tax events. This guide explains LP tokens, rewards, and impermanent loss treatment.",
+    steps: [
+      "Adding liquidity: deposit tokens may trigger taxable swap if different tokens.",
+      "LP tokens: received tokens represent pool share, not taxable at receipt.",
+      "Pool rewards: trading fees and rewards taxable as income when received.",
+      "Impermanent loss: not a taxable event until you exit the pool.",
+      "Removing liquidity: calculate gain/loss comparing to original deposit value.",
+    ],
+  },
+  {
+    slug: "mortgage-construction-loan-guide",
+    title: "Mortgage Construction Loan Guide for Building a Home (2026)",
+    description:
+      "Understand construction loans: draw schedule, interest-only phase, conversion to mortgage, and construction loan rates.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Construction loans finance building a new home. This guide explains draw schedules, interest phases, and conversion.",
+    steps: [
+      "Draw schedule: funds released in stages as construction progresses.",
+      "Interest-only phase: pay interest only during construction period.",
+      "Conversion: construction loan converts to permanent mortgage after completion.",
+      "Interest rate: typically higher than standard mortgage rates during construction.",
+      "Down payment: often requires 20-25% down for construction loans.",
+    ],
+  },
+  {
+    slug: "tax-foreign-income-guide",
+    title: "Tax Foreign Income Guide for US Citizens Abroad (2026)",
+    description:
+      "Understand foreign income tax: FEIE exclusion, foreign tax credit, expat filing, and US citizen abroad tax rules.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "US citizens abroad still owe US tax on worldwide income. This guide explains exclusions, credits, and filing.",
+    steps: [
+      "Worldwide income: US citizens taxed on all income regardless of location.",
+      "FEIE exclusion: Foreign Earned Income Exclusion up to ~$120K (2024).",
+      "Foreign tax credit: credit for taxes paid to foreign governments.",
+      "Expat filing: same deadlines, can extend to June 15 or October 15.",
+      "FBAR reporting: Report foreign bank accounts over $10,000 aggregate.",
+    ],
+  },
+  {
+    slug: "retirement-social-security-spouse-guide",
+    title: "Retirement Social Security Spouse Guide for Married Benefits (2026)",
+    description:
+      "Understand spousal Social Security: spouse benefit amount, timing, survivor benefits, and married couple SS strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/social-security-break-even-calculator",
+    targetProductLabel: "Social Security Break-even Calculator",
+    summary:
+      "Married couples have additional Social Security strategies. This guide explains spousal and survivor benefits.",
+    steps: [
+      "Spousal benefit: up to 50% of spouse's FRA benefit if higher than own.",
+      "Timing: spouse can claim when primary filer has claimed (any age).",
+      "Survivor benefit: 100% of deceased spouse's benefit (or own if higher).",
+      "Restricted application: strategy for maximizing combined benefits.",
+      "Coordination: coordinate claiming ages to maximize lifetime benefits.",
+    ],
+  },
+  {
+    slug: "insurance-flood-insurance-guide",
+    title: "Insurance Flood Insurance Guide for Home Protection (2026)",
+    description:
+      "Understand flood insurance: NFIP coverage, private flood, flood zone requirements, and flood insurance cost.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Flood insurance is separate from homeowners insurance. This guide explains NFIP, private options, and requirements.",
+    steps: [
+      "Not in homeowners: standard home policies exclude flood damage.",
+      "NFIP: National Flood Insurance Program maximum $250K building, $100K contents.",
+      "Private flood: higher limits, faster claims, may be cheaper than NFIP.",
+      "Flood zones: high-risk zones require flood insurance for mortgages.",
+      "Waiting period: NFIP 30-day wait unless lender-required.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
