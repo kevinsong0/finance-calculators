@@ -38,6 +38,33 @@ const relatedTools = [
 ]
 
 export default function TaxLossHarvestingCalculatorPage() {
+  // SoftwareApplication schema for AI crawlers (GEO)
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tax Loss Harvesting Calculator",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Calculate tax savings from selling losing investments to offset capital gains and reduce tax liability.",
+    "featureList": ["Capital loss offset", "Wash sale rule compliance", "Ordinary income offset", "Carryforward tracking"]
+  };
+
+  // BreadcrumbList schema for navigation
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+      { "@type": "ListItem", "position": 2, "name": "Tax Hub", "item": "https://finance.128345827.xyz/tools/tax-hub" },
+      { "@type": "ListItem", "position": 3, "name": "Tax Loss Harvesting Calculator", "item": "https://finance.128345827.xyz/tools/tax-loss-harvesting-calculator" }
+    ]
+  };
+
   return (
     <>
       <script
@@ -57,6 +84,8 @@ export default function TaxLossHarvestingCalculatorPage() {
           }),
         }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
         <TaxLossHarvestingCalculator />
 

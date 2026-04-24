@@ -47,14 +47,42 @@ const faqSchema = {
   ]
 }
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Social Security Break-Even Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate the optimal Social Security claiming age by analyzing break-even points and lifetime benefits.",
+  "featureList": ["Break-even age analysis", "Claiming age comparison", "Delayed retirement credits", "Lifetime benefit projection"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Social Security Break-Even Calculator", "item": "https://finance.128345827.xyz/tools/social-security-break-even-calculator" }
+  ]
+};
+
 export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <SocialSecurityBreakEvenCalculator />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main className="max-w-5xl mx-auto px-4 py-8">
+        <SocialSecurityBreakEvenCalculator />
+      </main>
     </>
   )
 }

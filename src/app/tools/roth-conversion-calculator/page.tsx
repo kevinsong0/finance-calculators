@@ -49,6 +49,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Roth IRA Conversion Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate the tax implications of converting Traditional IRA to Roth IRA and plan optimal conversion timing.",
+  "featureList": ["Conversion tax analysis", "Current vs future tax rates", "5-year rule tracking", "Roth ladder strategy"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Roth Conversion Calculator", "item": "https://finance.128345827.xyz/tools/roth-conversion-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Roth IRA Conversion Calculator - Analyze Tax Benefits',
   description: 'Calculate the tax implications of converting Traditional IRA to Roth IRA. Compare current vs future tax rates and plan optimal conversion timing.',
@@ -57,9 +84,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <RothConversionCalculator />
-    </Suspense>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <main className="max-w-5xl mx-auto px-4 py-8">
+        <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+          <RothConversionCalculator />
+        </Suspense>
+      </main>
+    </>
   );
 }
