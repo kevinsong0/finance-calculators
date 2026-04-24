@@ -6,22 +6,32 @@ import { SITE_URL } from '@/lib/site'
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-KTD45LPW6G';
 
 export const metadata: Metadata = {
-  title: 'Free Mortgage Calculator (2026) | Monthly Payment + Amortization Schedule',
-  description: 'Professional financial calculators for mortgage payments, compound interest, crypto tax, IRS penalties, and retirement planning. Free online tools for smart financial decisions.',
+  title: 'Free Financial Calculators (2026) | Mortgage, Tax, Crypto, Retirement',
+  description: '333+ free online financial calculators and guides for mortgage payments, crypto taxes, retirement planning, tax deductions, and insurance decisions. Expert guidance with instant calculations.',
   metadataBase: new URL(SITE_URL),
-  keywords: ['mortgage calculator', 'compound interest calculator', 'currency converter', 'loan calculator', 'crypto tax calculator', 'IRS penalty calculator', 'tax extension penalty', 'estimated tax payments', 'retirement withdrawal strategy', 'social security taxation', 'medicare IRMAA', 'umbrella insurance', 'long-term care planning', 'business expense deduction', 'mortgage points calculator', 'HELOC calculator', 'financial calculator', 'early repayment'],
-  authors: [{ name: 'Finance Calculators' }],
+  keywords: ['mortgage calculator', 'crypto tax calculator', 'retirement calculator', 'tax calculator', 'compound interest calculator', 'loan calculator', 'crypto staking tax', 'crypto NFT tax', 'tax loss harvesting', 'refinance calculator', 'HELOC calculator', 'social security calculator', '401k calculator', 'IRA calculator', 'life insurance calculator', 'financial calculator', 'tax deduction', 'capital gains calculator', 'estimated tax calculator', 'RMD calculator'],
+  authors: [{ name: 'Finance Tools' }],
   openGraph: {
-    title: 'Free Mortgage Calculator (2026) | Monthly Payment + Amortization Schedule',
-    description: 'Calculate mortgage payments, compound interest, crypto tax, IRS penalties, and retirement planning. Bank-grade accuracy, instant results.',
+    title: 'Free Financial Calculators (2026) | 333+ Expert Guides',
+    description: '333+ free online financial calculators and guides for mortgage, crypto tax, retirement, tax planning, and insurance. Bank-grade accuracy, instant results.',
     type: 'website',
     url: SITE_URL,
     locale: 'en_US',
-    alternateLocale: ['zh_CN'],
+    siteName: 'Finance Tools',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 }
 

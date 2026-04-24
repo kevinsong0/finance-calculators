@@ -1,9 +1,9 @@
 import TaxLossHarvestingCalculator from '@/components/TaxLossHarvestingCalculator'
 
 export const metadata = {
-  title: 'Tax Loss Harvesting Calculator 2024-2025 | Capital Loss Offset',
-  description: 'Calculate tax savings from tax loss harvesting. Estimate how selling losing investments can offset capital gains and reduce your tax liability.',
-  keywords: 'tax loss harvesting calculator, capital loss offset, investment tax savings, capital gains tax, wash sale rule, tax optimization, investment loss deduction',
+  title: 'Tax Loss Harvesting Calculator (2026) - Capital Loss Offset & Wash Sale',
+  description: 'Calculate 2026 tax savings from tax loss harvesting. Estimate how selling losing investments can offset capital gains and reduce your tax liability. Wash sale rule compliance.',
+  keywords: 'tax loss harvesting calculator 2026', 'capital loss offset', 'investment tax savings', 'capital gains tax', 'wash sale rule', 'tax optimization', 'investment loss deduction',
 }
 
 const faqData = [

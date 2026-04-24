@@ -50,9 +50,9 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: 'Crypto Tax Calculator - Calculate Cryptocurrency Capital Gains',
-  description: 'Calculate cryptocurrency capital gains tax based on holding period, tax bracket, and cost basis method. Understand short-term vs long-term crypto tax rates.',
-  keywords: ['crypto tax calculator', 'cryptocurrency tax', 'bitcoin tax', 'crypto capital gains', 'crypto reporting', 'digital asset tax', 'crypto cost basis', 'crypto gains'],
+  title: 'Crypto Tax Calculator (2026) - Cryptocurrency Capital Gains & Reporting',
+  description: 'Calculate cryptocurrency capital gains tax for 2026 based on holding period, tax bracket, and cost basis method. Short-term vs long-term crypto tax rates. Form 8949 reporting.',
+  keywords: ['crypto tax calculator 2026', 'cryptocurrency tax', 'bitcoin tax', 'crypto capital gains', 'crypto reporting', 'digital asset tax', 'crypto cost basis', 'crypto gains', 'form 8949'],
 };
 
 export default function Page() {
