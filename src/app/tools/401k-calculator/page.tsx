@@ -50,6 +50,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "401(k) Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate 401(k) retirement savings growth with contribution limits and employer matching.",
+  "featureList": ["Contribution limits 2026", "Employer match calculation", "Traditional vs Roth", "Catch-up contributions", "Growth projection"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Investment Hub", "item": "https://finance.128345827.xyz/tools/investment-hub" },
+    { "@type": "ListItem", "position": 3, "name": "401(k) Calculator", "item": "https://finance.128345827.xyz/tools/401k-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: '401(k) Calculator (2026) - Contribution Limits & Employer Match',
   description: 'Calculate 401(k) retirement savings growth with 2026 contribution limits ($23,000 + $7,500 catch-up). Includes employer matching and growth projection.',
@@ -67,6 +94,8 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
         <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
           <FourOneKCalculator />

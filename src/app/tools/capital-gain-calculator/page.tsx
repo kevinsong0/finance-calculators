@@ -50,6 +50,33 @@ const faqSchema = {
   ]
 };
 
+// SoftwareApplication schema for AI crawlers (GEO)
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Capital Gain Tax Calculator",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Calculate capital gains tax for stocks, ETFs, real estate, and cryptocurrency.",
+  "featureList": ["Short-term vs long-term rates", "Real estate exclusion", "Crypto capital gains", "Tax-loss harvesting integration"]
+};
+
+// BreadcrumbList schema for navigation
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://finance.128345827.xyz" },
+    { "@type": "ListItem", "position": 2, "name": "Tax Hub", "item": "https://finance.128345827.xyz/tools/tax-hub" },
+    { "@type": "ListItem", "position": 3, "name": "Capital Gain Calculator", "item": "https://finance.128345827.xyz/tools/capital-gain-calculator" }
+  ]
+};
+
 export const metadata: Metadata = {
   title: 'Capital Gain Tax Calculator (2026) - Stock, Real Estate & Crypto Gains',
   description: 'Calculate capital gains tax for stocks, ETFs, real estate, and cryptocurrency. Compare short-term vs long-term rates. 2026 tax brackets.',
@@ -67,6 +94,8 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
         <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
           <CapitalGainCalculator />
