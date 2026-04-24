@@ -5513,6 +5513,96 @@ export const SEO_GUIDE_PAGES: SeoGuidePage[] = [
       "Premium factors: bike type, engine size, rider age, riding history.",
     ],
   },
+  {
+    slug: "crypto-tax-loss-harvesting-guide",
+    title: "Crypto Tax Loss Harvesting Guide for Loss Optimization (2026)",
+    description:
+      "Implement crypto tax loss harvesting: sell losers, offset gains, wash sale rules, and cryptocurrency tax optimization.",
+    category: "crypto",
+    targetProductHref: "/tools/crypto-tax-calculator",
+    targetProductLabel: "Crypto Tax Calculator",
+    summary:
+      "Tax loss harvesting reduces crypto tax liability. This guide explains selling losers, offsetting gains, and wash sale timing.",
+    steps: [
+      "Understand strategy: sell losing crypto to offset capital gains.",
+      "Offset short-term gains: harvested losses offset gains dollar-for-dollar.",
+      "Excess losses: up to $3,000 net loss offsets ordinary income annually.",
+      "Avoid wash sale: wait 31 days before repurchasing same cryptocurrency.",
+      "End-of-year timing: harvest losses before December 31 for current tax year.",
+    ],
+  },
+  {
+    slug: "mortgage-rate-lock-guide",
+    title: "Mortgage Rate Lock Guide for Interest Rate Protection (2026)",
+    description:
+      "Understand mortgage rate lock: lock timing, lock period, float-down option, and interest rate protection.",
+    category: "mortgage",
+    targetProductHref: "/tools/mortgage-calculator",
+    targetProductLabel: "Mortgage Calculator",
+    summary:
+      "Rate lock protects mortgage interest rate. This guide explains timing, lock periods, and float-down options.",
+    steps: [
+      "Understand rate lock: lender guarantees specific interest rate for period.",
+      "Lock timing: typically after loan approval, before closing.",
+      "Lock period: 30, 45, 60 days common, longer locks cost more.",
+      "Float-down option: some allow rate reduction if rates fall after lock.",
+      "Lock expiration: must close before lock expires or risk higher rate.",
+    ],
+  },
+  {
+    slug: "tax-elderly-tax-credit-guide",
+    title: "Tax Elderly Tax Credit Guide for Senior Tax Benefit (2026)",
+    description:
+      "Claim elderly tax credit: age requirements, income limits, credit amount, and senior taxpayer tax benefit.",
+    category: "tax",
+    targetProductHref: "/tools/tax-calculator",
+    targetProductLabel: "Tax Calculator",
+    summary:
+      "Elderly tax credit benefits seniors. This guide explains age, income requirements, and claiming the credit.",
+    steps: [
+      "Understand credit: tax credit for taxpayers age 65 or older.",
+      "Age requirement: must be 65 or older by end of tax year.",
+      "Income limits: credit phased out based on adjusted gross income.",
+      "Credit amount: maximum $5,000 (singles) varies by filing status.",
+      "Must calculate: Schedule R determines actual credit amount.",
+    ],
+  },
+  {
+    slug: "retirement-dividend-investing-guide",
+    title: "Retirement Dividend Investing Guide for Income Portfolio (2026)",
+    description:
+      "Build retirement dividend portfolio: dividend stocks, yield selection, income stability, and retirement income strategy.",
+    category: "retirement",
+    targetProductHref: "/tools/retirement-calculator",
+    targetProductLabel: "Retirement Calculator",
+    summary:
+      "Dividend stocks provide retirement income. This guide explains yield, selection, and income stability.",
+    steps: [
+      "Understand dividend investing: stocks that pay regular cash dividends.",
+      "Target yield: 3-5% dividend yield sustainable for retirement income.",
+      "Focus on quality: dividend aristocrats, consistent dividend history.",
+      "Diversify sectors: avoid concentration in any single sector.",
+      "Reinvest early: compound growth by reinvesting dividends until retirement.",
+    ],
+  },
+  {
+    slug: "boat-insurance-guide",
+    title: "Boat Insurance Guide for Watercraft Coverage (2026)",
+    description:
+      "Understand boat insurance: hull coverage, liability protection, navigation limits, and watercraft protection.",
+    category: "insurance",
+    targetProductHref: "/tools/insurance-calculator",
+    targetProductLabel: "Insurance Calculator",
+    summary:
+      "Boat insurance protects watercraft. This guide explains hull coverage, liability, and navigation limits.",
+    steps: [
+      "Understand hull coverage: physical damage to boat, collision, sinking.",
+      "Liability protection: covers injury/damage to others from boat operation.",
+      "Navigation limits: policy specifies geographic operating area.",
+      "Personal effects: covers gear, equipment, personal items on boat.",
+      "Premium factors: boat type, length, engine horsepower, experience.",
+    ],
+  },
 ];
 
 export function getSeoGuideBySlug(slug: string) {
