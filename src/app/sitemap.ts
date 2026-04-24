@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
+import { SEO_GUIDE_PAGES } from '@/lib/seoPages'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
+  // Base routes for tools and pages
+  const baseRoutes = [
     '/',
     '/tools/mortgage-calculator',
     '/tools/amortization-calculator',
@@ -735,15 +737,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/disclaimer',
   ]
 
+  // Generate guide routes from SEO_GUIDE_PAGES
+  const guideRoutes = SEO_GUIDE_PAGES.map((page) => `/guides/${page.slug}`)
+
+  // Combine base routes with guide routes
+  const routes = [...baseRoutes, ...guideRoutes]
+
   const items: MetadataRoute.Sitemap = routes.map((route) => {
     const isToolRoute = route.startsWith('/tools')
-    const changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] = isToolRoute ? 'monthly' : 'weekly'
+    const isGuideRoute = route.startsWith('/guides')
+    const changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] = isToolRoute || isGuideRoute ? 'monthly' : 'weekly'
 
     return {
       url: `${SITE_URL}${route === '/' ? '' : route}`,
       lastModified: new Date(),
       changeFrequency,
-      priority: route === '/' ? 1 : isToolRoute ? 0.9 : 0.5,
+      priority: route === '/' ? 1 : isToolRoute ? 0.9 : isGuideRoute ? 0.8 : 0.5,
     }
   })
 
