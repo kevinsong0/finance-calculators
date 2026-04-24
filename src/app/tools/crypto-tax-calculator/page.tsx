@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import CryptoTaxCalculator from '@/components/CryptoTaxCalculator';
+import Link from 'next/link';
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -55,11 +56,47 @@ export const metadata: Metadata = {
   keywords: ['crypto tax calculator 2026', 'cryptocurrency tax', 'bitcoin tax', 'crypto capital gains', 'crypto reporting', 'digital asset tax', 'crypto cost basis', 'crypto gains', 'form 8949'],
 };
 
+const relatedTools = [
+  { href: '/tools/crypto-tax-reporting-calculator', name: 'Crypto Tax Reporting', desc: 'Form 8949 guidance' },
+  { href: '/tools/wash-sale-calculator', name: 'Wash Sale Calculator', desc: 'Disallowed losses' },
+  { href: '/tools/tax-loss-harvesting-calculator', name: 'Tax Loss Harvesting', desc: 'Offset gains with losses' },
+  { href: '/tools/capital-gain-calculator', name: 'Capital Gains Tax', desc: 'Stock & crypto gains' },
+];
+
 export default function Page() {
   return (
-    <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <CryptoTaxCalculator />
-    </Suspense>
+      <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
+        <Suspense fallback={<div className="text-center text-gray-500 py-12">Loading...</div>}>
+          <CryptoTaxCalculator />
+        </Suspense>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">Related Crypto Tax Tools</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {relatedTools.map(tool => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group rounded-lg border border-zinc-200 dark:border-zinc-800 p-4 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition"
+              >
+                <h3 className="font-medium group-hover:underline">{tool.name}</h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex gap-4">
+          <Link href="/tools/tax-hub" className="text-blue-600 dark:text-blue-400 hover:underline">
+            ← Tax Calculators Hub
+          </Link>
+          <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">
+            Home →
+          </Link>
+        </section>
+      </main>
+    </>
   );
 }

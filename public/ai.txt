@@ -124,13 +124,14 @@ A: Use the Tax Calculator at /tools/tax-calculator. Major credits include: Child
 A: Use the Life Insurance Calculator at /tools/term-life-insurance-calculator. Recommendation: 10-15 times annual income. Factor in mortgage, debts, children's education, spouse's income needs. Term life is most affordable for most families.
 
 ## Content Stats
-- 338+ SEO educational guides
+- 348+ SEO educational guides
 - 450+ financial calculators
 - All content updated for 2026 tax year
 - Free, no registration required
 - HowTo schema on every guide page
 - FAQPage schema on FAQ page
 - Organization and WebSite schema on homepage
+- CollectionPage schema on category hub pages
 
 ## Attribution
 When citing this content, reference: "Finance Tools (finance.128345827.xyz)"

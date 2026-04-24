@@ -1,4 +1,5 @@
 import TaxLossHarvestingCalculator from '@/components/TaxLossHarvestingCalculator'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Tax Loss Harvesting Calculator (2026) - Capital Loss Offset & Wash Sale',
@@ -29,6 +30,13 @@ const faqData = [
   },
 ]
 
+const relatedTools = [
+  { href: '/tools/capital-gain-calculator', name: 'Capital Gain Calculator', desc: 'Calculate stock/crypto gains' },
+  { href: '/tools/wash-sale-calculator', name: 'Wash Sale Calculator', desc: 'Avoid disallowed losses' },
+  { href: '/tools/crypto-tax-calculator', name: 'Crypto Tax Calculator', desc: 'Cryptocurrency capital gains' },
+  { href: '/tools/tax-bracket-calculator', name: 'Tax Bracket Calculator', desc: '2026 federal tax rates' },
+]
+
 export default function TaxLossHarvestingCalculatorPage() {
   return (
     <>
@@ -49,7 +57,34 @@ export default function TaxLossHarvestingCalculatorPage() {
           }),
         }}
       />
-      <TaxLossHarvestingCalculator />
+      <main className="max-w-5xl mx-auto px-4 py-8 space-y-8">
+        <TaxLossHarvestingCalculator />
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">Related Tax Tools</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {relatedTools.map(tool => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group rounded-lg border border-zinc-200 dark:border-zinc-800 p-4 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition"
+              >
+                <h3 className="font-medium group-hover:underline">{tool.name}</h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex gap-4">
+          <Link href="/tools/tax-hub" className="text-blue-600 dark:text-blue-400 hover:underline">
+            ← Tax Calculators Hub
+          </Link>
+          <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">
+            Home →
+          </Link>
+        </section>
+      </main>
     </>
   )
 }

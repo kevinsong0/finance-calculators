@@ -7,13 +7,13 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-KTD45LPW6G';
 
 export const metadata: Metadata = {
   title: 'Free Financial Calculators (2026) | Mortgage, Tax, Crypto, Retirement',
-  description: '333+ free online financial calculators and guides for mortgage payments, crypto taxes, retirement planning, tax deductions, and insurance decisions. Expert guidance with instant calculations.',
+  description: '348+ free online financial calculators and guides for mortgage payments, crypto taxes, retirement planning, tax deductions, and insurance decisions. Expert guidance with instant calculations.',
   metadataBase: new URL(SITE_URL),
-  keywords: ['mortgage calculator', 'crypto tax calculator', 'retirement calculator', 'tax calculator', 'compound interest calculator', 'loan calculator', 'crypto staking tax', 'crypto NFT tax', 'tax loss harvesting', 'refinance calculator', 'HELOC calculator', 'social security calculator', '401k calculator', 'IRA calculator', 'life insurance calculator', 'financial calculator', 'tax deduction', 'capital gains calculator', 'estimated tax calculator', 'RMD calculator'],
+  keywords: ['mortgage calculator', 'crypto tax calculator', 'retirement calculator', 'tax calculator', 'compound interest calculator', 'loan calculator', 'crypto staking tax', 'crypto NFT tax', 'tax loss harvesting', 'refinance calculator', 'HELOC calculator', 'social security calculator', '401k calculator', 'IRA calculator', 'life insurance calculator', 'financial calculator', 'tax deduction', 'capital gains calculator', 'estimated tax calculator', 'RMD calculator', 'crypto DeFi tax', 'move to earn tax', 'play to earn tax', 'pension calculator'],
   authors: [{ name: 'Finance Tools' }],
   openGraph: {
-    title: 'Free Financial Calculators (2026) | 333+ Expert Guides',
-    description: '333+ free online financial calculators and guides for mortgage, crypto tax, retirement, tax planning, and insurance. Bank-grade accuracy, instant results.',
+    title: 'Free Financial Calculators (2026) | 348+ Expert Guides',
+    description: '348+ free online financial calculators and guides for mortgage, crypto tax, retirement, tax planning, and insurance. Bank-grade accuracy, instant results.',
     type: 'website',
     url: SITE_URL,
     locale: 'en_US',
